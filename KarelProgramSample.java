@@ -16,6 +16,7 @@ public class KarelProgramSample extends SuperKarel {
 	@Override
 	public void run() {
 		move();		
+		turnUp();
 
 	}
 	
