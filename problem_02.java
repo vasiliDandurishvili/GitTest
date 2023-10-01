@@ -10,16 +10,9 @@ public class problem_02 extends Karel{
 		move();
 		move();
 		move();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
+		for(int i=0; i<7; i++){
+			pickBeeper();
+		}
 		move();
 		putBeeper();
 		putBeeper();
