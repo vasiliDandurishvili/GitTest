@@ -12,6 +12,10 @@ public class problem_05 extends Karel{
 			move();
 			putBeeper();
 		}
+		if (beepersPresent()){
+			move();
+			
+		}
 		
 		
 	}
