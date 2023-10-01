@@ -7,7 +7,7 @@ import stanford.karel.Karel;
  */
 public class problem_05 extends Karel{
 	public void run(){
-		if (frontIsClear()){
+		if (beepersPresent()){
 			move();
 			putBeeper();
 		} else{
