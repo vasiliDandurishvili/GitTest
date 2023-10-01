@@ -6,10 +6,9 @@ import stanford.karel.Karel;
 public class problem_02 extends Karel{
 	public void run(){
 		turnLeft();
-		move();
-		move();
-		move();
-		move();
+		for(int i=0; i<4; i++){
+			move();
+		}
 		for(int i=0; i<10; i++){
 			pickBeeper();
 		}
