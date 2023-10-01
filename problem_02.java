@@ -10,7 +10,7 @@ public class problem_02 extends Karel{
 		move();
 		move();
 		move();
-		for(int i=0; i<7; i++){
+		for(int i=0; i<10; i++){
 			pickBeeper();
 		}
 		move();
