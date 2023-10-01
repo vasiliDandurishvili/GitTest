@@ -12,26 +12,6 @@ public class problem_02 extends Karel{
 		move();
 		move();
 		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		move();
-		putBeeper();
-		putBeeper();
-		putBeeper();
-		putBeeper();
-		putBeeper();
-		putBeeper();
-		putBeeper();
-		putBeeper();
-		putBeeper();
-		putBeeper();
-		
+
 	}
 }
