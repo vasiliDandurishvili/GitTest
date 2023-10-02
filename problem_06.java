@@ -8,6 +8,7 @@ import stanford.karel.Karel;
 public class problem_06 extends Karel{	
 
 	public void run(){
+		move();
 		while (beepersPresent()){
 			pickBeeper();
 			if (noBeepersPresent()){
