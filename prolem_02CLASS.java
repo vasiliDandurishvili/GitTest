@@ -7,7 +7,7 @@ public class prolem_02CLASS extends Karel{
 	public void run(){
 		moveToTheBeeperPile();
 		pickTenBeepers();
-		move();
+//		move();
 		putTenBeepers();
 		
 	}
