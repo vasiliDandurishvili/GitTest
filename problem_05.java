@@ -10,7 +10,8 @@ public class problem_05 extends Karel{
 		while (frontIsClear()){
 			if(noBeepersPresent()){
 				putBeeper();
-//				move();		
+//				move();	
+//				ეს მუვი აღარა საჭირორადგან if შიცაა და else-შიც
 			}
 			move();
 //			else{
