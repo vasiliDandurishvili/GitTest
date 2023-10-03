@@ -8,41 +8,44 @@ import stanford.karel.Karel;
  */
 public class problem_07 extends Karel{
 	public void run(){
+		fillLine();
+//		while nextLineExists
+		    moveToTheLine();
+//			fillLine
+		
+	
+	}
+
+	private void moveToTheLine() {
+		turnLeft();
+		move();
+		turnLeft();
+		while (frontIsClear()){
+			move();
+		}
+		turnAround();
+	}
+
+	private void turnAround() {
+		turnLeft();
+		turnLeft();
+	}
+
+	private void fillLine() {
+		while (frontIsClear()){
+			if(noBeepersPresent()){
+				putBeeper();
+			}
+			move();
+		}
 		if (noBeepersPresent()){
 			putBeeper();
-		}
-		while (frontIsClear()){
-			if (noBeepersPresent()){
-				putBeeper();
-				move();
-			}else{
-				move();
-			}
-		}
-		
-		while(frontIsBlocked()){
-			turnLeft();
-			move();
-			turnLeft();
-		}
-		while (frontIsClear()){
-			if (noBeepersPresent()){
-				putBeeper();
-				move();
-			}else{
-				move();
-			}
-		}
-		while(frontIsBlocked()){
-			for(int i=0; i<3; i++){
-				turnLeft();
-			}
-			move();
-			for(int i=0; i<3; i++){
-				turnLeft();
-			}
 		}
 		
 	}
 		
-}
+		
+		
+		
+		
+	}
