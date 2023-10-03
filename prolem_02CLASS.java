@@ -21,7 +21,9 @@ public class prolem_02CLASS extends Karel{
 	}
 
 	private void pickTenBeepers() {
-		// TODO Auto-generated method stub
+		for (int i=0; i<10;i++){
+			putBeeper();
+		}
 		
 	}
 
