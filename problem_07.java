@@ -9,11 +9,10 @@ import stanford.karel.Karel;
 public class problem_07 extends Karel{
 	public void run(){
 		fillLine();
-//		while nextLineExists
+		while (leftIsClear()){
 		    moveToTheLine();
-//			fillLine
-		
-	
+			fillLine();
+		}
 	}
 
 	private void moveToTheLine() {
