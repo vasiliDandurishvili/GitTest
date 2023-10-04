@@ -20,8 +20,7 @@ public class problem_08 extends Karel{
 			turnAround();
 			move();
 			turnAround();
-		}
-		
+		}	
 	}
 
 	private void carryBeepersFrom2x1() {
@@ -34,15 +33,12 @@ public class problem_08 extends Karel{
 			move();
 			move();
 			turnAround();
-		}
-		
+		}	
 	}
 
 	private void turnAround() {
 		turnLeft();
 		turnLeft();
 		
-	}
-		
-		
+	}	
 }
