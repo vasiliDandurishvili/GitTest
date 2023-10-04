@@ -20,6 +20,7 @@ public class problem_09 extends Karel{
 				move();
 				move();
 				move();
+				turnAround();
 			}
 		}
 		
