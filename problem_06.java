@@ -10,11 +10,23 @@ public class problem_06 extends Karel{
 	public void run(){
 		move();
 		carryBeepersFrom2x1();
-//		carryBeepersFrom3x1();
+		carryBeepersFrom3x1();
 		
 
 			
 		}
+
+	private void carryBeepersFrom3x1() {
+		move();
+		while (beepersPresent()){
+			pickBeeper();
+			move();
+			putBeeper();
+			turnAround();
+			move();
+			turnAround();
+		}
+	}
 
 	private void carryBeepersFrom2x1() {
 		while (beepersPresent()){
