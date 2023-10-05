@@ -4,7 +4,6 @@ import stanford.karel.Karel;
 ცალი ბრილიანტი, კარელმა 4x1 უჯრაზე უნდა დადოს n+m ბრილიანტი. ჩათვალეთ, რომ
 კარელს ჩანთაში უსასრულო რაოდენობის ბრილიანტი აქვს.
 */
-
 public class problem_06 extends Karel{	
 
 	public void run(){
