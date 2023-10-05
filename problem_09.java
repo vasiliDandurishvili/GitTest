@@ -23,8 +23,6 @@ public class problem_09 extends Karel{
 				turnAround();
 			}
 		}
-		
-		
 	}
 
 	private void turnAround() {
