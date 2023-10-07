@@ -9,16 +9,19 @@ public class problem_09 extends SuperKarel{
 		move();
 		mutliplieBeepers();
 		splitBeepers();
-//		დგას  2-3-ზე სახით ზევით
-		addBeepers();
+//		დგას  3-2-ზე სახით ზევით
+//		addBeepers();
 //		goHome();
 	}
 
 	private void addBeepers() {
-		
 		while(beepersPresent()){
 			move();
-			turnRight();
+			if(beepersPresent()){
+				turnAround();
+				move();
+				turnRight();
+			}
 			while(beepersPresent()){
 				pickBeeper();
 				move();
@@ -27,10 +30,10 @@ public class problem_09 extends SuperKarel{
 				move();
 				turnAround();
 			}
-			move();
-			turnRight();
-			move();
-			turnAround();
+//			move();
+//			turnRight();
+//			move();
+//			turnAround();
 		}
 
 		
