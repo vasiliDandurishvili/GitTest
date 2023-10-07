@@ -10,7 +10,7 @@ public class problem_09 extends SuperKarel{
 		mutliplieBeepers();
 		splitBeepers();
 //		დგას  3-2-ზე სახით ზევით
-		addBeepers();
+//		addBeepers();
 //		goHome();
 	}
 
