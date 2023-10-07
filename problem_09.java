@@ -31,6 +31,6 @@ public class problem_09 extends SuperKarel{
 		while(frontIsClear()){
 			move();
 		}
-		turnLeft();
+		turnAround();
 	}
 }
