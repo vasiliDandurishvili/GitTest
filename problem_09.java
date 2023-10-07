@@ -9,8 +9,14 @@ public class problem_09 extends SuperKarel{
 		move();
 		mutliplieBeepers();
 		splitBeepers();
-//		addBeepers();
+		addBeepers();
 //		goHome();
+	}
+
+	private void addBeepers() {
+		
+
+		
 	}
 
 	private void splitBeepers() {
