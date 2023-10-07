@@ -14,14 +14,15 @@ public class problem_09 extends SuperKarel{
 	}
 
 	private void splitBeepers() {
-		pickBeeper();
 		turnLeft();
 		while(beepersPresent()){
+			pickBeeper();
 			move();
 			if(noBeepersPresent()){
 				putBeeper();
 			}else{
 				move();
+				putBeeper();
 			}
 			goBack();
 		}
