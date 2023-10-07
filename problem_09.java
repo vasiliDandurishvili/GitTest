@@ -12,16 +12,15 @@ public class problem_09 extends SuperKarel{
 	}
 
 	private void mutliplieBeepers() {
-		while (beepersPresent()){
-			pickBeeper();
-			turnLeft();
+		pickBeeper();
+		turnLeft();
 			while(frontIsClear()){
 				move();
 				putBeeper();
 				if(frontIsBlocked()){
 					goBack();
 					pickBeeper();
-				}
+				
 			}
 		}
 	}
