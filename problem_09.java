@@ -23,18 +23,14 @@ public class problem_09 extends SuperKarel{
 				turnRight();
 				move();
 				turnRight();
-			while(beepersPresent()){
-				pickBeeper();
-				move();
-				putBeeper();
-				turnAround();
-				move();
-				turnAround();
-			}
-		}else{
-			move();
-			turnRight();
-			move();
+				while(beepersPresent()){
+					pickBeeper();
+					move();
+					putBeeper();
+					turnAround();
+					move();
+					turnAround();
+				}
 		}
 	}	
 }
