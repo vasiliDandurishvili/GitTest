@@ -32,5 +32,5 @@ public class problem_09 extends SuperKarel{
 			move();
 		}
 		turnAround();
-		}
 	}
+}
