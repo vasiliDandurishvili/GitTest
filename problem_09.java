@@ -8,16 +8,22 @@ public class problem_09 extends SuperKarel{
 	public void run(){
 		move();
 		mutliplieBeepers();
-//		splitBeepers();
+		splitBeepers();
 //		addBeepers();
 //		goHome();
 	}
 
 	private void splitBeepers() {
+		pickBeeper();
 		turnLeft();
 		while(beepersPresent()){
-			pickBeeper();
-			move()
+			move();
+			if(noBeepersPresent()){
+				putBeeper();
+			}else{
+				move();
+			}
+			goBack();
 		}
 	
 		
