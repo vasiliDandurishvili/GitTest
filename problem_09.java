@@ -19,7 +19,11 @@ public class problem_09 extends SuperKarel{
 				putBeeper();
 				if(frontIsBlocked()){
 					goBack();
-					pickBeeper();
+					if(beepersPresent()){
+						pickBeeper();
+					}else{
+						turnRight();
+					}
 				
 			}
 		}
