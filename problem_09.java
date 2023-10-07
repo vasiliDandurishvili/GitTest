@@ -21,7 +21,7 @@ public class problem_09 extends SuperKarel{
 				turnAround();
 				move();
 				turnRight();
-			}
+			
 			while(beepersPresent()){
 				pickBeeper();
 				move();
@@ -30,14 +30,9 @@ public class problem_09 extends SuperKarel{
 				move();
 				turnAround();
 			}
-			move();
-			turnRight();
-			move();
-			turnAround();
 		}
-
-		
-	}
+	}	
+}
 
 	private void splitBeepers() {
 		turnLeft();
