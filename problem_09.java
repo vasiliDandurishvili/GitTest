@@ -8,6 +8,9 @@ public class problem_09 extends SuperKarel{
 	public void run(){
 		move();
 		mutliplieBeepers();
+		turnLeft();
+		move();
+		mutliplieBeepers();
 //		goHome();
 	}
 
