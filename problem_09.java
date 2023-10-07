@@ -22,8 +22,6 @@ public class problem_09 extends SuperKarel{
 					goBack();
 					pickBeeper();
 				}
-			}if (noBeepersPresent()){
-				turnRight();
 			}
 		}
 	}
@@ -33,6 +31,10 @@ public class problem_09 extends SuperKarel{
 		while(frontIsClear()){
 			move();
 		}
-		turnAround();
+		if (noBeepersPresent()){
+			turnRight();
+		}else{
+			turnAround();
+		}
 	}
 }
