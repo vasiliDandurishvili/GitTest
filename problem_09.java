@@ -21,6 +21,8 @@ public class problem_09 extends SuperKarel{
 					goBack();
 					if(beepersPresent()){
 						pickBeeper();
+					}else{
+						turnAround();
 					}
 			}
 		}
