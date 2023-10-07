@@ -7,6 +7,30 @@ m ცალი ბრილიანტი, კარელმა 4x1 უჯრ�
 public class problem_09 extends SuperKarel{
 	public void run(){
 		move();
-		turnRight();
+		mutliplieBeepers();
+//		goHome();
+	}
+
+	private void mutliplieBeepers() {
+		while (beepersPresent()){
+			pickBeeper();
+			turnLeft();
+			while(frontIsClear()){
+				move();
+				putBeeper();
+				if(frontIsBlocked()){
+					goBack();
+				}
+			}
+		}
+		
+	}
+
+	private void goBack() {
+		turnAround();
+		while(frontIsClear()){
+			move();
+		}
+		turnLeft();
 	}
 }
