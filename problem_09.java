@@ -20,6 +20,7 @@ public class problem_09 extends SuperKarel{
 				putBeeper();
 				if(frontIsBlocked()){
 					goBack();
+					pickBeeper();
 /*
  * კარელი დგას 2x1-ზე და იყურება ზევით*					
  */
