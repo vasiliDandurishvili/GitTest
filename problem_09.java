@@ -18,11 +18,10 @@ public class problem_09 extends SuperKarel{
 		while(beepersPresent() ){
 			pickBeeper();
 			move();
-			if(beepersPresent()){
-				while(beepersPresent()){
-					move();
-				}
-			}else{
+			while(beepersPresent()){
+				move();
+			}
+			if(noBeepersPresent()){
 				putBeeper();
 				goBack();
 			}
