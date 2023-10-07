@@ -15,19 +15,15 @@ public class problem_09 extends SuperKarel{
 		while (beepersPresent()){
 			pickBeeper();
 			turnLeft();
-			if (noBeepersPresent()){
-				turnRight();
-			}
 			while(frontIsClear()){
 				move();
 				putBeeper();
 				if(frontIsBlocked()){
 					goBack();
 					pickBeeper();
-/*
- * კარელი დგას 2x1-ზე და იყურება ზევით*					
- */
 				}
+			}if (noBeepersPresent()){
+				turnRight();
 			}
 		}
 	}
