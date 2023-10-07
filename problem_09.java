@@ -31,10 +31,8 @@ public class problem_09 extends SuperKarel{
 		while(frontIsClear()){
 			move();
 		}
-		if (noBeepersPresent()){
-			turnRight();
-		}else{
-			turnAround();
+		turnAround();
+
 		}
 	}
 }
