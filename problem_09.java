@@ -14,11 +14,16 @@ public class problem_09 extends SuperKarel{
 	}
 
 	private void addBeepers() {
-		move();
 		while(beepersPresent()){
-			turnLeft();
 			move();
 			turnRight();
+			while(beepersPresent()){
+				pickBeeper();
+				move();
+				turnAround();
+				move();
+				turnAround();
+			}
 		}
 
 		
