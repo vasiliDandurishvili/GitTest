@@ -12,12 +12,22 @@ import stanford.karel.SuperKarel;
 public class assiment_1 extends SuperKarel{
 	public void run(){
 		goOut();
+//		stand on 6x3 facing left
 		pickBeeper();
-//		returnHome();
+		returnHome();
+	}
+
+	private void returnHome() {
+		move();
+		turnRight();
+		move();
+		turnLeft();
+		doubleMove();
+		turnAround();
 	}
 
 	private void goOut() {
-		douleMove();
+		doubleMove();
 		turnRight();
 		move();
 		turnLeft();
@@ -27,7 +37,7 @@ public class assiment_1 extends SuperKarel{
 		
 	}
 
-	private void douleMove() {
+	private void doubleMove() {
 		move();
 		move();
 		
