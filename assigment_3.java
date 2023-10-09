@@ -8,6 +8,10 @@ public class assigment_3 extends SuperKarel{
 	}
 
 	private void fillBoard() {
+		fillOneBoard();
+    }
+
+	private void fillOneBoard() {
 		putBeeper();
 		while(frontIsClear()){
 			move();
@@ -23,6 +27,7 @@ public class assigment_3 extends SuperKarel{
 		turnRight();
 		move();
 		turnRight();
+		
 	}
 		
 }
