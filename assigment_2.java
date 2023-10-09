@@ -30,8 +30,8 @@ public class assigment_2 extends SuperKarel{
 				for(int i=0;i<4;i++){
 					move();
 				}
+				turnLeft();
 			}
-			turnLeft();
 		}
 
 }
