@@ -9,7 +9,7 @@ public class assigment_2 extends SuperKarel{
 
 	private void fillColumns() {
 		turnLeft();
-		while(rightIsClear()){
+		while(frontIsClear()){
 			while(frontIsClear()){
 				if(beepersPresent()){
 					move();
