@@ -10,7 +10,6 @@ public class assigment_2 extends SuperKarel{
 	private void fillColumns() {
 		while (frontIsClear()){
 			turnLeft();
-			turnLeft();
 			if(noBeepersPresent()){
 				putBeeper();
 			}
