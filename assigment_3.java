@@ -6,13 +6,11 @@ public class assigment_3 extends SuperKarel{
 	public void run(){
 		fillOneBoard();
 		completeTheBoard();
-		fillOneBoard();
 	}
 
 	private void completeTheBoard() {
 		while(frontIsClear()){
 			move();
-		
 		}
 		turnAround();
 	}
