@@ -4,10 +4,16 @@ import stanford.karel.SuperKarel;
  */
 public class assigment_3 extends SuperKarel{
 	public void run(){
-		fillBoard();
+		fillOneBoard();
+		completeTheBoard();
 	}
 
-	private void fillBoard() {
+	private void completeTheBoard() {
+		
+		
+	}
+
+	private void fillOneBoard() {
 		putBeeper();
 		while(frontIsClear()){
 			move();
@@ -25,5 +31,6 @@ public class assigment_3 extends SuperKarel{
 		turnRight();
 		
 	}
+	
 		
 }
