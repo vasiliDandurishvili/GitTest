@@ -12,9 +12,9 @@ public class assigment_3 extends SuperKarel{
 	private void completeTheBoard() {
 		while(frontIsClear()){
 			move();
-			turnAround();
-		}
 		
+		}
+		turnAround();
 	}
 
 	private void fillOneBoard() {
