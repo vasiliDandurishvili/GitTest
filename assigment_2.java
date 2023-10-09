@@ -1,4 +1,21 @@
+import stanford.karel.SuperKarel;
+/*
+  
+ */
+public class assigment_2 extends SuperKarel{
+	public void run(){
+		fillColumns();
+	}
 
-public class assigment_2 {
-
+	private void fillColumns() {
+		turnLeft();
+		while (frontIsClear()){
+			if(noBeepersPresent()){
+				putBeeper();
+			}
+			move();
+		}
+		
+	}
+		
 }
