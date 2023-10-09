@@ -18,9 +18,9 @@ public class assigment_03_vol2 extends SuperKarel{
 	private void fillOneBoard() {
 		putBeeper();
 		while(frontIsClear()){
-			if(noBeepersPresent()){
-				putBeeper();
-			}
+//			if(noBeepersPresent()){
+//				putBeeper();
+//			}
 			move();
 			if(frontIsClear()){
 				move();
