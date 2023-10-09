@@ -14,16 +14,16 @@ public class assigment_2 extends SuperKarel{
 				putBeeper();
 			}
 			move();
-			turnAround();
-			while(frontIsClear()){
-				move();
-			}
-			turnLeft();
-			for(int i=0;i<3;i++){
-				move();
-			}
+		turnAround();
+		while(frontIsClear()){
+			move();
 		}
-		
+		turnLeft();
+		for(int i=0;i<3;i++){
+			move();
+		}
 	}
+		
+}
 		
 }
