@@ -13,6 +13,7 @@ public class assigment_2 extends SuperKarel{
 		while(frontIsBlocked()){
 			if (noBeepersPresent()){
 				putBeeper();
+				turnRight();
 				}
 		}
 	}
