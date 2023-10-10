@@ -6,7 +6,7 @@ public class assigment_2 extends SuperKarel{
 	public void run(){
 		fillColumns();
 		forBlockedFront();
-		fillColumns();
+//		fillColumns();
 	}
 
 	private void forBlockedFront() {
