@@ -1,3 +1,5 @@
+import java.awt.Color;
+
 import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
@@ -14,6 +16,7 @@ public class Problem_12 extends GraphicsProgram {
 		myOval = new GOval(100,200,200,300);
 		add(myOval);
 		
-		
+		myOval.setFilled(true);
+		myOval.setColor(Color.BLACK);
 	}
 }
