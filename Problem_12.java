@@ -22,6 +22,6 @@ public class Problem_12 extends GraphicsProgram {
 		myOval.setFilled(true);
 		myOval.setColor(Color.BLACK);
 		
-		
+		oldBall.setFilled(true);
 	}
 }
