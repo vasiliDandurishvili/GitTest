@@ -8,8 +8,8 @@ public class assigment_2 extends SuperKarel{
 	}
 
 	private void fillColumns() {
+		turnLeft();
 		while(frontIsClear()){
-			turnLeft();
 			while(frontIsClear()){
 				if(beepersPresent()){
 					move();
