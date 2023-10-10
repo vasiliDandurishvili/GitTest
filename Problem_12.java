@@ -20,7 +20,7 @@ public class Problem_12 extends GraphicsProgram {
 		add(myOval);
 		
 		myOval.setFilled(true);
-		myOval.setColor(Color.BLACK);
+		myOval.setColor(Color.RED);
 		
 		oldBall.setFilled(true);
 	}
