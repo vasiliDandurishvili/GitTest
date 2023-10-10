@@ -14,28 +14,17 @@ public class assigment_2 extends SuperKarel{
 		fillColumns();
 	}
 /*
- forBlockedFront method is for columns which only include one square
+ * this is the cycle to move from one to second column and fill each column.
  */
-	private void forBlockedFront() {
-		while(frontIsBlocked()){
-			if (noBeepersPresent()){
-				putBeeper();
-				turnRight();
-				for(int i=0;i<4;i++){
-					move();
-				}
-				turnLeft();
-			}
-		}
-	}
-
 	private void fillColumns() {
 		while(frontIsClear()){
 			fillEachColumn();
 		}
 		
 	}
-
+/*
+ this is to fill only one column, go back and move to the next column with facing up.
+ */
 	private void fillEachColumn() {
 		while(frontIsClear()){
 			if(beepersPresent()){
@@ -62,6 +51,21 @@ public class assigment_2 extends SuperKarel{
 			turnLeft();
 		}
 		
+	}
+/*
+ forBlockedFront method is for columns which only include one square
+ */
+	private void forBlockedFront() {
+		while(frontIsBlocked()){
+			if (noBeepersPresent()){
+				putBeeper();
+				turnRight();
+				for(int i=0;i<4;i++){
+					move();
+				}
+				turnLeft();
+			}
+		}
 	}
 }
 		
