@@ -15,7 +15,9 @@ public class assigment_2 extends SuperKarel{
 					move();
 				}else{
 					putBeeper();
-					move();
+					if(frontIsClear()){
+						move();
+					}
 				}
 			}
 			if(noBeepersPresent()){
