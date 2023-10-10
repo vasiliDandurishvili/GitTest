@@ -5,6 +5,16 @@ import stanford.karel.SuperKarel;
 public class assigment_2 extends SuperKarel{
 	public void run(){
 		fillColumns();
+		forBlockedFront();
+		fillColumns();
+	}
+
+	private void forBlockedFront() {
+		while(frontIsBlocked()){
+			if (noBeepersPresent()){
+				putBeeper();
+				}
+		}
 	}
 
 	private void fillColumns() {
@@ -35,7 +45,7 @@ public class assigment_2 extends SuperKarel{
 				turnLeft();
 			}
 		}
-
+		
+	}
 }
 		
-}
