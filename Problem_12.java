@@ -13,10 +13,15 @@ public class Problem_12 extends GraphicsProgram {
 		myOval =new GOval(100, 200);
 		add(myOval ,200,200);
 		
+		
+		GOval oldBall = myOval;
+		
 		myOval = new GOval(100,200,200,300);
 		add(myOval);
 		
 		myOval.setFilled(true);
 		myOval.setColor(Color.BLACK);
+		
+		
 	}
 }
