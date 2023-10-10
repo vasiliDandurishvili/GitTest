@@ -4,6 +4,7 @@ import stanford.karel.SuperKarel;
  */
 public class assigment_2 extends SuperKarel{
 	public void run(){
+		turnLeft();
 		fillColumns();
 		forBlockedFront();
 //		fillColumns();
@@ -19,7 +20,6 @@ public class assigment_2 extends SuperKarel{
 	}
 
 	private void fillColumns() {
-		turnLeft();
 		while(frontIsClear()){
 			while(frontIsClear()){
 				if(beepersPresent()){
