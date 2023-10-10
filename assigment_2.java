@@ -15,7 +15,11 @@ public class assigment_2 extends SuperKarel{
 			if (noBeepersPresent()){
 				putBeeper();
 				turnRight();
+				for(int i=0;i<4;i++){
+					move();
 				}
+				turnLeft();
+			}
 		}
 	}
 
