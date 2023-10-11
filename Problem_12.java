@@ -57,7 +57,7 @@ public class Problem_12 extends GraphicsProgram {
 		GLine myChimney_1 = new GLine (800,250,800,200);
 		add(myChimney_1);
 		
-		GLine myChimney_2 = new GLine (900,175,900,200);
+		GLine myChimney_2 = new GLine (840,220,840,200);
 		add(myChimney_2);
 	}
 
