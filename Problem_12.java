@@ -28,7 +28,7 @@ public class Problem_12 extends GraphicsProgram {
 		myWindow_2.setFilled(true);
 		myWindow_2.setColor(Color.WHITE);
 		
-		GLine Wline = new GLine (850,500,850,650);
+		GLine Wline = new GLine (775,500,775,650);
 		add(Wline);
 		
 		
