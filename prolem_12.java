@@ -1,9 +1,10 @@
+import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
 public class prolem_12 extends GraphicsProgram {
 	
 	public void run() {
-		// You fill this in
+		GRect myRect = new GRect (200,100);
 	}
 
 }
