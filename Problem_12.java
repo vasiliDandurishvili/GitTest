@@ -5,7 +5,7 @@ import acm.program.GraphicsProgram;
 public class Problem_12 extends GraphicsProgram {
 	public void run() {
 		GRect myRect = new GRect(200,100);
-		add(myRect,400,500);
+		add(myRect,1000,500);
 	}
 
 }
