@@ -22,7 +22,7 @@ public class Problem_12 extends GraphicsProgram {
 		add(myWindow_1,750,500);
 
 		myWindow_1.setFilled(true);
-		myWindow_1.setColor(Color.BLUE);
+		myWindow_1.setColor(Color.WHITE);
 		
 		GRect myWindow_2 = new GRect(150,150);
 		add(myWindow_2,1100,500);
