@@ -8,6 +8,7 @@ public class Problem_12 extends GraphicsProgram {
 		add(myRect,600,400);
 		
 		myRect.setFilled(true);
+		myRect.setColor(Color.blue);
 
 	}
 
