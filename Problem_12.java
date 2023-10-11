@@ -42,6 +42,9 @@ public class Problem_12 extends GraphicsProgram {
 		
 		GRect myDoor = new GRect(50,150);
 		add(myDoor,975,650);
+		
+		myDoor.setFilled(true);
+		myDoor.setColor(Color.BLACK);
 	}
 
 }
