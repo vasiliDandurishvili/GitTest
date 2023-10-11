@@ -52,7 +52,7 @@ public class Problem_12 extends GraphicsProgram {
 		add(myHandle,1020,730);
 		
 		myHandle.setFilled(true);
-		myHandle.setColor(Color.RED);
+		myHandle.setColor(Color.YELLOW);
 		
 		GLine myChimney_1 = new GLine (800,250,800,200);
 		add(myChimney_1);
