@@ -4,7 +4,7 @@ public class assigment_3 extends SuperKarel{
 		fillTheBoard();
 	}
 	private void fillTheBoard() {
-		while(leftIsClear()){
+		while(frontIsClear()){
 		fillLine();
 		goBackAndMoveToTheNextLineAndMoveOnce();
 		fillLine();
