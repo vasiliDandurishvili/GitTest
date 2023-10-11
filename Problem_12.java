@@ -59,6 +59,9 @@ public class Problem_12 extends GraphicsProgram {
 		
 		GLine myChimney_2 = new GLine (840,220,840,200);
 		add(myChimney_2);
+		
+		GRect myWall = new GRect(40,40);
+		add(myWall,800,160);
 	}
 
 }
