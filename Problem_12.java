@@ -1,6 +1,5 @@
 import java.awt.Color;
-
-import acm.graphics.GTrai;
+import acm.graphics.GPolygon;
 import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
@@ -12,7 +11,7 @@ public class Problem_12 extends GraphicsProgram {
 		myRect.setFilled(true);
 		myRect.setColor(Color.BLUE);
 		
-		GTrai myRoof = new GTrai(800,400);
+		GPolygon myRoof = new GPolygon(800,400);
 		add(myRoof,600,400);
 
 	}
