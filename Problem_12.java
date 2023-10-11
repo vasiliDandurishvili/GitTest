@@ -17,7 +17,7 @@ public class Problem_12 extends GraphicsProgram {
 		add(Roof_2);
 		
 		GRect myWindow_1 = new GRect(150,150);
-		add(myWindow_1,700,500);
+		add(myWindow_1,750,500);
 
 		myWindow_1.setFilled(true);
 		myWindow_1.setColor(Color.WHITE);
