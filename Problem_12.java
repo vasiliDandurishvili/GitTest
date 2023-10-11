@@ -16,11 +16,16 @@ public class Problem_12 extends GraphicsProgram {
 		GLine Roof_2 = new GLine (1000,100,1400,400);
 		add(Roof_2);
 		
-		GRect myWindow = new GRect(200,200);
-		add(myWindow,700,500);
+		GRect myWindow_1 = new GRect(200,200);
+		add(myWindow_1,700,500);
 
-		myWindow.setFilled(true);
-		myWindow.setColor(Color.WHITE);
+		myWindow_1.setFilled(true);
+		myWindow_1.setColor(Color.WHITE);
+		
+		
+		
+		
+		
 	}
 
 }
