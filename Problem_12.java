@@ -19,6 +19,8 @@ public class Problem_12 extends GraphicsProgram {
 		GRect myWindow = new GRect(200,200);
 		add(myWindow,700,500);
 
+		myWindow.setFilled(true);
+		myWindow.setColor(Color.WHITE);
 	}
 
 }
