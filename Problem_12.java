@@ -60,8 +60,8 @@ public class Problem_12 extends GraphicsProgram {
 		GLine myChimney_2 = new GLine (840,220,840,200);
 		add(myChimney_2);
 		
-		GRect myWall = new GRect(40,40);
-		add(myWall,800,160);
+		GRect myChimney_3 = new GRect(40,40);
+		add(myChimney_3,800,160);
 	}
 
 }
