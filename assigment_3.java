@@ -1,38 +1,19 @@
 import stanford.karel.SuperKarel;
-/*
-  
- */
 public class assigment_3 extends SuperKarel{
 	public void run(){
-		fillOneBoard();
-		completeTheBoard();
+		fillTheBoard();
 	}
-
-	private void completeTheBoard() {
-		while(frontIsClear()){
-			move();
-		}
-		turnAround();
+	private void fillTheBoard() {
+		fillLine();
 	}
-
-	private void fillOneBoard() {
-		putBeeper();
-		while(frontIsClear()){
-			move();
-			if(frontIsClear()){
+	private void fillLine() {
+			putBeeper();
+			while(frontIsClear()){
 				move();
-				putBeeper();
+				if(frontIsClear()){
+					move();
+					putBeeper();
+				}
 			}
-		}
-		turnAround();
-		while(frontIsClear()){
-			move();
-		}
-		turnRight();
-		move();
-		turnRight();
-		
 	}
-	
-		
 }
