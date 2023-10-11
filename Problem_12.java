@@ -9,6 +9,9 @@ public class Problem_12 extends GraphicsProgram {
 		
 		myRect.setFilled(true);
 		myRect.setColor(Color.BLUE);
+		
+		GRect myTria = new GRect(800,400);
+		add(myTria,600,400);
 
 	}
 
