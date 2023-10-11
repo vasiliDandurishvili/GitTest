@@ -12,7 +12,7 @@ public class Problem_12 extends GraphicsProgram {
 		myWall.setColor(Color.BLUE);
 		
 		GLine Roof_1 = new GLine (600,400,1000,200);
-		
+		add(Roof_1);
 
 	}
 
