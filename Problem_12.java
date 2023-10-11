@@ -39,6 +39,9 @@ public class Problem_12 extends GraphicsProgram {
 		
 		GLine Wline2_2 = new GLine (1100,575,1250,575);
 		add(Wline2_2);
+		
+		GRect myDoor = new GRect(50,150);
+		add(myDoor,975,650);
 	}
 
 }
