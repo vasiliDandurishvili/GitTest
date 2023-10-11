@@ -5,9 +5,9 @@ public class assigment_3 extends SuperKarel{
 	}
 	private void fillTheBoard() {
 		fillLine();
-		goBackAndMoveToTheNextLine();
+		goBackAndMoveToTheNextLineAndMove();
 	}
-	private void goBackAndMoveToTheNextLine() {
+	private void goBackAndMoveToTheNextLineAndMove() {
 		if(frontIsBlocked()){
 			turnAround();
 			while(frontIsClear()){
@@ -16,6 +16,7 @@ public class assigment_3 extends SuperKarel{
 			turnRight();
 			move();
 			turnRight();
+			move();
 		}
 	}
 	private void fillLine() {
