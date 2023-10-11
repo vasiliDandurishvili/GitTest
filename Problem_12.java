@@ -62,6 +62,8 @@ public class Problem_12 extends GraphicsProgram {
 		
 		GRect myChimney_3 = new GRect(40,40);
 		add(myChimney_3,800,160);
+		myChimney_3.setFilled(true);
+		myChimney_3.setColor(Color.BLACK);
 	}
 
 }
