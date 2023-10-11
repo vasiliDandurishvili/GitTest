@@ -41,7 +41,7 @@ public class Problem_12 extends GraphicsProgram {
 		add(Wline2_2);
 		
 		GRect myDoor = new GRect(100,150);
-		add(myDoor,975,650);
+		add(myDoor,950,650);
 		
 		myDoor.setFilled(true);
 		myDoor.setColor(Color.BLACK);
