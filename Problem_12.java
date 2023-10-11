@@ -34,6 +34,8 @@ public class Problem_12 extends GraphicsProgram {
 		GLine Wline1_2 = new GLine (750,575,900,575);
 		add(Wline1_2);
 		
+		GLine Wline2_1 = new GLine (1175,500,1175,650);
+		add(Wline2_1);
 	}
 
 }
