@@ -65,5 +65,5 @@ public class Problem_12 extends GraphicsProgram {
 		myChimney_3.setFilled(true);
 		myChimney_3.setColor(Color.BLACK);
 	}
-
+	
 }
