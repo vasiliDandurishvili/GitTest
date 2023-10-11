@@ -45,6 +45,9 @@ public class Problem_12 extends GraphicsProgram {
 		
 		myDoor.setFilled(true);
 		myDoor.setColor(Color.BLACK);
+		
+		GOval myHandle = new GOval(150,150);
+		add(myHandle,750,500);
 	}
 
 }
