@@ -9,7 +9,7 @@ public class Problem_12 extends GraphicsProgram {
 		add(myWall,600,400);
 		
 		myWall.setFilled(true);
-		myWall.setColor(Color.ORANGE);
+		myWall.setColor(Color.YELLOW);
 		
 		GLine Roof_1 = new GLine (600,400,1000,100);
 		add(Roof_1);
