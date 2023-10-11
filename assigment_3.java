@@ -6,10 +6,23 @@ public class assigment_3 extends SuperKarel{
 	private void fillTheBoard() {
 		while(frontIsClear()){
 		fillLine();
+		goBackAndMoveToTheNextLineAndMoveOnce();
+		fillLine();
 		goBackAndMoveToTheNextLineAndMove();
 		}
 	}
 	private void goBackAndMoveToTheNextLineAndMove() {
+		if(frontIsBlocked()){
+			turnAround();
+			while(frontIsClear()){
+				move();
+			}
+			turnRight();
+			move();
+			turnRight();
+		}
+	}
+	private void goBackAndMoveToTheNextLineAndMoveOnce() {
 		if(frontIsBlocked()){
 			turnAround();
 			while(frontIsClear()){
