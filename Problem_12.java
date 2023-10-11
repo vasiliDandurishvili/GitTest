@@ -14,6 +14,7 @@ public class Problem_12 extends GraphicsProgram {
 		GLine Roof_1 = new GLine (600,400,1000,100);
 		add(Roof_1);
 		GLine Roof_2 = new GLine (1000,100,1400,400);
+		add(Roof_2);
 
 	}
 
