@@ -20,7 +20,7 @@ public class Class_Practice_1 extends GraphicsProgram {
 			a = 3;
 		}
 		
-		b = b + 1
+//		b = b + 1
 	}	
 	
 	
