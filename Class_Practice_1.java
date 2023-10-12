@@ -25,9 +25,9 @@ public class Class_Practice_1 extends GraphicsProgram {
 		
 	}
 	private void drawRoof() {
-		double x1 = (int) (getWidth()/ 2 -HOUSE_WIDTH / 2);
+		double x1 = (int) (getWidth()/ 2 -HOUSE_WIDTH);
 		double y1 = getHeight() - HOUSE_HEIGHT;
-		double x2 = x1 +HOUSE_WIDTH/2;
+		double x2 = x1 +HOUSE_WIDTH / 2;
 		double y2 = y1 - ROOF_HEIGHT ;
 		GLine leftRoof = new GLine(x1, y1, x2, y2);
 		add(leftRoof);
