@@ -18,9 +18,9 @@ public class Class_Practice_1 extends GraphicsProgram {
 	}
 	private void drawHouse() {
 		drawWall();
-		drawRoof();
-		drawDoor();
-		drawWindowa();
+//		drawRoof();
+//		drawDoor();
+//		drawWindowa();
 		
 	}
 	private void drawWall() {
