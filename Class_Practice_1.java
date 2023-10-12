@@ -16,6 +16,7 @@ public class Class_Practice_1 extends GraphicsProgram {
 			
 //			int a = 7 mistake
 			GLabel label = new GLabel("a:" + a);
+			add(label);
 			a = 3;
 		}
 		
