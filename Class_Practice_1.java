@@ -9,6 +9,7 @@ public class Class_Practice_1 extends GraphicsProgram {
 	private static final double HOUSE_HEIGHT = 300;
 	private static final double DOOR_WIDTH = 40;
 	private static final double DOOR_HEIGHT = 60;
+	private static final double ROOF_HEIGHT = 100;
 	
 	public void run() {
 //		PI = 3;
@@ -18,9 +19,19 @@ public class Class_Practice_1 extends GraphicsProgram {
 	}
 	private void drawHouse() {
 		drawWall();
-//		drawRoof();
+		drawRoof();
 //		drawDoor();
 //		drawWindowa();
+		
+	}
+	private void drawRoof() {
+		double x1 = (int) (getWidth()/ 2 -HOUSE_WIDTH / 2);
+		double y1 = getHeight() - HOUSE_WIDTH;
+		double x2 = x1 +HOUSE_WIDTH/2;
+		double y2 = y1 - ROOF_HEIGHT ;
+		GLine leftRoof = new GLine(x1, y1, x2, y2);
+		add(leftRoof);
+
 		
 	}
 	private void drawWall() {
