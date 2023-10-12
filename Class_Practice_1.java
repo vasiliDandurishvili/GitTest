@@ -12,7 +12,7 @@ public class Class_Practice_1 extends GraphicsProgram {
 	
 	public void run() {
 //		PI = 3;
-		drawMidLine();
+//		drawMidLine();
 		drawHouse();
 		
 	}
