@@ -24,8 +24,35 @@ this is a main function which contains all small and big steps.
 			if(frontIsClear()){
 				move();
 				putBeeper();
+			}else{
+				goBackAndMoveToTheNextLine();
 			}
+			
 		}
+		
+	}
+	private void goBackAndMoveToTheNextLine(){
+		turnAround();
+		while(frontIsClear()){
+			move();
+		if(rightIsClear()){
+			moveToTheNextLine();
+		}
+	    }
+		
+	}
+	private void moveToTheNextLine() {
+		if(beepersPresent()){
+			turnRight();
+			move();
+			turnRight();
+			move();
+		}else{
+			turnRight();
+			move();
+			turnRight();
+		}
+
 		
 	}
 }
