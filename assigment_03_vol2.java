@@ -24,7 +24,8 @@ this is a main function which contains all small and big steps.
 			if(frontIsClear()){
 				move();
 				putBeeper();
-			}else{
+			}
+			if(frontIsBlocked()){
 				goBackAndMoveToTheNextLine();
 			}
 			
