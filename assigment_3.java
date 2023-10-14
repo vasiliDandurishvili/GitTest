@@ -1,51 +1,56 @@
 import stanford.karel.SuperKarel;
+/*
+  
+ */
 public class assigment_3 extends SuperKarel{
 	public void run(){
-		fillTheBoard();
+		makeChessBoard();
 	}
-	private void fillTheBoard() {
-		while(leftIsClear()){
-		fillLine();
-		goBackAndMoveToTheNextLineAndMoveOnce();
-		fillLine();
-		goBackAndMoveToTheNextLineAndMove();
+/*
+this is a main function which contains all small and big steps.	  
+ */
+	private void makeChessBoard() {
+		if (frontIsClear()){
+			fillHorizontals();
+		}else{
+//			fillVertical();
 		}
 	}
-	private void goBackAndMoveToTheNextLineAndMove() {
-		if(frontIsBlocked()){
-			turnAround();
-			while(frontIsClear()){
-				move();
-			}
-			turnRight();
+	
+	private void fillHorizontals() {
+		putBeeper();
+		while (frontIsClear()){
+			move();
 			if(frontIsClear()){
-			move();
-			}
-			turnRight();
-		}
-	}
-	private void goBackAndMoveToTheNextLineAndMoveOnce() {
-		if(frontIsBlocked()){
-			turnAround();
-			while(frontIsClear()){
 				move();
+				putBeeper();
+			}else{
+				goBackAndMoveToTheNextLine();
 			}
-			turnRight();
-			if(frontIsClear()){
-			move();
-			}
-			turnRight();
+			
+		}
+		
+	}
+	private void goBackAndMoveToTheNextLine(){
+		turnAround();
+		while(frontIsClear()){
 			move();
 		}
+		if(rightIsClear()){
+			moveToTheNextLine();
+		}
+		
 	}
-	private void fillLine() {
-			putBeeper();
-			while(frontIsClear()){
-				move();
-				if(frontIsClear()){
-					move();
-					putBeeper();
-				}
-			}
+	private void moveToTheNextLine() {
+		if(beepersPresent()){
+			turnRight();
+			move();
+			turnRight();
+			move();
+		}else{
+			turnRight();
+			move();
+			turnRight();
+		}
 	}
 }
