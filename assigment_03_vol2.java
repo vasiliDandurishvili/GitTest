@@ -47,10 +47,12 @@ this is a main function which contains all small and big steps.
 			move();
 			turnRight();
 			move();
+			putBeeper();
 		}else{
 			turnRight();
 			move();
 			turnRight();
+			putBeeper();
 		}
 	}
 }
