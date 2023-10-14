@@ -5,7 +5,7 @@ public class assigment_03_vol2 extends SuperKarel{
 		makeChessBoard();
 	}
 /*
-this is a main function which contains all small and big steps.	  
+this is a main method which contains all small and big steps.	  
  */
 	private void makeChessBoard() {
 		if (frontIsClear()){
