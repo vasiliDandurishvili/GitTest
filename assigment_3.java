@@ -17,7 +17,7 @@ this is a main method which contains all small and big steps.
 /*
 this is a cycle to fill the one horizontal and   move to the
  second again and again Until we climb to the top. 
- */	
+*/	
 	private void fillHorizontals() {
 		putBeeper();
 		while (frontIsClear()){
@@ -31,7 +31,10 @@ this is a cycle to fill the one horizontal and   move to the
 			}	
 		}
 	}
-	
+/*
+this is a method that after every filled line to 
+go back and move to the next line.	  
+*/	
 	private void goBackAndMoveToTheNextLine(){
 		turnAround();
 		while(frontIsClear()){
@@ -41,7 +44,11 @@ this is a cycle to fill the one horizontal and   move to the
 			moveToTheNextLine();
 		}
 	}
-	
+/*
+this is a method that when karel fill the line, go back 
+This method moves it to the next line and checks 
+whether it should start putting beepers from the first cell or from the second.
+*/
 	private void moveToTheNextLine() {
 		if(beepersPresent()){
 			turnRight();
