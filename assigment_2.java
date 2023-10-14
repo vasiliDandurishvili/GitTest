@@ -5,7 +5,7 @@ public class assigment_2 extends SuperKarel{
 		fillAllColumns();
 	}
 /*
-	this is a main function which contains all small and big steps.	  
+	this is a main method which contains all small and big steps.	  
  */
 	private void fillAllColumns() {
 		turnLeft();
