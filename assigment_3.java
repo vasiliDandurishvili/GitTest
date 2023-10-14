@@ -63,6 +63,10 @@ whether it should start putting beepers from the first cell or from the second.
 			putBeeper();
 		}
 	}
+/*
+this is a method if we only have vetical line,
+this method fill the vertical.  
+*/
 	private void fillVertical() {
 		turnLeft();
 		putBeeper();
