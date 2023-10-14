@@ -11,10 +11,9 @@ this is a main function which contains all small and big steps.
 		if (frontIsClear()){
 			fillHorizontals();
 		}else{
-//			fillVertical();
+			fillVertical();
 		}
 	}
-	
 	private void fillHorizontals() {
 		putBeeper();
 		while (frontIsClear()){
@@ -52,6 +51,17 @@ this is a main function which contains all small and big steps.
 			move();
 			turnRight();
 			putBeeper();
+		}
+	}
+	private void fillVertical() {
+		turnLeft();
+		putBeeper();
+		while (frontIsClear()){
+			move();
+			if(frontIsClear()){
+				move();
+				putBeeper();
+			}
 		}
 	}
 }
