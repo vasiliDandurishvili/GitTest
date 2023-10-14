@@ -1,22 +1,20 @@
 import stanford.karel.SuperKarel;
-
-/*როგორც ნაჩვენებია სურათზე, კარელი თავდაპირველად იმყოფება სახლის მარცხენა ზედა კუთხეში. თქვენი ამოცანაა ააღებინოთ კარელს გაზეთი და დააბრუნოთ კარელი საწყის პოზიციაზე. გაზეთი, ისევე როგორც ყველა სხვა ობიექტი კარელის სამყაროში წარმოდგენილია ბრილიანტის სახით, რომელიც დევს სახლის გარეთ(იხ. სურათი).
-ეს სავარჯიშო საკმაოდ მარტივია და მიზნად ისახავს კარელთან უკეთ გაცნობას. თქვენ შეგიძლიათ ჩათვალოთ რომ კარელის სამყარო გამოიყურება ზუსტად ისე როგორც სურათზეა ნაჩვენები. სახლი ყოველთვის ამ ზომისაა, კარის მდებარეობა ყოველთვის ისეთია როგორც სურათზე და ბრილიანტიც ზუსტად კარის წინ დევს.
-თქვენი დავალებაა მხოლოდ დაწეროთ საჭირო ბრძანებების მიმდევრობა იმისათვის რომ კარელი
-1. მივიდეს გაზეთთან,
-2. აიღოს გაზეთი, და
-3. დაბრუნდეს საწყის პოზიციაზე.
-
-მიუხედავად იმისა რომ პროგრამა სულ რამოდენიმე ხაზს შეიცავს, სასურველია შეასულოთ გარკვეული დონის დეკომპოზიცია. კერძოთ, თქვენს პროგრამაში დაამატეთ თითო private მეთოდი თითოეული ბიჯისთვის, რომელიც ნაჩვენებია ზემოთ.
- */
 public class assiment_1 extends SuperKarel{
 	public void run(){
+		bringNewspaperAtHome();
+	}
+/*
+this is a main function which contains all small and big steps.	  
+ */
+	private void bringNewspaperAtHome() {
 		goOut();
-//		stand on 6x3 facing left
-		pickBeeper();
+//		stand on 6x3 and facing left
+		pickNewspaper();
 		returnHome();
 	}
-
+/*
+this is a method to move karel to starting location.  
+*/
 	private void returnHome() {
 		move();
 		turnRight();
@@ -25,7 +23,13 @@ public class assiment_1 extends SuperKarel{
 		doubleMove();
 		turnAround();
 	}
-
+	
+	private void pickNewspaper() {
+		pickBeeper();
+	}
+/*
+this is a method to move karel on the newspaper.  
+*/
 	private void goOut() {
 		doubleMove();
 		turnRight();
@@ -33,15 +37,10 @@ public class assiment_1 extends SuperKarel{
 		turnLeft();
 		move();
 		turnAround();
-	
-		
 	}
 
 	private void doubleMove() {
 		move();
 		move();
-		
 	}
-		
-		
 }
