@@ -4,7 +4,7 @@ public class assiment_1 extends SuperKarel{
 		bringNewspaperAtHome();
 	}
 /*
-this is a main function which contains all small and big steps.	  
+this is a main method which contains all small and big steps.	  
  */
 	private void bringNewspaperAtHome() {
 		goOut();
