@@ -25,7 +25,6 @@ this is a main method which contains all small and big steps.
 				turnLeft();
 			}else{
 				goDown();
-				putBeeper();
 			}
 		}
 	}
@@ -34,6 +33,7 @@ this is a main method which contains all small and big steps.
 		while(frontIsClear()){
 			move();
 		}
+		putBeeper();
 		
 	}
 }
