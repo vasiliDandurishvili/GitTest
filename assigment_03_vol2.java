@@ -18,8 +18,8 @@ this is a main function which contains all small and big steps.
 	}
 	
 	private void fillHorizontals() {
+		putBeeper();
 		while (frontIsClear()){
-			putBeeper();
 			move();
 			if(frontIsClear()){
 				move();
