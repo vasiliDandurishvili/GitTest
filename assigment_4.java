@@ -23,9 +23,17 @@ this is a main method which contains all small and big steps.
 				turnRight();
 				move();
 				turnLeft();
+			}else{
+				goDown();
+				putBeeper();
 			}
 		}
-		
+	}
+	private void goDown() {
+		turnAround();
+		while(frontIsClear()){
+			move();
+		}
 		
 	}
 }
