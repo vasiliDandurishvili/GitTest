@@ -21,12 +21,12 @@ this is a main function which contains all small and big steps.
 		putBeeper();
 		while (frontIsClear()){
 			move();
-			if(frontIsClear()){
-				move();
-				putBeeper();
-			}else{
+			move();
+			putBeeper();
+			if(frontIsBlocked()){
 				goBackAndMoveToTheNextLine();
 			}
+
 			
 		}
 		
