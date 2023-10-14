@@ -17,7 +17,6 @@ public class assigment_2 extends SuperKarel{
 		while(frontIsClear()){
 			fillEachColumn();
 		}
-		
 	}
 /*
  this is to fill only one column, go back and move to the next column with facing up.
@@ -47,7 +46,6 @@ public class assigment_2 extends SuperKarel{
 			}
 			turnLeft();
 		}
-		
 	}
 /*
  forBlockedFront method is for columns which only include one square
