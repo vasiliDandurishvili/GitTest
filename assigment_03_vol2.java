@@ -14,6 +14,10 @@ this is a main function which contains all small and big steps.
 			fillVertical();
 		}
 	}
+/*
+this is a cycle to fill the one horizontal and   move to the
+ second again and again Until we climb to the top. 
+ */	
 	private void fillHorizontals() {
 		putBeeper();
 		while (frontIsClear()){
@@ -24,11 +28,10 @@ this is a main function which contains all small and big steps.
 			}
 			if(frontIsBlocked()){
 				goBackAndMoveToTheNextLine();
-			}
-			
+			}	
 		}
-		
 	}
+	
 	private void goBackAndMoveToTheNextLine(){
 		turnAround();
 		while(frontIsClear()){
@@ -37,8 +40,8 @@ this is a main function which contains all small and big steps.
 		if(rightIsClear()){
 			moveToTheNextLine();
 		}
-		
 	}
+	
 	private void moveToTheNextLine() {
 		if(beepersPresent()){
 			turnRight();
