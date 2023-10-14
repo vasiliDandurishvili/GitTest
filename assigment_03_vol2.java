@@ -19,12 +19,11 @@ this is a main function which contains all small and big steps.
 	
 	private void fillHorizontals() {
 		putBeeper();
-		move();
 		while (frontIsClear()){
 			move();
-			putBeeper();
 			if(frontIsClear()){
 				move();
+				putBeeper();
 			}else{
 				goBackAndMoveToTheNextLine();
 			}
