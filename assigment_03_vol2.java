@@ -35,10 +35,10 @@ this is a main function which contains all small and big steps.
 		turnAround();
 		while(frontIsClear()){
 			move();
+		}
 		if(rightIsClear()){
 			moveToTheNextLine();
 		}
-	    }
 		
 	}
 	private void moveToTheNextLine() {
