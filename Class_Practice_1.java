@@ -35,7 +35,7 @@ public class Class_Practice_1 extends GraphicsProgram {
 		double x1_1 = (int) (x1 +HOUSE_WIDTH / 2);
 		double y1_1 = y1 - ROOF_HEIGHT ;
 		double x2_1 = (int) (getWidth() / 2 + HOUSE_WIDTH / 2 );
-		double y2_1 = 
+		double y2_1 = getHeight()- HOUSE_HEIGHT;
 		GLine rightRoof = new GLine(x1_1, y1_1, x2_1, y2_1);
 		add(rightRoof);
 	}
