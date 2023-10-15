@@ -32,7 +32,12 @@ public class Class_Practice_1 extends GraphicsProgram {
 		GLine leftRoof = new GLine(x1, y1, x2, y2);
 		add(leftRoof);
 
-		
+		double x1_1 = (int) (x1 +HOUSE_WIDTH / 2);
+		double y1_1 = y1 - ROOF_HEIGHT ;
+		double x2_1 = (int) (getWidth() / 2 + HOUSE_WIDTH / 2 );
+		double y2_1 = 
+		GLine rightRoof = new GLine(x1_1, y1_1, x2_1, y2_1);
+		add(rightRoof);
 	}
 	private void drawWall() {
 		GRect wall = new GRect (HOUSE_WIDTH, HOUSE_HEIGHT);
