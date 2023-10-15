@@ -5,14 +5,7 @@ import acm.program.GraphicsProgram;
 
 public class Problem_15 extends GraphicsProgram {
 	
-	public void run() {
-		int x = 5;
-		if (true){
-		int	y = 5;
-			println(x+y);
-		}
-		
-		
-		
-    }   
+	public void run(){
+		println("this program adds two numbers.");
+	}
 }
