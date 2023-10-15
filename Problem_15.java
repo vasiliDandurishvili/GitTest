@@ -1,11 +1,11 @@
-import java.awt.Color;
+import acm.program.*;
 
-import acm.graphics.*;
-import acm.program.GraphicsProgram;
+public class Problem_15 extends ConsoleProgram {
 
-public class Problem_15 extends GraphicsProgram {
-	
 	public void run(){
 		println("this program adds two numbers.");
+		int n1 = readint ("enter n1: ");
+		
+		
 	}
 }
