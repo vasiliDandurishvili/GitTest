@@ -48,4 +48,3 @@ public class practice_circle extends GraphicsProgram {
 //private void testVoid(){
 //	int a = 7;
 //	
-}
