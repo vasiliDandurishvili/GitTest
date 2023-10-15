@@ -25,3 +25,27 @@ public class practice_circle extends GraphicsProgram {
 		oldBall.setFilled(true);
 	}
 }
+//public void run() {
+//	int a = 5;
+//	a=a + 5;
+//	
+//	if(2 == 2){
+//		double b = 3;
+//		b = 4;
+//		b = a + 3;
+//		
+//		
+////		int a = 7 mistake
+//		GLabel label = new GLabel("a:" a, 20, 20);
+//		add(label);
+//		a = 3;
+//	}
+//	
+////	b = b + 1
+//}	
+//
+//
+//private void testVoid(){
+//	int a = 7;
+//	
+}
