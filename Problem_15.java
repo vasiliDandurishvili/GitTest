@@ -8,6 +8,7 @@ public class Problem_15 extends ConsoleProgram {
 		int n2 = readInt ("enter n2: ");
 		double middle = (double) (n1 + n2) / 2;
 //		double middle = (n1 + n2) / 2.0; esec sworia
+//		double middle = (n1 + n2) / 2; es arasworia
 		println("this is two integers middle: " + middle + ".");
 	}
 }
