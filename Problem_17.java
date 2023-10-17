@@ -3,8 +3,10 @@ import acm.program.ConsoleProgram;
 public class Problem_17 extends ConsoleProgram {
 
 	public void run(){
-		double x = readDouble("enter your number: ");
-		println("print integer: " + (int) x);
-		println("print double without integer:" + (x - (int) x));
+		double a = readDouble("enter your number: ");
+		int integerPart = (int)a;
+		double fractionPart = (double) a - integerPart;
+		println("print integer: " + integerPart);
+		println("print double without integer:" + fractionPart);
 	}
 }
