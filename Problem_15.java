@@ -7,7 +7,7 @@ public class Problem_15 extends ConsoleProgram {
 		int n1 = readInt ("enter n1: ");
 		int n2 = readInt ("enter n2: ");
 		double middle = (double) (n1 + n2) / 2;
-		print("this is two integers middle: " + middle + ".");
+		println("this is two integers middle: " + middle + ".");
 	}
 }
 
