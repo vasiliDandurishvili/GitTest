@@ -12,6 +12,8 @@ public class Problem_17 extends ConsoleProgram {
 	
 	
 	private void calculateInBigDecimal(double a) {
+		double a = readDouble("enter your number: ");
+		
 		BigDecimal decimal= new BigDecimal(a);
 		
 		int integerPart = decimal.intValue();
