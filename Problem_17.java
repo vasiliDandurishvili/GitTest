@@ -6,6 +6,5 @@ public class Problem_17 extends ConsoleProgram {
 		double x = readDouble("enter your nymber: ");
 		println((int) x);
 		println(x - (int) x);
-		
 	}
 }
