@@ -8,6 +8,6 @@ public class Problem_20 extends ConsoleProgram {
 		for (; i <= x; i++ ){
 			i += i;
 		}
-		println("add integers until" + x + ":" + i );
+		println("add integers until " + x + ":" + i );
 	}
 }
