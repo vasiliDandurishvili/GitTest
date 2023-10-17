@@ -16,6 +16,9 @@ public class Problem_17 extends ConsoleProgram {
 		
 		int integerPart = decimal.intValue();
 		BigDecimal fractionPart = decimal.remainder(BigDecimal.ONE);
+		
+		println("print integer: " + integerPart);
+		println("print double without integer:" + fractionPart);
 	}
 
 
