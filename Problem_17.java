@@ -12,8 +12,10 @@ public class Problem_17 extends ConsoleProgram {
 	
 	
 	private void calculateInBigDecimal(double a) {
-		BigDecimal decimal= new BigDecimal("" + a);
+		BigDecimal decimal= new BigDecimal(a);
 		
+		int integerPart = decimal.intValue();
+		BigDecimal fractionPart = decimal.remainder(BigDecimal.ONE);
 	}
 
 
