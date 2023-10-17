@@ -1,13 +1,13 @@
 import acm.program.ConsoleProgram;
-
+/*
+ * კონსოლიდან წაიკითხეთ n, შემდეგ წაიკითხეთ n ცალი მთელი რიცხვი და დაბეჭდეთ ჯამი
+ */
 public class Problem_20 extends ConsoleProgram {
 
 	public void run(){
-		int i = 0;
 		int x = readInt ("enter your number: ");
-		for (; i < x; i++ ){
-			i = i ;
+		for (int i = 0; i < x; i++){
+			println()
 		}
-		println("add integers until " + x + ": " + i );
 	}
 }
