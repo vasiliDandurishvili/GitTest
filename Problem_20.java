@@ -9,6 +9,5 @@ public class Problem_20 extends ConsoleProgram {
 			i += i;
 		}
 		println("add integers until" + x + ":" + i );
-		println(i);
 	}
 }
