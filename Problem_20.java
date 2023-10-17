@@ -6,7 +6,7 @@ public class Problem_20 extends ConsoleProgram {
 		int i = 0;
 		int x = readInt ("enter your number: ");
 		for (; i < x; i++ ){
-			i =i + 1;
+			i += i;
 		}
 		println("add integers until " + x + ": " + i );
 	}
