@@ -6,6 +6,5 @@ public class Problem_17 extends ConsoleProgram {
 		double x = readDouble("enter your number: ");
 		println("print integer: " + (int) x);
 		println("print double without integer:" + (x - (int) x));
-		println(x);
 	}
 }
