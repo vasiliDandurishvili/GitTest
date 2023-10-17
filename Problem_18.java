@@ -3,12 +3,14 @@ import acm.program.ConsoleProgram;
 public class Problem_18 extends ConsoleProgram {
 
 	public void run(){
-		int a = readInt("enter the first integer: ");
-		int b = readInt("enter the second integer: ");
-		if (a > b){
-			println(a);
+		int n1 = readInt("enter the first integer: ");
+		int n2 = readInt("enter the second integer: ");
+		if (n1 > n2){
+			println(n1);
 		}else{
-			println(b);
+			println(n2);
 		}
 	}
 }
+
+
