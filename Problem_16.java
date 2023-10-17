@@ -8,6 +8,7 @@ public class Problem_16 extends ConsoleProgram {
 		int n2 = readInt ("enter n2: ");
 		int n3 = readInt ("enter n3: ");
 		double harmonic = (double) n1*n2*n3 / (n1*n2 + n2*n3 + n1*n3);
+
 		println("three integers harmonic: "+ harmonic + ".");
 	}
 }
