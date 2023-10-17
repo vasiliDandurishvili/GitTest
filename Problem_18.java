@@ -10,6 +10,7 @@ public class Problem_18 extends ConsoleProgram {
 		}else{
 			println(n2);
 		}
+	println(Math.max(n1,n2));	
 	}
 }
 
