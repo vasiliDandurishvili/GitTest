@@ -9,8 +9,8 @@ public class Problem_20 extends ConsoleProgram {
 		for (int i = 0; i < x; i++){
 			int a = readInt("enter " + (i+1) + "th integer: ");
 			a += a;
+			print(a);
 	
 		}
-		print(a);
 	}
 }
