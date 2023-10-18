@@ -8,6 +8,7 @@ public class Problem_20 extends ConsoleProgram {
 		int x = readInt ("enter your number: ");
 		for (int i = 0; i < x; i++){
 			readInt("enter " + (i+1) + "th integer: ");
+			println(i += i);
 	
 		}
 	}
