@@ -13,7 +13,8 @@ public class Problem_20 extends ConsoleProgram {
 //	
 //		}
 		int a = 5;
-		a += a;
+		int b = 6;
+		a += b;
 		print(a);
 	}
 }
