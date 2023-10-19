@@ -8,8 +8,18 @@ public class Problem_21 extends GraphicsProgram {
 	public void run() {
 		for(int i =0; i < NUM_LINES; i++){
 		drawHorizontalLine(i);
+		drawVerticalLine(i);
 		}
 	}
+	private void drawVerticalLine(int i) {
+		double x = i * (getWidth()) / (NUM_LINES -1.0));
+		double y_1 = 0;
+		double y_2 = getHeight();
+		GLine line = new GLine (x, y_1, x, y_2);
+		add(line);
+		
+	}
+	
 	private void drawHorizontalLine(int i) {
 		double y = i * (getHeight() / (NUM_LINES -1.0));
 		double x_1 = 0;
