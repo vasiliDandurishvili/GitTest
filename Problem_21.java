@@ -1,4 +1,5 @@
 import acm.program.GraphicsProgram;
+import acm.graphics.*;
 /*
  * ხაზებით ბადის დახატვა 10x10 ზე.
  */
@@ -13,6 +14,7 @@ public class Problem_21 extends GraphicsProgram {
 		double y = i * (getHeight() / (NUM_LINES -1.0));
 		double x_1 = 0;
 		double x_2 = getWidth();
-		Gline line = new Gline (x_1, y, x_2, y);
+		GLine line = new GLine (x_1, y, x_2, y);
+		add(line);
 		}
 }
