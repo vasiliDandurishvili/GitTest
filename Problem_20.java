@@ -5,9 +5,9 @@ import acm.program.ConsoleProgram;
 public class Problem_20 extends ConsoleProgram {
 
 	public void run(){
-		int x = readInt ("enter your number: ");
+		int n_1 = readInt ("enter your number: ");
 		int sum = 0;
-		for (int i = 0; i < x; i++){
+		for (int i = 0; i < n_1; i++){
 			int a = readInt("enter " + (i+1) + "th integer: ");
 			sum = sum + a;
 			println((i+1) + " numbers sum: " + sum);
