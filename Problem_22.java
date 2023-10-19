@@ -5,6 +5,8 @@ import acm.graphics.*;
  */
 public class Problem_22 extends GraphicsProgram {
 	private static final int NUM_CELLS = 8;
+//	double length = Math.min(getWidth(), getHeight()) / (double) NUM_CELLS ; 
+//	ეს არასწორია რადგად getWidth()და  getHeight() run-ის გარეთ არ მუშაობს.
 	public void run() {
 		double length = Math.min(getWidth(), getHeight()) / (double) NUM_CELLS ;
 		for(int i = 0; i < NUM_CELLS; i++){
