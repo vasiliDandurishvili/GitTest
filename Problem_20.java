@@ -8,8 +8,8 @@ public class Problem_20 extends ConsoleProgram {
 		int n_1 = readInt ("enter your number: ");
 		int sum = 0;
 		for (int i = 0; i < n_1; i++){
-			int a = readInt("enter " + (i+1) + "th integer: ");
-			sum = sum + a;
+			int new_num = readInt("enter " + (i+1) + "th integer: ");
+			sum = sum + new_num;
 			println((i+1) + " numbers sum: " + sum);
 		}
 	}
