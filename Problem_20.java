@@ -10,7 +10,7 @@ public class Problem_20 extends ConsoleProgram {
 		for (int i = 0; i < x; i++){
 			int a = readInt("enter " + (i+1) + "th integer: ");
 			y = y + a;
-			println((i+1) + "_ numbers sum: " + y);
+			println((i+1) + " numbers sum: " + y);
 		}
 	}
 }
