@@ -7,16 +7,20 @@ public class Problem_21 extends GraphicsProgram {
 	private static final int NUM_LINES = 11;
 	public void run(){
 		for (int i = 0; i < NUM_LINES; i++ ){
-			drawHorizonalLIne();
+			drawHorizonalLIne(i);
 //			drawVerticalLIne();
 		}
 		
 		
 		
 	}
-	private void drawHorizonalLIne() {
-		double x_1 = i * (getHeight / (NUM_LINES - 1.0));
+	private void drawHorizonalLIne(int i) {
+		double y = i * (getHeight() / (NUM_LINES - 1.0));
+		double x_1 = 0;
+		double x_2 = getWidth();
 		
+		GLine line = new GLine(x_1, y, x_2, y);
+		add(line);
 	}
 	
 	
