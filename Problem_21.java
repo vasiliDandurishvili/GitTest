@@ -19,6 +19,9 @@ public class Problem_21 extends GraphicsProgram {
 		double y_1 = 0;
 		double y_2 = getHeight();
 		
+		GLine line = new GLine(x, y_1, x, y_2);
+		add(line);
+		
 	}
 	private void drawHorizonalLIne(int i) {
 		double y = i * (getHeight() / (NUM_LINES - 1.0));
