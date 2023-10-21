@@ -5,8 +5,8 @@ import acm.program.ConsoleProgram;
 public class Problem_17 extends ConsoleProgram {
 
 	public void run(){
-		calculateInDouble();
-//		calculateInBigDecimal();
+//		calculateInDouble();
+		calculateInBigDecimal();
 	}
 	
 	
