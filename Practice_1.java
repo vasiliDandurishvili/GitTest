@@ -6,8 +6,7 @@ import acm.program.ConsoleProgram;
  */
 public class Practice_1 extends ConsoleProgram {
 	public void run () {
-		boolean divisionNum_1_WithoutRemainder = 7 % 2 == 0;
-		println("ll: " + divisionNum_1_WithoutRemainder );
+
 		
 		
 		
@@ -24,15 +23,13 @@ public class Practice_1 extends ConsoleProgram {
 //		for (int i = 1; i <= num_1;i++){
 //			boolean divisionNum_1_WithoutRemainder = num_1 % i == 0;
 //			if(divisionNum_1_WithoutRemainder){
-//				for(int j = 1; j <= num_2; i++){
+//				for(int j = 1; j <= num_2; j++){
 //					boolean divisionNum_2_WithoutRemainder = num_2 % j == 0;
 //					if(divisionNum_2_WithoutRemainder){
 //						if(i == j){
 //							LeastCommonMultiple = LeastCommonMultiple / i;
 //						}
-//						println("the least common multiple: " + LeastCommonMultiple);
-//					}
-//							
+//					}	
 //				}
 //			}
 //		}
