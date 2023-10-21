@@ -12,9 +12,7 @@ public class Problem_24 extends ConsoleProgram {
 			if (a){
 				amountOfDividers +=1;
 			}
-			
 		}
 		println("amount of the dividers: " + amountOfDividers );
 	}
 }	
-
