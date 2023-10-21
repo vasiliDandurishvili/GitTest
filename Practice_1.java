@@ -19,8 +19,6 @@ public class Practice_1 extends ConsoleProgram {
 					if(divisionNum_2_WithoutRemainder){
 						if(i == j){
 							LeastCommonMultiple = LeastCommonMultiple / i;
-						}else{
-							println()
 						}
 					}
 							
