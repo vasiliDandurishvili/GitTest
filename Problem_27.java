@@ -13,6 +13,6 @@ public class Problem_27 extends ConsoleProgram {
 			n_MultipleXm *= n;
 
 		}
-		println("n^m: " + n);
+		println("n^m: " + n_MultipleXm);
 	}
 }
