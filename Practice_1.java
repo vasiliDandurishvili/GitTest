@@ -5,7 +5,7 @@ import acm.program.ConsoleProgram;
 public class Practice_1 extends ConsoleProgram {
 	public void run () {
 //		task 25
-		int num_1 = readInt("enter first the integer:");
+		int num_1 = readInt("enter first integer:");
 		for (int i = 1; i <= num_1;i++){
 			boolean a = num_1 % i == 0;
 			if(a){
