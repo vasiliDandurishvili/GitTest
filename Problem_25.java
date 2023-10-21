@@ -21,6 +21,7 @@ public class Problem_25 extends ConsoleProgram {
 					}
 				}
 			}
+			println("the least common multiple: " + LeastCommonMultiple);
 		}
 		println("the least common multiple: " + LeastCommonMultiple);
 	}
