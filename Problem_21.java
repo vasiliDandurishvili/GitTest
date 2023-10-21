@@ -15,6 +15,7 @@ public class Problem_21 extends GraphicsProgram {
 		double x = i * (getWidth() / (NUM_LINES -1.0));
 		double y_1 = 0;
 		double y_2 = getHeight();
+		
 		GLine line = new GLine (x, y_1, x, y_2);
 		add(line);
 		
@@ -24,6 +25,7 @@ public class Problem_21 extends GraphicsProgram {
 		double y = i * (getHeight() / (NUM_LINES -1.0));
 		double x_1 = 0;
 		double x_2 = getWidth();
+		
 		GLine line = new GLine (x_1, y, x_2, y);
 		add(line);
 		}
