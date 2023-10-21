@@ -19,6 +19,7 @@ public class Problem_25 extends ConsoleProgram {
 							LeastCommonMultiple = LeastCommonMultiple / i;
 						}
 					}
+					println("the least common multiple: " + LeastCommonMultiple);
 				}
 				println("the least common multiple: " + LeastCommonMultiple);
 			}
