@@ -7,8 +7,8 @@ public class Problem_27 extends ConsoleProgram {
 		int n = readInt("enter the integer: ");
 		int m = readInt("enter the integer: ");
 		for (int i = 0; i < m; i++){
-			n *= n;
-			println("n: " + n);
+// 
+//			n =
 		}
 		println("n^m: " + n);
 	}
