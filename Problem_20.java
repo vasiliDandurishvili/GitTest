@@ -12,5 +12,6 @@ public class Problem_20 extends ConsoleProgram {
 			sum += new_num;
 		}
 		println(" numbers sum: " + sum);
+		println(Math.min(3, 4));
 	}
 }
