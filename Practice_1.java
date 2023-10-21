@@ -20,6 +20,7 @@ public class Practice_1 extends ConsoleProgram {
 						if(i == j){
 							LeastCommonMultiple = LeastCommonMultiple / i;
 						}
+						println("the least common multiple: " + LeastCommonMultiple);
 					}
 							
 				}
