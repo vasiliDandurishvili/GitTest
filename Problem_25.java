@@ -9,6 +9,7 @@ public class Problem_25 extends ConsoleProgram {
 		int num_2 = readInt("enter second integer:");
 		
 		int LeastCommonMultiple = num_1 * num_2;
+		
 		for (int i = 1; i <= num_1;i++){
 			boolean divisionNum_1_WithoutRemainder = num_1 % i == 0;
 			if(divisionNum_1_WithoutRemainder){
@@ -19,12 +20,9 @@ public class Problem_25 extends ConsoleProgram {
 							LeastCommonMultiple = LeastCommonMultiple / i;
 						}
 					}
-					println("the least common multiple: " + LeastCommonMultiple);
 				}
-				println("the least common multiple: " + LeastCommonMultiple);
 			}
-			println("the least common multiple: " + LeastCommonMultiple);
 		}
-		println("the least common multiple: " + LeastCommonMultiple);
 	}
 }
+//println("the least common multiple: " + LeastCommonMultiple);
