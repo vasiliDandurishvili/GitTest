@@ -26,10 +26,3 @@ public class Problem_26 extends ConsoleProgram {
 		println("the greatest common denominator: " + greatestCommonDenominator);
 	}
 }
-	
-		
-		
-		
-		
-	}
-}
