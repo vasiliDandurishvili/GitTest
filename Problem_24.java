@@ -8,6 +8,7 @@ public class Problem_24 extends ConsoleProgram {
 		int num_1 = readInt("enter the integer: ");
 		int amountOfDividers = 0;
 		for (int i = 1; i <= num_1; i++){
+//			a means true or false.
 			boolean a = num_1 % i == 0;
 			if (a){
 				amountOfDividers +=1;
