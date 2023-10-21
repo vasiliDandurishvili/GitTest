@@ -11,10 +11,13 @@ public class Practice_1 extends ConsoleProgram {
 		int num_2 = readInt("enter second integer:");
 		
 		int LeastCommonMultiple = num_1 * num_2;
-		
+		println(1);
 		for (int i = 1; i <= num_1;i++){
+			println(2);
 			boolean divisionNum_1_WithoutRemainder = num_1 % i == 0;
+			println(3);
 			if(divisionNum_1_WithoutRemainder){
+				println(4);
 				for(int j = 1; j <= num_2; i++){
 					boolean divisionNum_2_WithoutRemainder = num_2 % j == 0;
 					if(divisionNum_2_WithoutRemainder){
