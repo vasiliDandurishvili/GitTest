@@ -5,6 +5,7 @@ import acm.graphics.*;
  */
 public class Problem_21 extends GraphicsProgram {
 	private static final int NUM_LINES = 11;
+	
 	public void run() {
 		for(int i =0; i < NUM_LINES; i++){
 		drawHorizontalLine(i);
