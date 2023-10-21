@@ -17,7 +17,7 @@ public class Problem_25 extends ConsoleProgram {
 					boolean divisionNum_2_WithoutRemainder = num_2 % j == 0;
 					if(divisionNum_2_WithoutRemainder){
 						if(i == j){
-							LeastCommonMultiple = LeastCommonMultiple / i;
+							LeastCommonMultiple = LeastCommonMultiple / j;
 						}
 					}
 				}
