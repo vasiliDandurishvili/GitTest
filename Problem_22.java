@@ -10,7 +10,7 @@ public class Problem_22 extends GraphicsProgram {
 	public void run() {
 		double length = Math.min(getWidth(), getHeight()) / (double) NUM_CELLS ;
 		for(int i = 0; i < NUM_CELLS; i++){
-			for(int j = 0; j < 3 ; j++){
+			for(int j = 0; j <  NUM_CELLS ; j++){
 				double x = i * length;
 				double y = j * length;
 				boolean isFilled = (i + j) % 2 == 1;
