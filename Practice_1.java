@@ -18,14 +18,14 @@ public class Practice_1 extends ConsoleProgram {
 					boolean divisionNum_2_WithoutRemainder = num_2 % j == 0;
 					if(divisionNum_2_WithoutRemainder){
 						if(i == j){
-							LeastCommonMultiple /= i;
-							println("the least common multiple: " + LeastCommonMultiple);
+							LeastCommonMultiple = LeastCommonMultiple / i;
 						}
 					}
 							
 				}
 			}
 		}
+		println("the least common multiple: " + LeastCommonMultiple);
 	}
 }
 		
