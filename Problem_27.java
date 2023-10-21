@@ -10,6 +10,6 @@ public class Problem_27 extends ConsoleProgram {
 		for (int i = 0; i < m; i++){
 			n *= n;
 		}
-		println("n^m" + n);
+		println("n^m: " + n);
 	}
 }
