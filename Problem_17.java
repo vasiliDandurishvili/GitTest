@@ -7,7 +7,7 @@ public class Problem_17 extends ConsoleProgram {
 	public void run(){
 		double a = readDouble("enter your number: ");
 		calculateInDouble(a);
-//		calculateInBigDecimal();
+		calculateInBigDecimal();
 	}
 	
 	
