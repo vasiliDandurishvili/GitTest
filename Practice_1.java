@@ -9,7 +9,7 @@ public class Practice_1 extends ConsoleProgram {
 		for (int i = 1; i <= num_1;i++){
 			boolean a = num_1 % i == 0;
 			if(a){
-				println(a);
+				println(i);
 			}
 		}
 		
