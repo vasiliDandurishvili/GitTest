@@ -4,6 +4,7 @@ import acm.program.ConsoleProgram;
 
 public class Practice_1 extends ConsoleProgram {
 	public void run () {
+//		task 17
 		calculateNumInBigDecimal();
 		
 	}
