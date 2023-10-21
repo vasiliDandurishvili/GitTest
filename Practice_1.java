@@ -28,6 +28,9 @@ public class Practice_1 extends ConsoleProgram {
 
 			}
 		}
+		println("the least common multiple: " + LeastCommonMultiple);
+	}
+}
 		
 		
 		
@@ -61,6 +64,4 @@ public class Practice_1 extends ConsoleProgram {
 //		
 //		println("Integer part: " + integerPart);
 //		println("Franction part (as BigDecimal): " + franctionPart);
-//		
-	}
-}
+//	
