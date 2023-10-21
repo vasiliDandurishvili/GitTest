@@ -6,7 +6,7 @@ public class Practice_1 extends ConsoleProgram {
 	public void run () {
 //		task 25
 		int num_1 = readInt("enter first integer:");
-		int num_2 = readInt("enter first integer:");
+		int num_2 = readInt("enter second integer:");
 		for (int i = 1; i <= num_1;i++){
 			boolean a = num_1 % i == 0;
 			if(a){
