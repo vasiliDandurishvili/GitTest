@@ -8,10 +8,16 @@ public class Problem_21 extends GraphicsProgram {
 	public void run(){
 		for (int i = 0; i < NUM_LINES; i++ ){
 			drawHorizonalLIne(i);
-//			drawVerticalLIne();
+			drawVerticalLIne(i);
 		}
 		
 		
+		
+	}
+	private void drawVerticalLIne(int i) {
+		double x = i * (getWidth() / (NUM_LINES - 1.0));
+		double y_1 = 0;
+		double y_2 = getHeight();
 		
 	}
 	private void drawHorizonalLIne(int i) {
