@@ -5,8 +5,7 @@ import acm.program.ConsoleProgram;
 public class Problem_17 extends ConsoleProgram {
 
 	public void run(){
-		double a = readDouble("enter your number: ");
-//		calculateInDouble(a);
+		calculateInDouble();
 		calculateInBigDecimal();
 	}
 	
@@ -23,7 +22,8 @@ public class Problem_17 extends ConsoleProgram {
 		println("Franction part (as BigDecimal): " + franctionPart);
 	}
 
-	private void calculateInDouble(double a){
+	private void calculateInDouble(){
+		double a = readDouble("Enter real number: ");
 		int integerPart = (int)a;
 		double fractionPart = (double) a - integerPart;
 		
