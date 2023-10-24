@@ -12,6 +12,9 @@ public class Practice_oct_24 extends ConsoleProgram{
 	int sum = calculateSum(n);
 	println("sum of numbers 1...n is: " + sum);
 	
+	
+	int numDivisors = numberOfDividers( n);
+	println("num of divisors: " + n);
 	}
 
 	private int calculateSum(int n) {
@@ -22,4 +25,16 @@ public class Practice_oct_24 extends ConsoleProgram{
 		return sum;
 	}
 	
+	private int numberOfDividers(int n){
+		int num = 0;
+		for (int i = 1; i <= n; i++){
+			if(n % i == 0){
+				num += 1;
+			}
+		}
+		return num;
+	}
+	
 }
+
+
