@@ -12,11 +12,14 @@ import acm.program.ConsoleProgram;
 public class Practice_oct_24 extends ConsoleProgram{
 	public void run () {
 		int n = readInt("enter n: ");
+		while(n < 0){
+			 n = readInt("enter n: ");
+		}
 		int m = readInt("enter m: ");
 		
 		int gcd = gcd(n,m);
 		println("gcd is: " + gcd);
-		int lcm = lmc(n,m);
+		int lcm = lmc("lcm is: "n,m);
 		
 		
 		
@@ -24,7 +27,9 @@ public class Practice_oct_24 extends ConsoleProgram{
 
 	private int lmc(int n, int m) {
 		return n * m / gcd(n,m);
-		return 0;
+		
+		
+		
 	}
 
 	private int gcd(int n, int m) {
