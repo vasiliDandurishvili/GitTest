@@ -15,7 +15,7 @@ public class Practice_oct_24 extends ConsoleProgram{
 		int m = readInt("enter m: ");
 		
 		int gcd = gcd(n,m);
-		println("gcd is: " + gcd)
+		println("gcd is: " + gcd);
 		
 		
 		
@@ -27,7 +27,7 @@ public class Practice_oct_24 extends ConsoleProgram{
 				return i;
 			}
 		}
-		return -1;
+		return -1;  // amas arasodes ar daabrunebs
 	}
 }
 
