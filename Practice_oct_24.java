@@ -20,7 +20,9 @@ public class Practice_oct_24 extends ConsoleProgram{
 		
 		int gcd = gcd(n,m);
 		println("gcd is: " + gcd);
-		int lcm = lmc("lcm is: "n,m);
+		int lcm = lmc(n,m);
+		println("LCM is: " + lsm);
+		
 		
 		
 		
