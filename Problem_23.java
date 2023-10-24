@@ -9,7 +9,6 @@ public class Problem_23 extends ConsoleProgram {
 		int sum = 0;
 		for (int i = 0; i <= amount; i++){
 			sum += i;
-			println(sum);
 		}
 		println("sum: " + sum);
 	}
