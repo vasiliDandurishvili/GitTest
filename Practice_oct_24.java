@@ -16,9 +16,15 @@ public class Practice_oct_24 extends ConsoleProgram{
 		
 		int gcd = gcd(n,m);
 		println("gcd is: " + gcd);
+		int lcm = lmc(n,m);
 		
 		
 		
+	}
+
+	private int lmc(int n, int m) {
+		return n * m / gcd(n,m);
+		return 0;
 	}
 
 	private int gcd(int n, int m) {
