@@ -25,7 +25,7 @@ public class Damatebiti_9 extends GraphicsProgram {
 	
 	public void run() {
 		int x = 4;
-		GLabel label = new GLabel("x before method " + x);
+		GLabel label = new GLabel("x before method: " + x);
 		add(label, 0, 20);
 		
 		
