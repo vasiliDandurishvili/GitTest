@@ -39,17 +39,7 @@ public class Damatebiti_9 extends GraphicsProgram {
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+	
 		
 	}
 
