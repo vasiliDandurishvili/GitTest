@@ -13,6 +13,7 @@ public class Practice_oct_24 extends ConsoleProgram{
 	public void run () {
 		int n = readInt("enter n: ");
 		while(n < 0){
+			println("n shuold be positive num");
 			 n = readInt("enter n: ");
 		}
 		int m = readInt("enter m: ");
