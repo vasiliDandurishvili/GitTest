@@ -14,7 +14,7 @@ public class Practice_oct_24 extends ConsoleProgram{
 	
 	
 	int numDivisors = numberOfDividers( n);
-	println("num of divisors: " + n);
+	println("num of divisors: " + numDivisors);
 	}
 
 	private int calculateSum(int n) {
