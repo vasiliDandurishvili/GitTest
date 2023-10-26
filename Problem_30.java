@@ -9,7 +9,7 @@ public class Problem_30 extends ConsoleProgram {
 	public void run () {
 		int n = readInt("enter the integer: ");
 		double nLast = n / 10.0;
-		String nAsString = "" + n;
+		String nAsString = "" + nLast;
 		BigDecimal decimal = new BigDecimal(nAsString);
 		
 		
