@@ -6,6 +6,8 @@ import acm.program.ConsoleProgram;
 public class Problem_30 extends ConsoleProgram {
 	public void run () {
 		int n = readInt("enter the integer: ");
+		double m = 5.4;
+		int x = (int) Math.min(n, m);
 
 	}
 }
