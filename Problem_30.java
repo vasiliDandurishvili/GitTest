@@ -6,7 +6,6 @@ import acm.program.ConsoleProgram;
 public class Problem_30 extends ConsoleProgram {
 	public void run () {
 		int n = readInt("enter the integer: ");
-//		string m = string reverse(n);
-		String m = "isis";
+
 	}
 }
