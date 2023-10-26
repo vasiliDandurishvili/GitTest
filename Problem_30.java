@@ -12,8 +12,8 @@ public class Problem_30 extends ConsoleProgram {
 		BigDecimal decimal = new BigDecimal(nAsString);
 		
 		
-		BigDecimal franctionPart = decimal.remainder(BigDecimal.ONE);
-		println("x: " );
+		BigDecimal firstNum = decimal.remainder(BigDecimal.ONE);
+		println("firtsNum: " +  firstNum);
 
 	}
 }
