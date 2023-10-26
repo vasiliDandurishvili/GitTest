@@ -8,6 +8,7 @@ public class Problem_30 extends ConsoleProgram {
 		int n = readInt("enter the integer: ");
 		double m = 5.4;
 		int x = (int) Math.min(n, m);
+		println("x: " + x);
 
 	}
 }
