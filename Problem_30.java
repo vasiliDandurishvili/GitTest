@@ -15,6 +15,6 @@ public class Problem_30 extends ConsoleProgram {
 		
 		BigDecimal Num1 = decimal.remainder(BigDecimal.ONE);
 		println("firtsNum: " +  Num1);
-
+// amis chalichs isev 10ze gayofit gaakete.
 	}
 }
