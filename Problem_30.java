@@ -1,3 +1,5 @@
+import java.math.BigDecimal;
+
 import acm.program.ConsoleProgram;
 /*
 მომხმარებელს შეყავს მთელი რიცხვი, დაბეჭდეთ რიცხვი რომელიც მიიღება ციფრების
@@ -6,9 +8,12 @@ import acm.program.ConsoleProgram;
 public class Problem_30 extends ConsoleProgram {
 	public void run () {
 		int n = readInt("enter the integer: ");
-		double m = 5.4;
-		double x = (double) Math.min(n, m);
-		println("x: " + x);
+		String nAsString = "" + n;
+		BigDecimal decimal = new BigDecimal(nAsString);
+		
+		
+		BigDecimal franctionPart = decimal.remainder(BigDecimal.ONE);
+		println("x: " );
 
 	}
 }
