@@ -7,8 +7,7 @@ import acm.program.ConsoleProgram;
 public class Problem_28 extends ConsoleProgram {
 	public void run () {
 		int numOfEvenIntegers = 0;
-		boolean c = true;
-		while(c){
+		while(true){
 			int num_1 = readInt("enter the integer: ");
 			boolean a = num_1 % 2 == 0;
 			if(a){
