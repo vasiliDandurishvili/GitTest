@@ -24,6 +24,6 @@ public class Problem_29 extends ConsoleProgram {
 			firstNum = secondNum;
 			secondNum = k;
 		}
-		return -1;
+		return k;
 	}
 }
