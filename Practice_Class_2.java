@@ -6,7 +6,7 @@ public class Practice_Class_2  extends GraphicsProgram {
 	
 	public void run() {
 	GLabel msg = new GLabel("hello worls", 20, 20);	
-	msg.setFont ("Helavetica-24");
+	msg.setFont ("lucida blackletter-28");
 	add(msg);
 	}
 
