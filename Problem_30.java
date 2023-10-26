@@ -8,7 +8,7 @@ import acm.program.ConsoleProgram;
 public class Problem_30 extends ConsoleProgram {
 	public void run () {
 		int n = readInt("enter the integer: ");
-		double nLast = (double) n / 10;
+		double nLast = n / 10.0;
 		String nAsString = "" + n;
 		BigDecimal decimal = new BigDecimal(nAsString);
 		
