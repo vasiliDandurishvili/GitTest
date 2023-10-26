@@ -13,8 +13,8 @@ public class Problem_30 extends ConsoleProgram {
 		BigDecimal decimal = new BigDecimal(nAsString);
 		
 		
-		BigDecimal firstNum = decimal.remainder(BigDecimal.ONE);
-		println("firtsNum: " +  firstNum);
+		BigDecimal Num1 = decimal.remainder(BigDecimal.ONE);
+		println("firtsNum: " +  Num1);
 
 	}
 }
