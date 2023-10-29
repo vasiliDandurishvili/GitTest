@@ -14,7 +14,7 @@ public class Problem_30 extends ConsoleProgram {
 			int lastInt = n % 10;
 			reverseNum = lastInt * 10 + lastInt;
 			
-			n /= n;
+			n /= 10;
 		}
 		println("reversed num: " + reverseNum);
 	}
