@@ -10,9 +10,7 @@ public class Problem_32 extends ConsoleProgram {
 
 	private void findThePrimes() {
 		for(int i = 1; i <= 1000000; i++){
-			int numOfDividers = 0;
-			
-			divisionWithoutARiminder(numOfDividers, i);
+			int numOfDividers = divisionWithoutARiminder(i);;
 			
 			if(numOfDividers == 2){
 				println("the prime integer: " + i);
@@ -21,11 +19,14 @@ public class Problem_32 extends ConsoleProgram {
 		
 	}
 
-	private void divisionWithoutARiminder(int numOfDividers, int i) {
+	private int divisionWithoutARiminder(int i) {
+		int numOfDividers = 0;
+		
 		for(int j = 1; j <= 1000000; j++){
 			if(i % j == 0 ){
 				numOfDividers += 1;
 			}
-		}	
+		}
+		return numOfDividers;
 	}
 }
