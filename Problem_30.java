@@ -1,5 +1,3 @@
-import java.math.BigDecimal;
-
 import acm.program.ConsoleProgram;
 /*
 მომხმარებელს შეყავს მთელი რიცხვი, დაბეჭდეთ რიცხვი რომელიც მიიღება ციფრების
