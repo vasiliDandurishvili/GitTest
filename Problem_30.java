@@ -8,13 +8,12 @@ import acm.program.ConsoleProgram;
 public class Problem_30 extends ConsoleProgram {
 	public void run () {
 		int n = readInt("enter the integer: ");
-		double nLast = n / 10.0;
-		String nAsString = "" + nLast;
-		BigDecimal decimal = new BigDecimal(nAsString);
-		
-		
-		BigDecimal Num1 = decimal.remainder(BigDecimal.ONE);
-		println("firtsNum: " +  Num1);
-// amis chalichs isev 10ze gayofit gaakete.
+		while(true){
+			int divide = n / 10;
+			double fraction = n / 10;
+			int reverseNum = (int) (fraction - divide) * 10;
+			print(reverseNum);
+		}
+
 	}
 }
