@@ -11,7 +11,7 @@ public class Problem_30 extends ConsoleProgram {
 		for(int i = 0; i < 3;i++ ){
 			int divide = n / 10;
 			double fraction = n / 10;
-			int reverseNum = (int) (fraction - divide) * 10;
+			int reverseNum = (int) (fraction * 10 - divide * 10);
 			print(reverseNum);
 			if(divide == 0){
 				break;
