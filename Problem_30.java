@@ -15,7 +15,7 @@ public class Problem_30 extends ConsoleProgram {
 //			print(reverseNum);
 //			if()
 //		}
- int a = 12 / 10;
+ int a = 19 / 10;
  
  print(a);
 	}
