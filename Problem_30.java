@@ -12,7 +12,7 @@ public class Problem_30 extends ConsoleProgram {
 		
 		while(n != 0){
 			int lastInt = n % 10;
-			reverseNum = lastInt * 10 + lastInt;
+			reverseNum = reverseNum * 10 + lastInt;
 			
 			n /= 10;
 		}
