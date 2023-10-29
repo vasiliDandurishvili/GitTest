@@ -6,13 +6,12 @@ import acm.program.ConsoleProgram;
 public class Problem_32 extends ConsoleProgram {
 	public void run(){
 		findThePrimes();
-		
 	}
 
 	private void findThePrimes() {
 		for(int i = 1; i <= 1000000; i++){
 			int numOfDividers = 0;
-			for(int j = 1; j <= 1000000; i++){
+			for(int j = 1; j <= 1000000; j++){
 				if(i % j == 0 ){
 					numOfDividers += 1;
 				}
