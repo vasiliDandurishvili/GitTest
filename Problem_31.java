@@ -17,8 +17,6 @@ public class Problem_31 extends ConsoleProgram{
 			println("An integer is prime!");
 		}else{
 			println("An integer is not prime!");
-		}
-		
+		}	
 	}
-
 }
