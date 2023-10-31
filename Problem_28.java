@@ -5,6 +5,8 @@ import acm.program.ConsoleProgram;
 რაოდენობა რამდენი ლუწი რიცხვი შეყვანა მომხმარებელმა.
  */
 public class Problem_28 extends ConsoleProgram {
+	private static final int SENTINEL = -1;
+	
 	public void run () {
 		int numOfEvenIntegers = 0;
 		while(true){
@@ -13,7 +15,7 @@ public class Problem_28 extends ConsoleProgram {
 			if(a){
 				numOfEvenIntegers += 1;
 			}
-			if(num_1 == -1){
+			if(num_1 == SENTINEL){
 				break;
 			}
 		}
