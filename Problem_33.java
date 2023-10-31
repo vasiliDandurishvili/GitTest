@@ -10,7 +10,7 @@ public class Problem_33 extends ConsoleProgram {
 
 	private void findThePrimes() {
 		int k = 0;
-		for(int i = 1; i <= 1000000; i++){
+		for(int i = 1; i <= 10; i++){
 			int numOfDividers = divisionWithoutARiminder(i);;
 			
 			if(numOfDividers == 2){
@@ -24,7 +24,7 @@ public class Problem_33 extends ConsoleProgram {
 	private int divisionWithoutARiminder(int i) {
 		int numOfDividers = 0;
 		
-		for(int j = 1; j <= 1000000; j++){
+		for(int j = 1; j <= 10s; j++){
 			if(i % j == 0 ){
 				numOfDividers += 1;
 			}
