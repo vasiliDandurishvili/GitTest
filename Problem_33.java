@@ -24,7 +24,7 @@ public class Problem_33 extends ConsoleProgram {
 	private int divisionWithoutARiminder(int i) {
 		int numOfDividers = 0;
 		
-		for(int j = 1; j <= 10s; j++){
+		for(int j = 1; j <= 10; j++){
 			if(i % j == 0 ){
 				numOfDividers += 1;
 			}
