@@ -5,26 +5,28 @@ import acm.program.ConsoleProgram;
 import acm.util.RandomGenerator;
 
 public class Problem_35 extends ConsoleProgram{
-	private static final int MAX_SIMULATIONS  = 10000;
+	
+	private static final int MAX_EXPERIMENTS  = 10000;
 	private RandomGenerator rgen  = RandomGenerator.getInstance();
+	
 	public void run() {
 		double sumFlips = 0;
-		for(int i = 0; i < MAX_SIMULATIONS; i++) {
-			int currNumFlips = simulation();
-			sumFlips += currNumFlips;
+		for( int i = 0; i < MAX_EXPERIMENTS; i++ ){
+			int currFlips = holdExperiment();
+			sumFlips += currFlips;
 		}
-
-		double avgFlips = sumFlips / MAX_SIMULATIONS;
-
-		println("average number of flips: " + avgFlips);
+		double avgFlips = sumFlips / MAX_EXPERIMENTS;
+		println(avgFlips);
 	}
+	
+	
 
-	private int simulation() {
+	private int holdExperiment() {
 		int numFlips = 0;
-		while(true) {
+		while (true){
+			numFlips++;
 			boolean isHeads = rgen.nextBoolean();
-			numFlips += 1;
-			if(isHeads) {
+			if (isHeads){
 				break;
 			}
 		}
