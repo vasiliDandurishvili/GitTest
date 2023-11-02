@@ -11,11 +11,14 @@ import acm.util.RandomGenerator;
 public class Problem_34 extends GraphicsProgram {
 private static final int MIN_RADIUS = 10;
 private static final int MAX_RADIUS = 20;
+private static final int NUM_CIRCLES = 1000000;
 	//	private RandomGenerator rgen = new RandomGenerator();
 //	ase ar vqmnit xolme
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	public void run(){
-		int b = rgen.nextInt();
+		for(int i = 0; i < NUM_CIRCLES; i++){
+			addRandomCircle();
+		}
 	}
 
 	
@@ -33,7 +36,7 @@ private static final int MAX_RADIUS = 20;
 		circle.setColor(color);
 		
 		
-		
+		add(circle,x,y);
 		
 		
 	}
