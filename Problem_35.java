@@ -8,7 +8,6 @@ public class Problem_35 extends ConsoleProgram{
 	private static final int MAX_SIMULATIONS  = 10000;
 	private RandomGenerator rgen  = RandomGenerator.getInstance();
 	public void run() {
-		print(rgen);
 		double sumFlips = 0;
 		for(int i = 0; i < MAX_SIMULATIONS; i++) {
 			int currNumFlips = simulation();
