@@ -11,7 +11,7 @@ import acm.util.RandomGenerator;
 public class Problem_34 extends GraphicsProgram {
 private static final int MIN_RADIUS = 10;
 private static final int MAX_RADIUS = 20;
-private static final int NUM_CIRCLES = 1000000;
+private static final int NUM_CIRCLES = 1000;
 	//	private RandomGenerator rgen = new RandomGenerator();
 //	ase ar vqmnit xolme
 	private RandomGenerator rgen = RandomGenerator.getInstance();
