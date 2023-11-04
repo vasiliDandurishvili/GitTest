@@ -28,7 +28,7 @@ private static final int NUM_CIRCLES = 1000000;
 	private void addRandomCircle(){
 		int radius = rgen.nextInt(MIN_RADIUS, MAX_RADIUS);
 		double x = rgen.nextDouble(0,getWidth() - 2 * radius);
-		double y = rgen.nextDouble(00, getHeight() - 2 * radius);
+		double y = rgen.nextDouble(0, getHeight() - 2 * radius);
 		Color color = rgen.nextColor();
 		
 		GOval circle = new GOval (2 * radius, 2 * radius);
