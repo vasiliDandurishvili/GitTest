@@ -1,62 +1,72 @@
-
-
-import acm.program.*;
-
+import java.math.BigDecimal;
+import acm.program.ConsoleProgram;
+/*
+ მომხმარებელს შეჰყავს ორი რიცხვი თქვენმა პროგრამამ უნდა დაბეჭდოს ამ ორი რიცხვის
+უმცირესი საერთო ჯერადი.
+ */
 public class Practice_1 extends ConsoleProgram {
-	
-	/** this is the constant which's appear stops program.  */
-	private static final int SENTINEL = 0;
+	public void run () {
 
-	public void run() {
-		println("program finds the largest and smallest numbers.");
 		
-		/** user enter the first integer  */
-		int num1 = readInt("enter the integer: ");
 		
-		/** 
-		 * if the first integer is program stoper (SENTINEL) constant  
-		 * it outputs that there is  no legal numbers and the smallest and largest
-		 * will be zero(0).
-		 * */
-		if (num1 == SENTINEL) {
-			println("there is no positive integers");
-		}
 		
-		/** the very first number will be both smallest an largest.  */
-		int largest = num1;
-		int smallest = num1;
 		
-		/** this is a cycle for users to enter the numbers
-		 * untill they input SENTINEL.
-		 * */
-		while (num1 != SENTINEL) {			
-			int num2 = readInt("enter the integer: ");
-			
-			if(num2 == SENTINEL){
-				break;
-			}
-			
-			/** if the number is bigger than previous largest integers
-			 * it will become the largest.
-			 *   */
-			if(num2 > largest){
-				largest = num2;
-			}
-			
-			/** if the number is smallest than previous smallest integers
-			 * it will become the smallest.
-			 *   */
-			if (num2 < smallest){
-				smallest = num2;
-			}
-
-
-		}
-		/** after the user input SENTINEL the program
-		 * print the smallest and the largest numbers.
-		 *   */
-		println("smallest: " + smallest);
-		println("largest: " + largest);
-
-	}
+		
+		
+	}	
 }
+//		task 25
+//		int num_1 = readInt("enter first integer:");
+//		int num_2 = readInt("enter second integer:");
+//		
+//		int LeastCommonMultiple = num_1 * num_2;
+//		for (int i = 1; i <= num_1;i++){
+//			boolean divisionNum_1_WithoutRemainder = num_1 % i == 0;
+//			if(divisionNum_1_WithoutRemainder){
+//				for(int j = 1; j <= num_2; j++){
+//					boolean divisionNum_2_WithoutRemainder = num_2 % j == 0;
+//					if(divisionNum_2_WithoutRemainder){
+//						if(i == j){
+//							LeastCommonMultiple = LeastCommonMultiple / i;
+//						}
+//					}	
+//				}
+//			}
+//		}
+//		println("the least common multiple: " + LeastCommonMultiple);
+//	}
+//}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+////		task 17
+//		calculateNumInBigDecimal();
+//		
+//	}
+//
+//	private void calculateNumInBigDecimal() {
+//		double a = readDouble ("enter real number: " );
+//		String a_AsString = "" + a;
+//		BigDecimal decimal = new BigDecimal (a_AsString);
+//		
+//		int integerPart = decimal.intValue() ;
+//		BigDecimal franctionPart = decimal.remainder(BigDecimal.ONE);
+//		
+//		println("Integer part: " + integerPart);
+//		println("Franction part (as BigDecimal): " + franctionPart);
+//	
