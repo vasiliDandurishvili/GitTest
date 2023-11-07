@@ -34,6 +34,5 @@ public class Problem_37 extends ConsoleProgram {
 			}
 
 		}
-
 	}
 }
