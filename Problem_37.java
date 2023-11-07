@@ -25,8 +25,8 @@ public class Problem_37 extends ConsoleProgram {
 	}
 
 	private int readBet() {
-		int bet = readInt("enter bet num(0-36): ");
 		while (true) {
+		int bet = readInt("enter bet num(0-36): ");
 			if (bet < 0 || bet > 36) {
 				bet = readInt("enter bet num(0-36): ");
 			} else {
