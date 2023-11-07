@@ -8,7 +8,7 @@ public class Problem_39 extends GraphicsProgram{
 	public void run(){
 		GOval myOval = new GOval (R,R);
 		double x = 0;
-		double y = getWidth() / 2 - R / 2;
+		double y = getHeight() / 2 - R / 2;
 		
 		add(myOval,x,y);
 	}
