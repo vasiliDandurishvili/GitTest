@@ -33,7 +33,6 @@ public class Problem_37 extends ConsoleProgram {
 				return bet;
 			}
 
-			return bet;
 		}
 
 	}
