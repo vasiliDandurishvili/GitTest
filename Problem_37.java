@@ -10,9 +10,9 @@ public class Problem_37 extends ConsoleProgram{
 		int rouletteNumber = spinRoulette();
 		
 		if(betNumber == rouletteNumber){
-			println("you won");
+			println("you won!");
 		}else{
-			println("you lose");
+			println("you lose!");
 		}
 	}
 
@@ -25,6 +25,12 @@ public class Problem_37 extends ConsoleProgram{
 
 	private int readBet() {
 		int bet = readInt("enter bet num(0-36): ");
+		if(bet < 0 || bet > 36){
+			bet = readInt("enter bet num(0-36): ");
+		}else{
+			return bet;
+		}
+		
 		return bet;
 	}
 
