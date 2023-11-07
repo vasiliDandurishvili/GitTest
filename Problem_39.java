@@ -5,7 +5,7 @@ import acm.program.GraphicsProgram;
 //წერტილიდან მარჯვენა კედლამდე.
 public class Problem_39 extends GraphicsProgram{
 	private static final int R = 100;
-	private static final int PAUSE_TIME = 1000;
+	private static final int PAUSE_TIME = 100;
 
 	public void run(){
 		GOval myOval = new GOval (R,R);
