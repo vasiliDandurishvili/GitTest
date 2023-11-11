@@ -1,34 +1,39 @@
-import stanford.karel.Karel;
+import acm.program.ConsoleProgram;
+import acm.util.RandomGenerator;
 
-/*კარელი დგას 1x1 უჯრაზე. 5x1 უჯრაზე დევს 10 ცალი ბრილიანტი, კარელმა ათივე
-ბრილიანტი უნდა გადაიტანოს 6x1 უჯრაზე.
- */
-public class prolem_02CLASS extends Karel{
-	public void run(){
-		moveToTheBeeperPile();
-		pickTenBeepers();
-//		move();
-		putTenBeepers();
+public class prolem_02CLASS extends ConsoleProgram {
+	private static final int MIN_VALUE = 0;
+	private static final int MAX_VALUE = 0;
+	private RandomGenerator rgen = RandomGenerator.getInstance();
+	
+	public void run() {
+		int betNum = readBet();
+		int ruletteNum = spinRoulette();
 		
-	}
-
-	private void putTenBeepers() {
-		for (int i=0; i<4;i++){
-			move();
+		if(betNum == ruletteNum){
+			println("you win!!!");
+		}else{
+			println("you lose");
 		}
-		
-		
+
 	}
 
-	private void pickTenBeepers() {
-		for (int i=0; i<10;i++){
-			putBeeper();
+	private int readBet() {
+		while(true){
+			int bet = readInt("place your bet on number(0-36): ");
+			if(bet < 0 || bet > 36){
+				continue;
+			}else{
+				return bet;
+			}
 		}
-		
 	}
 
-	private void moveToTheBeeperPile() {
-		// TODO Auto-generated method stub
+	private int spinRoulette() {
+		int ruletteResult = rgen.nextInt(MIN_VALUE, MAX_VALUE);
+		println("rulette result is: " + ruletteResult);
 		
+		return ruletteResult;
 	}
+
 }
