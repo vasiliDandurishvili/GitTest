@@ -8,18 +8,20 @@ import acm.program.GraphicsProgram;
 
 public class Problem_40 extends GraphicsProgram {
 	private static final int PAUSE = 5;
-	
+
 	private static final int RADIUS = 20;
-	public void run(){
+
+	public void run() {
 		GOval circle = createLeftMidlleCircle();
 	}
+
 	private GOval createLeftMidlleCircle() {
-		GOval circle = new GOval (2 * RADIUS, 2 * RADIUS);
+		GOval circle = new GOval(2 * RADIUS, 2 * RADIUS);
 		circle.setFilled(true);
 		double x = 0;
-		double y = getHeight()/2 - RADIUS;
+		double y = getHeight() / 2 - RADIUS;
 		add(circle, x, y);
 		return circle;
 	}
-	
+
 }
