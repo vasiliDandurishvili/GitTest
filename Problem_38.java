@@ -45,7 +45,7 @@ public class Problem_38 extends ConsoleProgram {
 			int amount = readInt("enter bet amount: ");
 			if (amount > balance) {
 				continue;
-			}else{
+			} else {
 				return amount;
 			}
 
