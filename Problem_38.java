@@ -22,6 +22,7 @@ public class Problem_38 extends ConsoleProgram {
 		int balance = 1000;
 		while (true) {
 			if (balance == 0) {
+				println("GAME OVER");
 				break;
 			}
 
