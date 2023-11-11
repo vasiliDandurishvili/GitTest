@@ -15,15 +15,15 @@ public class Problem_40 extends GraphicsProgram {
 		GOval circle = createLeftMidlleCircle();
 		int vx = VEL_X;
 		int vy = 0;
-		
-		while(true){
+
+		while (true) {
 			if ((circle.getX() + 2 * RADIUS >= getWidth()) || (circle.getX() < 0)) {
 				vx = -vx;
 			}
 			circle.move(vx, vy);
 			pause(PAUSE);
 		}
-		
+
 	}
 
 	private GOval createLeftMidlleCircle() {
