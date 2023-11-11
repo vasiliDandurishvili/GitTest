@@ -17,7 +17,7 @@ public class Problem_40 extends GraphicsProgram {
 		GOval circle = new GOval (2 * RADIUS, 2 * RADIUS);
 		circle.setFilled(true);
 		double x = 0;
-		double y = getHeight() - RADIUS;
+		double y = getHeight()/2 - RADIUS;
 		add(circle, x, y);
 		return circle;
 	}
