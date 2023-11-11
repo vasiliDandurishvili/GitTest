@@ -5,7 +5,7 @@ import acm.program.GraphicsProgram;
 //წერტილიდან მარჯვენა კედლამდე.
 public class Problem_39 extends GraphicsProgram {
 	private static final int R = 100;
-	private static final int PAUSE_TIME = 100;
+	private static final int PAUSE_TIME = 10;
 
 	public void run() {
 		GOval myOval = new GOval(R * 2, R * 2);
@@ -23,7 +23,7 @@ public class Problem_39 extends GraphicsProgram {
 
 	private void getCircleToTheCentre(double x, GOval myOval) {
 		while (myOval.getX() < getWidth() - 2 *R) {
-			myOval.move(20, 0);
+			myOval.move(5, 0);
 			pause(PAUSE_TIME);
 		}
 
