@@ -7,6 +7,7 @@ public class prolem_02CLASS extends ConsoleProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	
 	public void run() {
+		while(true){
 		int betNum = readBet();
 		int ruletteNum = spinRoulette();
 		
@@ -17,7 +18,7 @@ public class prolem_02CLASS extends ConsoleProgram {
 		}
 
 	}
-
+}
 	private int readBet() {
 		while(true){
 			int bet = readInt("place your bet on number(0-36): ");
