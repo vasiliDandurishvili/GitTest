@@ -26,7 +26,7 @@ public class Problem_38 extends ConsoleProgram {
 			}
 
 			int betNumber = readBet();
-			int betAmount = readInt("enter bet amount");
+			int betAmount = readInt("enter bet amount: ");
 			int rouletteNumber = spinRoulette();
 
 			if (betNumber == rouletteNumber) {
