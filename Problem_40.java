@@ -8,11 +8,22 @@ import acm.program.GraphicsProgram;
 
 public class Problem_40 extends GraphicsProgram {
 	private static final int PAUSE = 5;
-
+	private static final int VEL_X = 3;
 	private static final int RADIUS = 20;
 
 	public void run() {
 		GOval circle = createLeftMidlleCircle();
+		int vx = VEL_X;
+		int vy = 0;
+		
+		while(true){
+			if ((circle.getX() + 2 * RADIUS >= getWidth()) || (circle.getX() < 0)) {
+				vx = -vx;
+			}
+			circle.move(vx, vy);
+			pause(PAUSE);
+		}
+		
 	}
 
 	private GOval createLeftMidlleCircle() {
