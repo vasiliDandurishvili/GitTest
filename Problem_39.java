@@ -22,7 +22,7 @@ public class Problem_39 extends GraphicsProgram {
 	}
 
 	private void getCircleToTheCentre(double x, GOval myOval) {
-		while (myOval.getX() < getWidth() / 2) {
+		while (myOval.getX() < getWidth() - 2 *R) {
 			myOval.move(40, 0);
 			pause(PAUSE_TIME);
 		}
