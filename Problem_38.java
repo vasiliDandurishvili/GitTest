@@ -26,7 +26,8 @@ public class Problem_38 extends ConsoleProgram {
 			}
 
 			int betNumber = readBet();
-			int betAmount = readInt("enter bet amount: ");
+			int betAmount = enterBet(balance);
+
 			int rouletteNumber = spinRoulette();
 
 			if (betNumber == rouletteNumber) {
@@ -36,6 +37,18 @@ public class Problem_38 extends ConsoleProgram {
 				balance -= betAmount;
 				println("you lose! your balance is: " + balance);
 			}
+		}
+	}
+
+	private int enterBet(int balance) {
+		while (true) {
+			int amount = readInt("enter bet amount: ");
+			if (amount > balance) {
+				continue;
+			}else{
+				return amount;
+			}
+
 		}
 	}
 
