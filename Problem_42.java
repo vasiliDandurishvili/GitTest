@@ -60,20 +60,32 @@ public class Problem_42 extends GraphicsProgram {
 	/* Method: run() */
 	/** Runs the Breakout program. */
 	public void run() {
-		/** draw bricks in 10 row also 10 in each and paint in
-		 * appropriate color.
-		 *    */
+		/** draw painted bricks in 10 row */
 		for (int i = 0; i < 10; i++) {
 			fillEachLineWithBricks(i);
 		}
 
 	}
-
+ /** draw bricks in each line and also paint
+  * them in the appropiate collor.  */
 	private void fillEachLineWithBricks(int i) {
 	for(int j = 0; j < 10; j++){
 		GRect brick = new GRect (BRICK_WIDTH, BRICK_HEIGHT);
 		double x = WIDTH - 10 * (BRICK_WIDTH + BRICK_SEP) + j * (BRICK_WIDTH + BRICK_SEP);
 		double y = BRICK_Y_OFFSET + i * (BRICK_HEIGHT + BRICK_SEP) ;
+		
+		if(i < 2){
+			brick.setColor(Color.RED);
+		}
+		if ((i >= 2) && (i < 4)) {
+			brick.setColor(Color.ORANGE);		}
+		if ((i >= 4) && (i < 6)) {
+			brick.setColor(Color.YELLOW);		}
+		if ((i >= 6) && (i < 8)) {
+			brick.setColor(Color.GREEN);		}
+		if ((i >= 8) && (i < 10)) {
+			brick.setColor(Color.CYAN);		}
+
 		
 		add(brick, x, y);
 	}
