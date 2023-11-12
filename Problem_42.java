@@ -1,37 +1,37 @@
+public class Problem_42 {
+    public static void main(String[] args) {
+        // Set canvas size
+        int width = 40;
+        int height = 8;
 
-import acm.program.GraphicsProgram;
+        // Create canvas
+        char[][] canvas = new char[height][width];
 
-public class Problem_42 extends GraphicsProgram {
-	public void run(){
-		        // Set canvas size
-		        int width = 40;
-		        int height = 8;
+        // Initialize canvas with spaces
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < width; j++) {
+                canvas[i][j] = ' ';
+            }
+        }
 
-		        // Create canvas
-		        char[][] canvas = new char[height][width];
+        // Add "you win" message using red bricks
+        String message = "you win";
+        int xStart = (width - message.length()) / 2;
+        int yStart = height / 2;
 
-		        // Initialize canvas with spaces
-		        for (int i = 0; i < height; i++) {
-		            for (int j = 0; j < width; j++) {
-		                canvas[i][j] = ' ';
-		            }
-		        }
+        // ASCII art representation of red bricks
+        String brick = "\u001B[31m#\u001B[0m"; // \u001B[31m is ANSI escape code for red color
 
-		        // Add "you win" message using bricks
-		        String message = "you win";
-		        int xStart = (width - message.length()) / 2;
-		        int yStart = height / 2;
+        for (int i = 0; i < message.length(); i++) {
+            canvas[yStart][xStart + i] = brick.charAt(0);
+        }
 
-		        for (int i = 0; i < message.length(); i++) {
-		            canvas[yStart][xStart + i] = message.charAt(i);
-		        }
-
-		        // Print the canvas
-		        for (int i = 0; i < height; i++) {
-		            for (int j = 0; j < width; j++) {
-		                System.out.print(canvas[i][j]);
-		            }
-		            System.out.println(); // Move to the next line after each row
-		        }
-		    }
-		}
+        // Print the canvas
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < width; j++) {
+                System.out.print(canvas[i][j]);
+            }
+            System.out.println(); // Move to the next line after each row
+        }
+    }
+}
