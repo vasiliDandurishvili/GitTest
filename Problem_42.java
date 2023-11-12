@@ -64,33 +64,62 @@ public class Problem_42 extends GraphicsProgram {
 		for (int i = 0; i < 10; i++) {
 			fillEachLineWithBricks(i);
 		}
-
-	}
- /** draw bricks in each line and also paint
-  * them in the appropiate collor.  */
-	private void fillEachLineWithBricks(int i) {
-	for(int j = 0; j < 10; j++){
-		GRect brick = new GRect (BRICK_WIDTH, BRICK_HEIGHT);
-		double x = WIDTH - 10 * (BRICK_WIDTH + BRICK_SEP) + j * (BRICK_WIDTH + BRICK_SEP);
-		double y = BRICK_Y_OFFSET + i * (BRICK_HEIGHT + BRICK_SEP) ;
-		brick.setFilled(true);
+		/** A racket that follows the mouse*/
+		createTheRacket();
 		
-		if(i < 2){
-			brick.setColor(Color.RED);
-		}
-		if ((i >= 2) && (i < 4)) {
-			brick.setColor(Color.ORANGE);		}
-		if ((i >= 4) && (i < 6)) {
-			brick.setColor(Color.YELLOW);		}
-		if ((i >= 6) && (i < 8)) {
-			brick.setColor(Color.GREEN);		}
-		if ((i >= 8) && (i < 10)) {
-			brick.setColor(Color.CYAN);		}
-
 		
-		add(brick, x, y);
+
 	}
 	
-}
+	
+	
+	
+	
+	
+
+	private void createTheRacket() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+
+
+
+
+	/**
+	 * draw bricks in each line and also paint them in the appropiate collor.
+	 */
+	private void fillEachLineWithBricks(int i) {
+		for (int j = 0; j < 10; j++) {
+			GRect brick = new GRect(BRICK_WIDTH, BRICK_HEIGHT);
+			/** draw following brick next to previous on the same line. */
+			double x = WIDTH - 10 * (BRICK_WIDTH + BRICK_SEP) + j * (BRICK_WIDTH + BRICK_SEP);
+			/** after colmplete the previous line draw the next one dawn. */
+			double y = BRICK_Y_OFFSET + i * (BRICK_HEIGHT + BRICK_SEP);
+			brick.setFilled(true);
+
+			/** color bricks due to their position*/
+			if (i < 2) {
+				brick.setColor(Color.RED);
+			}
+			if ((i >= 2) && (i < 4)) {
+				brick.setColor(Color.ORANGE);
+			}
+			if ((i >= 4) && (i < 6)) {
+				brick.setColor(Color.YELLOW);
+			}
+			if ((i >= 6) && (i < 8)) {
+				brick.setColor(Color.GREEN);
+			}
+			if ((i >= 8) && (i < 10)) {
+				brick.setColor(Color.CYAN);
+			}
+
+			add(brick, x, y);
+		}
+
+	}
 
 }
