@@ -73,6 +73,7 @@ public class Problem_42 extends GraphicsProgram {
 		GRect brick = new GRect (BRICK_WIDTH, BRICK_HEIGHT);
 		double x = WIDTH - 10 * (BRICK_WIDTH + BRICK_SEP) + j * (BRICK_WIDTH + BRICK_SEP);
 		double y = BRICK_Y_OFFSET + i * (BRICK_HEIGHT + BRICK_SEP) ;
+		brick.setFilled(true);
 		
 		if(i < 2){
 			brick.setColor(Color.RED);
