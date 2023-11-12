@@ -1,44 +1,37 @@
-import java.awt.event.MouseEvent;
-import java.util.HashMap;
-import java.util.Map;
 
-import acm.graphics.GLine;
-import acm.program.*;
+import acm.program.GraphicsProgram;
 
-/*-
- * პროგრამა, რომელიც საშუალებას აძლევს მომხმარებელს დახატოს ტეხილი
- * 
- * 1. ტეხილის სათავე დაფიქსირებულია და მდებარეობს (0, 0) წერტილში
- * 2. მაუსის კლიკზე დაფაზე უნდა დაემატოს ახალი GLine, რომლის ერთი წვერო არის ტეხილის ბოლო წერტილი,
- * 	  ხოლო მეორე წვერო კი, წერტილი სადაც მოხდა მაუსის კლიკი
- * 3. ყოველი მაუსის გაჩოჩებაზე (mouseDragged) პროგრამა უნდა ხატავდეს მონაკვეთის მოძრაობას, 
- *    რომლის ერთი ბოლო დაფიქსირებულია ტეხილის ბოლო წერტილში, ხოლო მეორე ბოლო დაყვება მაუსის ისარს.
- */
 public class Problem_42 extends GraphicsProgram {
+	public void run(){
+		        // Set canvas size
+		        int width = 40;
+		        int height = 8;
 
-	private int xs, ys;
-	private GLine line;
+		        // Create canvas
+		        char[][] canvas = new char[height][width];
 
-	@Override
-	public void init() {
-		xs = ys = 0;
-		addMouseListeners();
-	}
+		        // Initialize canvas with spaces
+		        for (int i = 0; i < height; i++) {
+		            for (int j = 0; j < width; j++) {
+		                canvas[i][j] = ' ';
+		            }
+		        }
 
-	@Override
-	public void mousePressed(MouseEvent e) {
-		line = new GLine(xs, ys, e.getX(), e.getY());
-		add(line);
-	}
+		        // Add "you win" message using bricks
+		        String message = "you win";
+		        int xStart = (width - message.length()) / 2;
+		        int yStart = height / 2;
 
-	@Override
-	public void mouseDragged(MouseEvent e) {
-		line.setEndPoint(e.getX(), e.getY());
-	}
+		        for (int i = 0; i < message.length(); i++) {
+		            canvas[yStart][xStart + i] = message.charAt(i);
+		        }
 
-	@Override
-	public void mouseReleased(MouseEvent e) {
-		xs = e.getX();
-		ys = e.getY();
-	}
-}
+		        // Print the canvas
+		        for (int i = 0; i < height; i++) {
+		            for (int j = 0; j < width; j++) {
+		                System.out.print(canvas[i][j]);
+		            }
+		            System.out.println(); // Move to the next line after each row
+		        }
+		    }
+		}
