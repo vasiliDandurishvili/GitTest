@@ -72,7 +72,7 @@ public class Problem_42 extends GraphicsProgram {
 	private void fillEachLineWithBricks(int i) {
 	for(int j = 0; j < 10; j++){
 		GRect brick = new GRect (BRICK_WIDTH, BRICK_HEIGHT);
-		double x = WIDTH - 10 * (BRICK_WIDTH + BRICK_SEP) + j * BRICK_WIDTH;
+		double x = WIDTH - 10 * (BRICK_WIDTH + BRICK_SEP) + j * (BRICK_WIDTH + BRICK_SEP);
 		double y = BRICK_Y_OFFSET + i * (BRICK_HEIGHT + BRICK_SEP) ;
 		
 		add(brick, x, y);
