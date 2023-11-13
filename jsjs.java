@@ -8,7 +8,11 @@ public class jsjs extends GraphicsProgram{
 		add(r);
 		
 		
-		getElementAt(30,30);
+		GObject x = getElementAt(30,30);
+		if (x != null){
+			GOval k = new GOval(100, 100, 100, 100);
+			add(k);
+		}
 	}
 
 }
