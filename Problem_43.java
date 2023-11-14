@@ -27,6 +27,7 @@ public class Problem_43 extends GraphicsProgram {
 			prevX = e.getX();
 			prevY = e.getY();
 		}
+		}
 		public void mouseDragged(MouseEvent e){
 			GObject obj = getElementAt(e.getX(), e.getY());
 			if (obj != null){
