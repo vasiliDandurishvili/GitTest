@@ -7,16 +7,16 @@ public class Bonus_20 extends ConsoleProgram{
 		int x = 0;
 		int a = 0;
 		double c = 0;
-		for(int i = 0; i< 100000000; i++){
+		for(int i = 0; i< 1000000; i++){
 			
 			for(int t = 0; t< 323; t++){
 				
 				
 				int m = g.nextInt(-1,100) ;
 				
-//				if(m == 0){
-//					x++;
-//				}
+				if(m == 0){
+					x++;
+				}
 				a += m;
 				
 				
