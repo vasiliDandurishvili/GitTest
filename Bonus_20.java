@@ -9,7 +9,7 @@ public class Bonus_20 extends ConsoleProgram{
 		for(int i = 0; i< 1000000; i++){
 			
 			for(int t = 0; t< 323; t++){
-				int m = g.nextInt(0,100) ;
+				int m = g.nextInt(-1,100) ;
 				a += m;
 				
 				
