@@ -12,7 +12,7 @@ public class Bonus_20 extends ConsoleProgram{
 			for(int t = 0; t< 323; t++){
 				
 				
-				int m = g.nextInt(-1,66) ;
+				int m = g.nextInt(-1,44) ;
 				
 				if(m == 0){
 					x++;
