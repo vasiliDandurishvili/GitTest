@@ -21,6 +21,7 @@ public class Problem_43 extends GraphicsProgram {
 
 	public void mousePressed(MouseEvent e) {
 		GObject obj = getElementAt(e.getX(), e.getY());
+		
 		if (obj != null) {
 			prevX = e.getX();
 			prevY = e.getY();
@@ -34,6 +35,7 @@ public class Problem_43 extends GraphicsProgram {
 			// move object
 			obj.move(e.getX() - prevX, e.getY() - prevY);
 
+			//update values
 			prevX = e.getX();
 			prevY = e.getY();
 		}
