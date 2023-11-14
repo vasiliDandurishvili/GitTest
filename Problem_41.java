@@ -22,7 +22,7 @@ public class Problem_41 extends GraphicsProgram {
 //	public void mousePressed(MouseEvent e){
 //		addBrush(e.getX(), e.getY());
 //	}
-	public void mouseCli(MouseEvent e){
+	public void mouseClicked(MouseEvent e){
 		addBrush(e.getX(), e.getY());
 	}
 	
