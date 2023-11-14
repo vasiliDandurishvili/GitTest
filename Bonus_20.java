@@ -14,12 +14,13 @@ public class Bonus_20 extends ConsoleProgram{
 				
 				
 			}
-			c += a/322.0;
+			c += a/322.0 ;
+			
 			a =0;
 			
 		}
 		
-		println(c/1000000);
+		println((c * 2 / 3 )/1000000);
 		
 		
 	}
