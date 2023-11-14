@@ -14,9 +14,9 @@ public class Bonus_20 extends ConsoleProgram{
 				
 				int m = g.nextInt(-1,100) ;
 				
-				if(m == 0){
-					x++;
-				}
+//				if(m == 0){
+//					x++;
+//				}
 				a += m;
 				
 				
