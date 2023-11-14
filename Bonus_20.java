@@ -7,7 +7,7 @@ public class Bonus_20 extends ConsoleProgram{
 		int x = 0;
 		int a = 0;
 		double c = 0;
-		for(int i = 0; i< 1000000; i++){
+		for(int i = 0; i< 1; i++){
 			
 			for(int t = 0; t< 323; t++){
 				
