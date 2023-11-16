@@ -15,6 +15,6 @@ public class Problem_45 extends ConsoleProgram {
 				x++;
 			}
 		}
-		print(x);
+		print("number of " + symbolText + ": " + x);
 	}
 }
