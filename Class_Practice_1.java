@@ -1,80 +1,25 @@
 import java.awt.Color;
 import acm.graphics.GPolygon;
 import acm.graphics.*;
+import acm.program.ConsoleProgram;
 import acm.program.GraphicsProgram;
 
-public class Class_Practice_1 extends GraphicsProgram {
-//	private static final double PI = 3.14;
-	private static final double HOUSE_WIDTH = 200;
-	private static final double HOUSE_HEIGHT = 300;
-	private static final double DOOR_WIDTH = 40;
-	private static final double DOOR_HEIGHT = 60;
-	private static final double ROOF_HEIGHT = 100;
+public class Class_Practice_1 extends ConsoleProgram {
+	public void run(){
+		String str1 = "mari";
+		String str2 = "mari";
+		String str3 = new String ("mari");
+		String str4 = readLine("enter str4: ");
+		
+//		//jer gaaketebs mimatebas orive mxares da mere sheadarebs + > ==(prioritetulia).
+//		println("1 ,2" + str1 == str2 + "" +str1.equals(str2));
+//		println("1 ,3" + str1 == str3 + "" +str1.equals(str3));
+//		println("1 ,4" + str1 == str4 + "" +str1.equals(str4));
+		
+		
+		println("1 ,2" + (str1 == str2) + "" +str1.equals(str2));
+		println("1 ,3" + (str1 == str3) + "" +str1.equals(str3));
+		println("1 ,4" + (str1 == str4) + "" +str1.equals(str4));
+	}
 	
-	public void run() {
-//		PI = 3;
-//		drawMidLine();
-		drawHouse();
-		
-	}
-	private void drawHouse() {
-		drawWall();
-		drawRoof();
-//		drawDoor();
-//		drawWindowa();
-		
-	}
-	private void drawRoof() {
-		double x1 = (int) (getWidth()/ 2 -HOUSE_WIDTH / 2);
-		double y1 = getHeight() - HOUSE_HEIGHT;
-		double x2 = x1 +HOUSE_WIDTH / 2;
-		double y2 = y1 - ROOF_HEIGHT ;
-		GLine leftRoof = new GLine(x1, y1, x2, y2);
-		add(leftRoof);
-
-		double x1_1 = (int) (x1 +HOUSE_WIDTH / 2);
-		double y1_1 = y1 - ROOF_HEIGHT ;
-		double x2_1 = (int) (getWidth() / 2 + HOUSE_WIDTH / 2 );
-		double y2_1 = getHeight()- HOUSE_HEIGHT;
-		GLine rightRoof = new GLine(x1_1, y1_1, x2_1, y2_1);
-		add(rightRoof);
-	}
-	private void drawWall() {
-		GRect wall = new GRect (HOUSE_WIDTH, HOUSE_HEIGHT);
-		int x = (int) (getWidth() / 2 - HOUSE_WIDTH / 2) ;
-		double y = getHeight()-HOUSE_HEIGHT;
-		add(wall, x, y);
-		
-	}
-	private void drawMidLine() {
-		double x1 = 0;
-		double y1 = getHeight() / 2;
-		double x2 = getWidth();
-		double y2 = y1;
-		GLine line = new GLine(x1, y1, x2, y2);
-		add(line);
-	}
 }
-		
-//		int a = 5;
-//		a=a + 5;
-//		
-//		if(2 == 2){
-//			double b = 3;
-//			b = 4;
-//			b = a + 3;
-//			
-//			
-////			int a = 7 mistake
-//			GLabel label = new GLabel("a:" + a, 20, 20);
-//			add(label);
-//			a = 3;
-//		}
-//		
-////		b = b + 1
-//	}	
-//	
-//	
-//	private void testVoid(){
-//		int a = 7;
-//		
