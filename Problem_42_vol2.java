@@ -30,9 +30,9 @@ public class Problem_42_vol2 extends GraphicsProgram {
 		line.setEndPoint(e.getX(), e.getY());
 	}
 
-//	@Override
-//	public void mouseReleased(MouseEvent e) {
-//		xs = e.getX();
-//		ys = e.getY();
-//	}
+	@Override
+	public void mouseReleased(MouseEvent e) {
+		xs = e.getX();
+		ys = e.getY();
+	}
 }
