@@ -1,21 +1,22 @@
+import java.awt.event.MouseEvent;
+
 import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
 public class jsjs extends GraphicsProgram{
-	private  int vx = 3;
     GOval oval;
 	public void run(){
-		oval = new GOval (30,30);
-		add(oval,0,getHeight() / 2 - 15);
-		
-		while(oval.getX() + 30 < getWidth()){
-		oval.move(vx, 0);
-		pause(10);
-		
-//		if(oval.getX() + 30 > getWidth() || oval.getX() < 0){
-//			vx = -vx;
-//		}
-		}
+		addMouseListeners();
 	}
 
+	public void mouseMoved(MouseEvent e){
+		oval = new GOval (20,20);
+		oval.setFilled(true);
+		
+		double x = e.getX() + 10;
+		double y = e.getY() + 10;
+		
+		add(oval, x, y);
+		
+	}
 }
