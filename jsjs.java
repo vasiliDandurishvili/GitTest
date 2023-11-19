@@ -14,7 +14,7 @@ public class jsjs extends GraphicsProgram {
 	}
 
 	public void mouseDrugged(MouseEvent e){
-		removeAll();
+//		removeAll();
 		oval = new GOval(2 * RADIUS, 2 * RADIUS);
 		double x = e.getX() - RADIUS;
 		double y = e.getY() - RADIUS;
