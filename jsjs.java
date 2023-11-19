@@ -2,7 +2,7 @@ import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
 public class jsjs extends GraphicsProgram{
-	private static final int vx = 3;
+	private  int vx = 3;
     GOval oval;
 	public void run(){
 		oval = new GOval (30,30);
