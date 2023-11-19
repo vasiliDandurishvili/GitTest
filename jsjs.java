@@ -12,7 +12,7 @@ public class jsjs extends GraphicsProgram{
 		oval.move(vx, 0);
 		pause(10);
 		
-		if(oval.getX() + 30 < getWidth() || oval.getX() < 0){
+		if(oval.getX() + 30 > getWidth() || oval.getX() < 0){
 			vx = -vx;
 		}
 		}
