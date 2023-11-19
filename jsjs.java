@@ -7,16 +7,17 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class jsjs extends GraphicsProgram {
-	GLine line;
+	private static final double RADIUS = 30;
+	GOval oval;
 	public void run(){
 		addMouseListeners();
 	}
-	public void mousePressed(MouseEvent e){
-		line = new GLine(e.getX(),e.getY(),e.getX(),e.getY() );
-		add(line);
-	}
+
 	public void mouseDrugged(MouseEvent e){
-		line.setEndPoint(e.getX(), e.getY());
+		oval = new GOval(2 * RADIUS, 2 * RADIUS);
+		double x = e.getX() - RADIUS;
+		double y = e.getY() - RADIUS;
+		
+		add(oval,x, y);
 	}
-	
 }
