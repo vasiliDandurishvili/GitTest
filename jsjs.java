@@ -8,8 +8,8 @@ public class jsjs extends GraphicsProgram{
 		add(oval,0,getHeight() / 2 - 15);
 		
 		while(oval.getX() + 30 < getWidth()){
-		oval.move(5, 0);
-		pause(30);
+		oval.move(2, 0);
+		pause(10);
 		}
 	}
 
