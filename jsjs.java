@@ -10,6 +10,10 @@ public class jsjs extends GraphicsProgram{
 	}
 
 	public void mouseMoved(MouseEvent e){
+		if (oval != null) {
+            remove(oval);
+        }
+		
 		oval = new GOval (20,20);
 		oval.setFilled(true);
 		
