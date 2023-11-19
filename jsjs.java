@@ -15,6 +15,8 @@ public class jsjs extends GraphicsProgram {
 		line = new GLine(e.getX(),e.getY(),e.getX(),e.getY() );
 		add(line);
 	}
-	
+	public void mouseDrugged(MouseEvent e){
+		line.setEndPoint(e.getX(), e.getX()Y);
+	}
 	
 }
