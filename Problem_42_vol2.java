@@ -9,18 +9,30 @@ import acm.program.GraphicsProgram;
 //კლიკით ფიქსირდება მეორე წვეროც.
 
 public class Problem_42_vol2 extends GraphicsProgram {
+
+	private int xs, ys;
 	private GLine line;
-	public void run(){
+
+	@Override
+	public void init() {
+		xs = ys = 0;
 		addMouseListeners();
 	}
+
 	@Override
-	public void mousePressed(MouseEvent e){
-		line = new GLine(e.getX(),e.getY(),e.getX(),e.getY());
+	public void mousePressed(MouseEvent e) {
+		line = new GLine(xs, ys, e.getX(), e.getY());
 		add(line);
 	}
+
 	@Override
-	public void mouseDragged(MouseEvent e){
+	public void mouseDragged(MouseEvent e) {
 		line.setEndPoint(e.getX(), e.getY());
 	}
-	
+
+	@Override
+	public void mouseReleased(MouseEvent e) {
+		xs = e.getX();
+		ys = e.getY();
+	}
 }
