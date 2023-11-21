@@ -9,6 +9,9 @@ public class Problem_49 extends ConsoleProgram {
 		String numStr = "1234";
 		int num = strintToInt(numStr);
 		
+		println(num);
+		println(num -1);
+		println(num + 1);
 //		math.pow(num, num)
 	}
 
