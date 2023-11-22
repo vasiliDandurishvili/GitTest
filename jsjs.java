@@ -11,10 +11,10 @@ public class jsjs extends ConsoleProgram {
 	public void run() {
 		String text = readLine("enter text: ");
 		boolean isPalindrom = isPalindrome(text);
-		if(isPalindorome){
+		if(isPalindrom){
 			print(text + " is palindrom.");
 		}else{
-			print(text + " is not palindrom.")
+			print(text + " is not palindrom.");
 		}
 	}
 
