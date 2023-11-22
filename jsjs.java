@@ -50,6 +50,6 @@ public class jsjs extends ConsoleProgram {
 				}
 			}
 		}
-		println("the sum is: " + ans);
+		println("the integer is: " + ans);
 	}
 }
