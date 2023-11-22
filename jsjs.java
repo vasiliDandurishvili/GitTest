@@ -25,6 +25,6 @@ public class jsjs extends ConsoleProgram {
 				mostC = text.charAt(i);
 			}
 		}
-		println("most offen char: " + mostC);
+		println("most offen char: " + mostC + " the number is: " + mostChar);
 	}
 }
