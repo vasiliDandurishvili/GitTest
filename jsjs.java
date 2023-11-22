@@ -21,7 +21,7 @@ public class jsjs extends ConsoleProgram {
 			}
 			if(currNum > mostChar){
 				mostChar = currNum;
-				print("mostlu char: " + text.charAt(i) );
+				print("most offen char: " + text.charAt(i) );
 			}
 		}
 	}
