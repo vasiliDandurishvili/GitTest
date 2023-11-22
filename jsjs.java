@@ -7,24 +7,23 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class jsjs extends ConsoleProgram {
-	private int mostChar = 0;
-	private char mostC;
 
 	public void run() {
 		String text = readLine("enter text: ");
+		boolean isPalindrom = isPalindrome(text);
+		if(isPalindorome){
+			print(text + " is palindrom.");
+		}else{
+			print(text + " is not palindrom.")
+		}
+	}
 
-		for (int i = 0; i < text.length(); i++) {
-			int currNum = 0;
-			for (int j = 0; j < text.length(); j++) {
-				if (text.charAt(i) == text.charAt(j)) {
-					currNum++;
-				}
-			}
-			if (currNum > mostChar) {
-				mostChar = currNum;
-				mostC = text.charAt(i);
+	private boolean isPalindrome(String text) {
+		for (int i = 0; i < text.length() / 2; i++){
+			if(text.charAt(i) != text.charAt(text.length() - i - 1 )){
+				return false;
 			}
 		}
-		println("most offen char: " + mostC + " the number is: " + mostChar);
+		return true;
 	}
 }
