@@ -23,9 +23,8 @@ public class jsjs extends ConsoleProgram {
 			if(text.charAt(i) == symbol){
 				numOfSym++;
 			}
-			return numOfSym;
 		}
-		return 0;
+		return numOfSym;
 	}
 
 }
