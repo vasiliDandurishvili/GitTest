@@ -23,7 +23,7 @@ public class jsjs extends GraphicsProgram {
 		double x = e.getX() - RADIUS;
 		double y = e.getY() - RADIUS;
 		add(circle, x, y);
-		while(true){
+		while(x == 1){
 			circle.move(0, vy);
 		}
 	}
