@@ -17,7 +17,7 @@ public class jsjs extends GraphicsProgram {
 		
 	}
 	public void mouseClicked(MouseEvent e){
-		removeAll();
+//		removeAll();
 		circle = new GOval (2 * RADIUS, 2 * RADIUS);
 		circle.setFilled(true);
 		double x = e.getX() - RADIUS;
