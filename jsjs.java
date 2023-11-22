@@ -10,7 +10,7 @@ public class jsjs extends ConsoleProgram {
 
 	public void run() {
 		int ans = 0;
-		String text = readLine("enter text: ");
+		String text = readLine("enter Roman numbers: ");
 		
 		for(int i = 0; i < text.length(); i++){
 			if(text.charAt(i) == 'M'){
