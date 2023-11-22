@@ -6,7 +6,7 @@ import acm.program.ConsoleProgram;
 //რომ დაბრუნებული მნიშვნელობა დადებითია და ეტევა int-ში.
 public class Problem_49 extends ConsoleProgram {
 	public void run() {
-		String numStr = "0";
+		String numStr = "1234";
 		int num = strintToInt(numStr);
 		
 		println(num);
