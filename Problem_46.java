@@ -21,6 +21,6 @@ public class Problem_46 extends ConsoleProgram {
 				mostC = text.charAt(i);
 			}
 		}
-		println("most offen char: " + mostC + " the number is: " + mostChar);
+		println("most offen char: " + mostC + ", the number is: " + mostChar);
 	}
 }
