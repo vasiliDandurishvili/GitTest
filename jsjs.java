@@ -8,8 +8,8 @@ import java.awt.event.*;
 
 public class jsjs extends GraphicsProgram {
 	private static final double RADIUS = 30;
-	private static final double vy = 7;
-	private static final double PAUSE = 50;
+	private static final double vy = 1;
+	private static final double PAUSE = 5;
 	private GOval circle;
 
 	public void run() {// removeAll();
