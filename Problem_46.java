@@ -1,26 +1,35 @@
-import acm.program.ConsoleProgram;
-
 //46. დაწერეთ მეთოდი რომელსაც გადაეცემა სტიგნი და რომელიც აბრუნებს ამ სტრინგში
 //ყველაზე ხშირ სიმბოლოს.
-public class Problem_46 extends ConsoleProgram {
-	private int mostChar = 0;
-	private char mostC;
 
+import acm.program.ConsoleProgram;
+
+public class Problem_46 extends ConsoleProgram {
 	public void run() {
-		String text = readLine("enter text: ");
+		String text = readLine("Enter text: ");
+		println("Frequent symbol is: " + frequentSymbol(text));
+	}
+
+	private char frequentSymbol(String text) {
+		int maxCharCount = 0;
+		char frequentChar = 0; // does not equal to char '0'
 
 		for (int i = 0; i < text.length(); i++) {
-			int currNum = 0;
-			for (int j = 0; j < text.length(); j++) {
-				if (text.charAt(i) == text.charAt(j)) {
-					currNum++;
-				}
-			}
-			if (currNum > mostChar) {
-				mostChar = currNum;
-				mostC = text.charAt(i);
+			int currCount = countSymbol(text, text.charAt(i));
+			if(currCount > maxCharCount) {
+				maxCharCount = currCount;
+				frequentChar = text.charAt(i);
 			}
 		}
-		println("most offen char: " + mostC + ", the number is: " + mostChar);
+		return frequentChar;
+	}
+
+	private int countSymbol(String text, char symbol) {
+		int symbolCount = 0;
+		for (int i = 0; i < text.length(); i++) {
+			if (text.charAt(i) == symbol) {
+				symbolCount++; // symbolCount = symbolCount + 1;
+			}
+		}
+		return symbolCount;
 	}
 }
