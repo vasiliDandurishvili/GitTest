@@ -28,7 +28,7 @@ public class jsjs extends GraphicsProgram {
 	}
 	
 
-	public void mouseDrugged(MouseEvent e){
+	public void mouseDragged(MouseEvent e){
 		GObject obj = getElementAt(e.getX(), e.getY());
 		
 		 if(obj != null){
@@ -37,7 +37,6 @@ public class jsjs extends GraphicsProgram {
 			 
 			 prevX = e.getX();
 			 prevY = e.getY();
-		 }
-		
+		 }	
 	}
 }
