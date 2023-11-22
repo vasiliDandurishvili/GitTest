@@ -19,12 +19,13 @@ public class jsjs extends GraphicsProgram {
 		addMouseListeners();
 		while (true) {
 			circle.move(0, vy);
+			pause(PAUSE);
 		}
 
 	}
 
 	public void mouseClicked(MouseEvent e) {
-
+		add(circle, e.getX() - RADIUS, e.getY() - RADIUS);
 	}
 
 }
