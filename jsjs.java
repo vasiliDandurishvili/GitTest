@@ -8,7 +8,8 @@ import java.awt.event.*;
 
 public class jsjs extends ConsoleProgram {
 	private int mostChar = 0;
-
+	private char mostC ;
+	
 	public void run() {
 		String text = readLine("enter text: ");
 
@@ -21,8 +22,9 @@ public class jsjs extends ConsoleProgram {
 			}
 			if(currNum > mostChar){
 				mostChar = currNum;
-				println("most offen char: " + text.charAt(i) );
+				mostC = text.charAt(i);
 			}
 		}
+		println("most offen char: " + mostC);
 	}
 }
