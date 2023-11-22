@@ -35,8 +35,8 @@ public class jsjs extends GraphicsProgram {
 			obj.move(e.getX() - prevX, e.getY() - prevY);
 
 			 
-			 prevX = e.getX();
-			 prevY = e.getY();
+//			 prevX = e.getX();
+//			 prevY = e.getY();
 		 }	
 	}
 }
