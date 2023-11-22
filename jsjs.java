@@ -34,7 +34,8 @@ public class jsjs extends GraphicsProgram {
 		 if(obj != null){
 			 obj.move(prevX - RADIUS, prevY - RADIUS);
 			 
-			 
+			 prevX = e.getX();
+			 prevY = e.getY();
 		 }
 		
 	}
