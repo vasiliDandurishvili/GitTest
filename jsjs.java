@@ -5,25 +5,51 @@ import acm.util.*;
 import java.applet.*;
 import java.awt.*;
 import java.awt.event.*;
-
+// Roman to Integer.
 public class jsjs extends ConsoleProgram {
 
 	public void run() {
+		int ans = 0;
 		String text = readLine("enter text: ");
-		boolean isPalindrom = isPalindrome(text);
-		if(isPalindrom){
-			print(text + " is palindrom.");
-		}else{
-			print(text + " is not palindrom.");
-		}
-	}
-
-	private boolean isPalindrome(String text) {
-		for (int i = 0; i < text.length() / 2; i++){
-			if(text.charAt(i) != text.charAt(text.length() - i - 1 )){
-				return false;
+		
+		for(int i = 0; i < text.length(); i++){
+			if(text.charAt(i) == 'M'){
+				ans += 1000;
+			}
+			else if(text.charAt(i) == 'D'){
+				ans += 500;
+			}
+			else if (text.charAt(i) == 'C'){
+				if(text.charAt(i + 1) == 'M'){
+					ans -= 100;
+				}else{
+					ans += 100;
+				}
+			}
+			else if(text.charAt(i) == 'L'){
+				ans += 50;
+			}
+			else if (text.charAt(i) == 'X'){
+				if (text.charAt(i + 1) == 'C'){
+					ans -= 10;
+				}else{
+					ans += 10;
+				}
+			}
+			else if (text.charAt(i) == 'V'){
+				ans += 5;
+			}
+			else if (text.charAt(i) == 'I'){
+				if (text.charAt(i + 1) == 'V'){
+					ans -= 1;
+				}
+				else if (text.charAt(i + 1) == 'X'){
+					ans -= 1;
+				}else{
+					ans += 1;
+				}
 			}
 		}
-		return true;
+		println("the sum is: " + ans);
 	}
 }
