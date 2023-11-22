@@ -7,7 +7,7 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class jsjs extends GraphicsProgram {
-	private static final double RADIUS = 30;
+	private static final double RADIUS = 70;
 	private GOval circle;
 	private int prevX;
 	private int prevY;
