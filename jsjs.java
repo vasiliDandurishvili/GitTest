@@ -48,8 +48,6 @@ public class jsjs extends ConsoleProgram {
 				}else{
 					ans += 1;
 				}
-			}else{
-				break;
 			}
 		}
 		println("the integer is: " + ans);
