@@ -7,25 +7,24 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class jsjs extends GraphicsProgram {
-	private static final double RADIUS = 70;
+	private static final double RADIUS = 30;
 	private static final double vy = 7;
+	private static final double PAUSE = 50;
 	private GOval circle;
 
-	
-	public void run(){
-		addMouseListeners();
-		
-	}
-	public void mouseClicked(MouseEvent e){
-//		removeAll();
-		circle = new GOval (2 * RADIUS, 2 * RADIUS);
+	public void run() {// removeAll();
+		circle = new GOval(2 * RADIUS, 2 * RADIUS);
 		circle.setFilled(true);
-		double x = e.getX() - RADIUS;
-		double y = e.getY() - RADIUS;
-		add(circle, x, y);
-		while(x == 1){
+
+		addMouseListeners();
+		while (true) {
 			circle.move(0, vy);
 		}
+
 	}
-	
+
+	public void mouseClicked(MouseEvent e) {
+
+	}
+
 }
