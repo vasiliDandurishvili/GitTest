@@ -8,19 +8,19 @@ import java.awt.event.*;
 
 public class jsjs extends ConsoleProgram {
 	private int mostChar = 0;
-	private char mostC ;
-	
+	private char mostC;
+
 	public void run() {
 		String text = readLine("enter text: ");
 
 		for (int i = 0; i < text.length(); i++) {
-			 int currNum = 0;
+			int currNum = 0;
 			for (int j = 0; j < text.length(); j++) {
-				if(text.charAt(i) == text.charAt(j)){
+				if (text.charAt(i) == text.charAt(j)) {
 					currNum++;
 				}
 			}
-			if(currNum > mostChar){
+			if (currNum > mostChar) {
 				mostChar = currNum;
 				mostC = text.charAt(i);
 			}
