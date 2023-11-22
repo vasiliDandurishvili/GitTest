@@ -8,35 +8,24 @@ import java.awt.event.*;
 
 public class jsjs extends GraphicsProgram {
 	private static final double RADIUS = 70;
+	private static final double vy = 7;
 	private GOval circle;
-	private int prevX;
-	private int prevY;
+
 	
 	public void run(){
 		addMouseListeners();
+		
+	}
+	public void mouseClicked(MouseEvent e){
+		removeAll();
 		circle = new GOval (2 * RADIUS, 2 * RADIUS);
 		circle.setFilled(true);
-		add(circle, getWidth() / 2 - RADIUS, getHeight() / 2 - RADIUS);
-	}
-	public void mousePressed(MouseEvent e){
-		 GObject obj = getElementAt(e.getX(), e.getY());
-		
-		 if(obj != null){
-			 prevX = e.getX();
-			 prevY = e.getY();
-		 }
+		double x = e.getX() - RADIUS;
+		double y = e.getY() - RADIUS;
+		add(circle, x, y);
+		while(true){
+			circle.move(0, vy);
+		}
 	}
 	
-
-	public void mouseDragged(MouseEvent e){
-		GObject obj = getElementAt(e.getX(), e.getY());
-		
-		 if(obj != null){
-			obj.move(e.getX() - prevX, e.getY() - prevY);
-
-			 
-			 prevX = e.getX();
-			 prevY = e.getY();
-		 }	
-	}
 }
