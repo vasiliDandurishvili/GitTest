@@ -7,8 +7,8 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class Problem_46_myCode extends ConsoleProgram {
-	private int mostChar = 0;
-	private char mostC;
+	private int mostCharNum = 0;
+	private char mostCh;
 
 	public void run() {
 		String text = readLine("enter text: ");
@@ -22,12 +22,12 @@ public class Problem_46_myCode extends ConsoleProgram {
 				}
 
 			}
-			if (currNum > mostChar) {
-				mostChar = currNum;
-				mostC = text.charAt(i);
+			if (currNum > mostCharNum) {
+				mostCharNum = currNum;
+				mostCh = text.charAt(i);
 			}
 		}
 
-		println("most offen char: " + mostC + " the number is: " + mostChar);
+		println("most offen char: " + mostCh + " the number is: " + mostCharNum);
 	}
 }
