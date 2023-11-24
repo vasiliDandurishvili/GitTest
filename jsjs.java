@@ -9,7 +9,7 @@ public class jsjs extends GraphicsProgram{
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	public void run(){
 		GOval oval = new GOval (30,30);
-		oval.setColor(Color.rgen.NextColor());
+//		oval.setColor(Color.rgen.NextColor());
 		
 		add(oval,0,0);
 	}
