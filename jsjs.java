@@ -6,7 +6,7 @@ import java.applet.*;
 import java.awt.*;
 import java.awt.event.*;
 public class jsjs extends GraphicsProgram{
-	private GRect brick
+	private GRect brick;
 	private int currpaints = 0;
 	private int maxPaints = 2;
 	public void run(){
