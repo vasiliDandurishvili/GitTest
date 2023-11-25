@@ -29,6 +29,7 @@ public class jsjs extends GraphicsProgram{
 	}
 	public void mouseClicked(MouseEvent e){
 		if(getElementAt(e.getX(), e.getY()) == brick){
+			brick.setColor(Color.BLACK);
 			
 		}
 	}
