@@ -22,7 +22,7 @@ public class jsjs extends GraphicsProgram{
 			for(int j = 0; j < 10; j++){
 				brick = new GRect (40 , 30);
 				brick.setFilled(true);
-				brick.setColor(Color.BLACK);
+				brick.setColor(Color.WHITE);
 				double x = j * 40 + j * 5;
 				double y = i * 30 + i * 5;
 				add(brick, x, y);
@@ -32,7 +32,7 @@ public class jsjs extends GraphicsProgram{
 	}
 	public void mouseClicked(MouseEvent e){
 		if(getElementAt(e.getX(), e.getY()) == brick){
-			brick.setColor(Color.RED);
+			brick.setColor(Color.BLACK);
 			
 		}
 	}
