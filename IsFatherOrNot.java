@@ -24,8 +24,8 @@ public class IsFatherOrNot extends ConsoleProgram {
 						i++;
 						j++;
 					}
-					i = i - currCommon;
-					j = j - currCommon;
+					i = i - 1; // while is mere swori pozicia.
+					j = j - 1; // while is mere swori pozicia.
 					if(currCommon > mostCommon ){
 						mostCommon = currCommon;
 					}
