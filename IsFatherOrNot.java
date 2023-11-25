@@ -9,7 +9,17 @@ public class IsFatherOrNot extends ConsoleProgram {
 		if(isFather){
 			print("true");
 		}else{
-			print("false")
+			print("false");
 		}
-	}	
+	}
+	private Boolean isFather(String fatherDNM,String childDNM){
+		for(int i = 0; i < childDNM.length(); i++){
+			for(int j = 0; j < fatherDNM.length(); j ++){
+				
+			}
+			
+		}
+		
+		return false;
+	}
 }
