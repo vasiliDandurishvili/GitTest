@@ -19,7 +19,7 @@ public class jsjs extends GraphicsProgram{
 		for (int i = 0; i < 10; i++){
 			for(int j = 0; j < 10; j++){
 				brick = new GRect (40 , 30);
-//				brick.setFilled(true);
+				brick.setFilled(true);
 				double x = j * 40 + j * 5;
 				double y = i * 30 + i * 5;
 				add(brick, x, y);
