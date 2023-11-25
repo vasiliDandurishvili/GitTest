@@ -36,6 +36,6 @@ public class IsFatherOrNot extends ConsoleProgram {
 				}
 			}
 		}
-			return (mostCommon > fatherDNM.length() / 2);
+		return (mostCommon > fatherDNM.length() / 2);
 	}
 }
