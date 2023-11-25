@@ -19,7 +19,7 @@ public class jsjs extends GraphicsProgram{
 				GRect brick = new GRect (getWidth() / 10, getHeight() /10);
 //				brick.setFilled(true);
 				brick.setColor(Color.RED);
-				double x = j * getWidth() / 10 + 100;
+				double x = j * getWidth() / 10 + i * 10;
 				double y = i * getHeight() /10;
 				add(brick, x, y);
 			}
