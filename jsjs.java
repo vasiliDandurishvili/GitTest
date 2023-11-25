@@ -10,8 +10,8 @@ public class jsjs extends GraphicsProgram{
 	private int currpaints = 0;
 	private int maxPaints = 2;
 	public void run(){
-		createGrects();
 		addMouseListeners();
+		createGrects();
 		
 	}
 
