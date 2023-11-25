@@ -18,15 +18,15 @@ public class IsFatherOrNot extends ConsoleProgram {
 
 	private Boolean isFather(String fatherDNM, String childDNM) {
 		for (int i = 0; i < childDNM.length(); i++) {
-			currCommon = 0;
 			for (int j = 0; j < fatherDNM.length(); j++) {
+				currCommon = 0;
 				while (i < childDNM.length() && j < fatherDNM.length() && childDNM.charAt(i) == fatherDNM.charAt(j)) {
 					currCommon++;
 					i++;
 					j++;
 				}
-				i = i - 1; // while is mere swori pozicia.
-				j = j - 1; // while is mere swori pozicia.
+				i = i - currCommon; // while is mere swori pozicia.
+				j = j - currCommon; // while is mere swori pozicia.
 				if (currCommon > mostCommon) {
 					mostCommon = currCommon;
 				}
