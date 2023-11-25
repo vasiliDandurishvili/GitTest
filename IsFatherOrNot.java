@@ -7,6 +7,7 @@ public class IsFatherOrNot extends ConsoleProgram {
 	public void run() {
 		String fatherDNM = readLine("father's DNM: ");
 		String childDNM = readLine("child's DNM: ");
+		print(fatherDNM.length() / 2);
 
 		boolean isFather = isFather(fatherDNM, childDNM);
 		if (isFather) {
