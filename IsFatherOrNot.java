@@ -19,16 +19,23 @@ public class IsFatherOrNot extends ConsoleProgram {
 			currCommon = 0;
 			for(int j = 0; j < fatherDNM.length(); j ++){
 				if(childDNM.charAt(i) ==fatherDNM.charAt(j)){
-					currCommon++;
-					while(childDNM.charAt(i +1)  == fatherDNM.charAt(j +1)){
+					while(childDNM.charAt(i)  == fatherDNM.charAt(j)){
 						currCommon++;
-						i
+						i++;
+					}
+					i = i - currCommon;
+					if(currCommon > mostCommon ){
+						mostCommon = currCommon;
 					}
 				}
 			}
 			
+			
 		}
-		
-		return false;
+		if(mostCommon > fatherDNM.length() / 2){
+			return true;
+		}else{
+			return false;	
+		}
 	}
 }
