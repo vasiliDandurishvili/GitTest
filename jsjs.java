@@ -26,6 +26,7 @@ public class jsjs extends GraphicsProgram{
 				double x = j * 40 + j * 5;
 				double y = i * 30 + i * 5;
 				add(brick, x, y);
+				brick[i][j] = brick;
 			}
 		}
 		
