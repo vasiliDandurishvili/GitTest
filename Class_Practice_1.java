@@ -9,13 +9,13 @@ public class Class_Practice_1 extends ConsoleProgram {
 		for(int i = 0; i < 5; i++){
 			int a = 5;
 			while(true){
-				print(i);
+				println(i);
 				i++;
 				if(i == 10){
 					break;
 				}
 			}
-			print(i);
+			println(i);
 		}
 	}
 	
