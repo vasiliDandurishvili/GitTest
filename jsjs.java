@@ -20,7 +20,7 @@ public class jsjs extends GraphicsProgram{
 	private void createGrects() {
 		for (int i = 0; i < 10; i++){
 			for(int j = 0; j < 10; j++){
-				brick = new GRect (40 , 30);
+				brick  = new GRect (40 , 30);
 				brick.setFilled(true);
 				brick.setColor(Color.WHITE);
 				double x = j * 40 + j * 5;
