@@ -4,7 +4,7 @@ public class jsjs extends ConsoleProgram{
 
 	public void run(){
 		String s = "abcdefgh";
-		s.substring(0, 11);
+		s.substring(0, s.length());
 		
 		println(s);
 	}
