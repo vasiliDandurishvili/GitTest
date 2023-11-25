@@ -3,10 +3,7 @@ import acm.program.ConsoleProgram;
 public class jsjs extends ConsoleProgram{
 
 	public void run(){
-		String s = "abcdefgh";
-		s = s.substring(0,3) + s.substring(4,s.length()) ;
-		
-		println(s);
-	}
+		print('d' + 1 - 'a' + "E" + 3 + 2 + 'b' );
+	}	
 
 }
