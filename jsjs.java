@@ -6,7 +6,9 @@ import java.applet.*;
 import java.awt.*;
 import java.awt.event.*;
 public class jsjs extends GraphicsProgram{
-	
+	private GRect brick
+	private int currpaints = 0;
+	private int maxPaints = 2;
 	public void run(){
 		createGrects();
 		addMouseListeners();
@@ -16,7 +18,7 @@ public class jsjs extends GraphicsProgram{
 	private void createGrects() {
 		for (int i = 0; i < 10; i++){
 			for(int j = 0; j < 10; j++){
-				GRect brick = new GRect (40 , 30);
+				brick = new GRect (40 , 30);
 //				brick.setFilled(true);
 				double x = j * 40 + j * 5;
 				double y = i * 30 + i * 5;
@@ -24,5 +26,10 @@ public class jsjs extends GraphicsProgram{
 			}
 		}
 		
+	}
+	public void mouseClicked(MouseEvent e){
+		if(getElementAt(e.getX(), e.getY()) == brick){
+			
+		}
 	}
 }
