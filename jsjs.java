@@ -85,7 +85,7 @@ collideWithUFO();
 moveOffScreen();
 }
 
-– 3 –
+
 
 /** checks to see if UFO and bullet collide, if so
 * bullet and UFO are removed and both variables are
