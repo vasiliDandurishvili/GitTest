@@ -13,6 +13,8 @@ public class jsjs extends ConsoleProgram {
 	}
 	private void cycleForDogs(){
 		while(true){
+			int luckyNum = rgen.nextInt(1,4);
+			
 			String dogName = readLine("what is your dog's name: ");
 			if(dogName == ""){
 				break;
@@ -30,7 +32,9 @@ public class jsjs extends ConsoleProgram {
 				println("oh boy! " + dogName + " gets 6 dog treats!");
 				sumOfTreats += 6;
 			}
+			if (luckyNum == 1){
+				println(dogName + " also won asqueaky toy");
+			}
 		}
-		
 	}
 }
