@@ -26,5 +26,3 @@ public class jsjs extends GraphicsProgram{
 			word.toUpperCase();
 			}
 	}	
-
-}
