@@ -17,6 +17,15 @@ public class jsjs extends ConsoleProgram {
 
 	private String samePart(String text1, String text2) {
 		String comm ="";
+		for(int i = 0; i < text1.length(); i++){
+			if(text1.charAt(i) != text2.charAt(i) ){
+				break;
+			}else{
+				comm += text1.charAt(i);
+			}
+		}
 		
+		
+		return comm;
 	}
 }
