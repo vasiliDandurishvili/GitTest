@@ -15,6 +15,8 @@ public class jsjs extends GraphicsProgram {
 		a = bark(num);
 		squeak(circle, dukesPwd);
 		println("all done!");
+		println(a);
+		println(num);
 	}
 
 	private char bark(int num) {
