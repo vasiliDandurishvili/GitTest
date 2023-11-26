@@ -3,7 +3,7 @@ import acm.program.ConsoleProgram;
 public class jsjs extends ConsoleProgram{
 
 	public void run(){
-		print((!true || 9 % 2 > 0) && (44 / 10 == 4.4) );
+		print(5 + 7 * 3 / 2 + (1 - 1) * 2);
 	}	
 
 }
