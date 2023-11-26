@@ -16,7 +16,7 @@ public class jsjs extends ConsoleProgram {
 			int luckyNum = rgen.nextInt(1,4);
 			
 			String dogName = readLine("what is your dog's name: ");
-			if(dogName == ""){
+			if(dogName == " "){
 				break;
 			}
 			int dogSize = readInt("how big is your dog? Enter a num: 1 - small, 2 - medium, 3 - big: ");
