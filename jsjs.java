@@ -38,7 +38,7 @@ return (ufo == null) ||
 
 }
 
-– 2 –
+
 
 /** when mouse is clicked create bullet, unless a bullet
 * already exists.
