@@ -3,7 +3,7 @@ import acm.program.ConsoleProgram;
 public class jsjs extends ConsoleProgram{
 
 	public void run(){
-		print('a' + "pp" + (double)1 + 'e');
+		print((!true || 9 % 2 > 0) && (44 / 10 == 4.4) );
 	}	
 
 }
