@@ -11,34 +11,12 @@ public class Problem_36 extends ConsoleProgram{
 	private RandomGenerator rgen  = RandomGenerator.getInstance();
 	
 	public void run() {
-		double sumFlips = 0;
-		for( int i = 0; i < MAX_EXPERIMENTS; i++ ){
-			int currFlips = holdExperiment();
-			sumFlips += currFlips;
+		for(int i = 0; i < 30; i++){
+			int a = rgen.nextInt(1, 5);
+			println(a);
 		}
-		double avgFlips = sumFlips / MAX_EXPERIMENTS;
-		println(avgFlips);
 	}
-	
 	
 
-	private int holdExperiment() {
-		int numFlips = 0;
-		int numConsecutiveHeads = 0;
-		while(true){
-			numFlips++;
-			boolean isHeads = rgen.nextBoolean();
-			if(isHeads){
-				numConsecutiveHeads += 1;
-				if(numConsecutiveHeads == 3){
-					break;
-				}
-			}else{
-				numConsecutiveHeads = 0;
-				
-			}
-		}
-	return numFlips;
-	}
 }
 
