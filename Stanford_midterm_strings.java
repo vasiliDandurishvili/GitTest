@@ -18,7 +18,7 @@ public class Stanford_midterm_strings extends ConsoleProgram {
 	private String samePart(String text1, String text2) {
 		String comm ="";
 		for(int i = 0; i < text1.length(); i++){
-			if(text1.charAt(i) != text2.charAt(i) || (i == text2.length()) ){
+			if((i == text2.length()) ||  text1.charAt(i) != text2.charAt(i) ){
 				break;
 			}else{
 				comm += text1.charAt(i);
