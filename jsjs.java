@@ -16,7 +16,7 @@ public class jsjs extends ConsoleProgram {
 	}
 
 	private String samePart(String text1, String text2) {
-		String comm =
+		String comm ="";
 		
 	}
 }
