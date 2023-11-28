@@ -30,7 +30,6 @@ public class jsjs extends GraphicsProgram {
 	        int red = rgen.nextInt(256);
 	        int green = rgen.nextInt(256);
 	        int blue = rgen.nextInt(256);
-	        int yellow = rgen.nextInt(256);
-	        return new Color(red, green, blue, yellow);
+	        return new Color(red, green, blue,);
 	    }
 }
