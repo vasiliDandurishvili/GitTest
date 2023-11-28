@@ -6,7 +6,7 @@ import acm.program.*;
 public class Problem_50 extends ConsoleProgram {
 	public void run(){
 		String text = readLine("Enter text: ");
-		StringTokenizer tokenizer = new StringTokenizer(text,",.!");
+		StringTokenizer tokenizer = new StringTokenizer(text," ,.!");
 		int count = 0;
 		
 		while(tokenizer.hasMoreTokens()){
