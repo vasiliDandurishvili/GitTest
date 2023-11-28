@@ -1,4 +1,5 @@
 import java.awt.Color;
+import java.awt.event.MouseEvent;
 
 import acm.graphics.*;
 import acm.program.*;
@@ -8,6 +9,8 @@ public class jsjs extends GraphicsProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private static final int NUM_COLUMNS = 5;
 	private static final int NUM_ROW = 5;
+	private GObject obj1;
+	private GObject obj2;
 
 	public void run() {
 		addMouseListeners();
@@ -40,6 +43,22 @@ public class jsjs extends GraphicsProgram {
 		} else {
 			return Color.BLACK; // TO GET ERROR.
 		}
+	}
+	public void mouseClicked(MouseEvent e){
+		if (obj1 == null && obj2 == null){
+		GObject obj1 = getElementAt(e.getX(), e.getY());
+		}else if (obj1 != null && obj2 == null){
+			GObject obj2 = getElementAt(e.getX(), e.getY());
+		}
+		
+		
+		ifIsSame();
+	}
+
+	private void ifIsSame() {
+		tu emtxveva gaaqre
+		da mere
+		
 	}
 
 }
