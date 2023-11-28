@@ -65,9 +65,6 @@ public class jsjs extends GraphicsProgram {
 				obj1 = null;
 				obj2 = null;
 			}
-		}else{
-			obj1 = null;
-			obj2 = null;
 		}
 	}
 
