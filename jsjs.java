@@ -48,7 +48,7 @@ public class jsjs extends GraphicsProgram {
 	public void mouseClicked(MouseEvent e) {
 		if (obj1 == null && obj2 == null) {
 			GObject obj1 = getElementAt(e.getX(), e.getY());
-		} else if (obj1 != null && obj2 == null) {
+		} else if ((obj1 != null) && (obj2 == null) && (getElementAt(e.getX(), e.getY()) != obj1)) {
 			GObject obj2 = getElementAt(e.getX(), e.getY());
 
 			if (obj1.getColor().equals(obj2.getColor())) {
