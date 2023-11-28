@@ -44,28 +44,19 @@ public class jsjs extends GraphicsProgram {
 			return Color.BLACK; // TO GET ERROR.
 		}
 	}
-	public void mouseClicked(MouseEvent e){
-		if (obj1 == null && obj2 == null){
-		GObject obj1 = getElementAt(e.getX(), e.getY());
-		}else if (obj1 != null && obj2 == null){
+
+	public void mouseClicked(MouseEvent e) {
+		if (obj1 == null && obj2 == null) {
+			GObject obj1 = getElementAt(e.getX(), e.getY());
+		} else if (obj1 != null && obj2 == null) {
 			GObject obj2 = getElementAt(e.getX(), e.getY());
-			
-			if(obj1.getColor().equals(obj2.getColor())){
+
+			if (obj1.getColor().equals(obj2.getColor())) {
 				remove(obj1);
 				remove(obj2);
-				
-				
+
 			}
 		}
-		
-		
-		ifIsSame();
-	}
-
-	private void ifIsSame() {
-		tu emtxveva gaaqre
-		da mere
-		
 	}
 
 }
