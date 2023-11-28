@@ -45,20 +45,21 @@ public class jsjs extends GraphicsProgram {
 		}
 	}
 
-	public void mouseClicked(MouseEvent e) {
-		if (obj1 == null && obj2 == null) {
-			GObject obj1 = getElementAt(e.getX(), e.getY());
-		} else if ((obj1 != null) && (obj2 == null) && (getElementAt(e.getX(), e.getY()) != obj1)) {
-			GObject obj2 = getElementAt(e.getX(), e.getY());
+	  public void mouseClicked(MouseEvent e) {
+	        if (obj1 == null && obj2 == null) {
+	            obj1 = getElementAt(e.getX(), e.getY());
+	        } else if ((obj1 != null) && (obj2 == null) && (getElementAt(e.getX(), e.getY()) != obj1)) {
+	            obj2 = getElementAt(e.getX(), e.getY());
 
-			if (((GRect)obj1).getColor().equals(((GRect)obj2).getColor()) && ((GRect)obj1).getFillColor().equals(((GRect)obj2).getFillColor()) ) {
-				remove(obj1);
-				remove(obj2);
-				
-				obj1 = null;
-				obj2 = null;
+	            if (((GRect) obj1).getColor().equals(((GRect) obj2).getColor())
+	                    && ((GRect) obj1).getFillColor().equals(((GRect) obj2).getFillColor())) {
+	                remove(obj1);
+	                remove(obj2);
 
-			}
+	                // Reset obj1 and obj2 for the next comparison
+	                obj1 = null;
+	                obj2 = null;
+	            }
 		}
 	}
 
