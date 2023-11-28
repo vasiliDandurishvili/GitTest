@@ -13,11 +13,18 @@ public class Problem_51 extends ConsoleProgram {
 		println(replaced);
 	}
 	private String removeDuplicates(String text){
-		text.replace("i","");
+//		es igives daareturnebs ar shecvils text-s.
+//		text.replace("i","");
+//		println(text.replace("i",""));
+		String result = "";
+		for (int i = 0; i < text.length(); i++){
+			char ch = text.charAt(i);
+			if(text.indexOf(ch) == i){ //first occurece
+				result += ch;
+			}
+		}
 		
-		println(text.replace("i",""));
-		
-		return text;
+		return result;
 	}
 	
 }
