@@ -59,6 +59,9 @@ public class jsjs extends GraphicsProgram {
 	                // Reset obj1 and obj2 for the next comparison
 	                obj1 = null;
 	                obj2 = null;
+	            }else{
+	            	 obj1 = null;
+		             obj2 = null;
 	            }
 		}
 	}
