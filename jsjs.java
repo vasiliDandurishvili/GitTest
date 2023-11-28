@@ -28,8 +28,6 @@ public class jsjs extends GraphicsProgram {
 	}
 	 private Color getRandomColor() {
 	        int red = rgen.nextInt(256);
-	        int green = rgen.nextInt(256);
-	        int blue = rgen.nextInt(256);
-	        return new Color(red, green, blue);
+	        return new Color(red);
 	    }
 }
