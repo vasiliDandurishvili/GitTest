@@ -33,7 +33,7 @@ public class jsjs extends GraphicsProgram {
 	}
 
 	private Color getRandomColor() {
-		int a = rgen.nextInt(1, );
+		int a = rgen.nextInt(1, 3);
 		if (a == 1) {
 			return Color.YELLOW;
 		} else if (a == 2) {
