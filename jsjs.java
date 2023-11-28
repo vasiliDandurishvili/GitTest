@@ -27,7 +27,15 @@ public class jsjs extends GraphicsProgram {
 		
 	}
 	 private Color getRandomColor() {
-	        int red = rgen.nextInt(256);
-	        return new Color(red);
+	       int a = rgen.nextInt(1, 3);
+	       if(a == 1){
+	    	   return Color.YELLOW;
+	       }else if (a == 2){
+	    	   return Color.BLUE;
+	       }else if (a == 3){
+	    	   return Color.GREEN;
+	       }else{
+	    	   return Color.BLACK; //TO GET ERROR.
+	       }
 	    }
 }
