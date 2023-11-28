@@ -54,6 +54,9 @@ public class jsjs extends GraphicsProgram {
 			if (((GRect)obj1).getColor().equals(((GRect)obj2).getColor()) && ((GRect)obj1).getFillColor().equals(((GRect)obj2).getFillColor()) ) {
 				remove(obj1);
 				remove(obj2);
+				
+				obj1 = null;
+				obj2 = null;
 
 			}
 		}
