@@ -6,14 +6,17 @@ public class Midterm_geometric_progression extends ConsoleProgram {
 		int num1 = readInt("enter num: ");
 		if (num1 == -1) {
 			println("Not a geometric progression.");
+			return;
 		}
 		int num2 = readInt("enter num: ");
 		if (num2 == -1) {
 			println("Not a geometric progression.");
+			return;
 		}
 		int num3 = readInt("enter num: ");
 		if (num3 == -1) {
 			println("Not a geometric progression.");
+			return;
 		}
 		double q = num2 / (double) num1;
 		while (true) {
