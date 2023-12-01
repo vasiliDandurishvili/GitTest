@@ -18,18 +18,19 @@ public class jsjs extends GraphicsProgram {
 		while(true){
 			ball1 = new GOval (2 * BALL_RADIUS, 2 * BALL_RADIUS);
 			ball1.setFilled(true);
+			Color ballColor = getRandomColor();
+			
 			double x1 = rgen.nextDouble(0, getWidth() - 2 * BALL_RADIUS);
 			double y1 = rgen.nextDouble(0, getHeight() - 2 * BALL_RADIUS);
-			Color ball1Color = getRandomColor();
-			ball1.setColor(ball1Color);
+
+			ball1.setColor(ballColor);
 			
 			ball2 = new GOval (2 * BALL_RADIUS, 2 * BALL_RADIUS);
 			ball2.setFilled(true);
 			
 			double x2 = rgen.nextDouble(0, getWidth() - 2 * BALL_RADIUS);
 			double y2 = rgen.nextDouble(0, getHeight() - 2 * BALL_RADIUS);
-			Color ball2Color = getRandomColor();
-			ball2.setColor(ball2Color);
+			ball2.setColor(ballColor);
 			
 			add(ball1, x1, y1);
 			add(ball2,x2,y2);
