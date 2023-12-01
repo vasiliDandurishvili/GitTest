@@ -12,7 +12,6 @@ public class jsjs extends ConsoleProgram {
 	private String clearText(String text) {
 		while (true) {
 			boolean check = false;
-			String result = "";
 			for (int i = 0; i < text.length() - 1; i++) {
 				if (text.charAt(i) == text.charAt(i + 1)) {
 					String sub1 = text.substring(0, i);
@@ -24,8 +23,6 @@ public class jsjs extends ConsoleProgram {
 			for (int i = 0; i < text.length() - 1; i++) {
 				if (text.charAt(i) != text.charAt(i + 1)) {
 					check = true;
-				}else{
-					continue;
 				}
 			}
 			if(check){
