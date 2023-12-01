@@ -32,7 +32,7 @@ public class jsjs extends GraphicsProgram {
 			double x1 = rgen.nextDouble(0, getWidth() - 2 * BALL_RADIUS);
 			double y1 = rgen.nextDouble(0, getHeight() - 2 * BALL_RADIUS);
 			Color ball1Color = getRandomColor();
-			System.out.println(ballColor);
+			System.out.println(balllColor);
 			ball1.setColor(ball1Color);
 			
 			ball2 = new GOval (2 * BALL_RADIUS, 2 * BALL_RADIUS);
