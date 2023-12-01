@@ -8,7 +8,7 @@ import acm.program.GraphicsProgram;
 
 public class Problem_40 extends GraphicsProgram {
 	private static final int PAUSE = 1000;
-	private static final int VEL_X = 3;
+	private static final int VEL_X = 30;
 	private static final int RADIUS = 20;
 
 	public void run() {
