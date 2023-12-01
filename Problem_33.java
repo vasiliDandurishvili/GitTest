@@ -2,7 +2,8 @@ import acm.graphics.GLabel;
 import acm.graphics.GLine;
 import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
-
+/**33. დაწერეთ პროგრამა რომელიც კანვასზე დახატავს შემთხვევითი ფერის მქონე წრეწირს,
+რაიდიუსიც შემთხვევით აირჩეით შეზღუდული რეინჯიდან.*/
 public class Problem_33 extends GraphicsProgram {	
 	
 	/** Width of each brick in pixels */
