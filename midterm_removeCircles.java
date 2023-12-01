@@ -37,7 +37,7 @@ public class midterm_removeCircles extends GraphicsProgram {
 			add(ball1, x1, y1);
 			add(ball2,x2,y2);
 			
-//			pause(PAUSE);
+			pause(PAUSE);
 		}
 		
 	}
