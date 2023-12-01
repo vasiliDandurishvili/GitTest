@@ -64,6 +64,7 @@ public class jsjs extends GraphicsProgram {
 	
 	private Color getRandomColor() {
 		int a = rgen.nextInt(1, 5);
+		System.out.println(a);
 		if (a == 1) {
 			return Color.YELLOW;
 		} else if (a == 2) {
