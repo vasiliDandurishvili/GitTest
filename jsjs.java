@@ -10,15 +10,37 @@ public class jsjs extends GraphicsProgram {
 	private GOval ball1;
 	private GOval ball2;
 	private static final double BALL_RADIUS = 20;
+	private static final double PAUSE = 2000;
 
 	public void run() {
 		addMouseListeners();
 		drawBalls();
+		while(true){
+			ball1 = new GOval (2 * BALL_RADIUS, 2 * BALL_RADIUS);
+			ball1.setFilled(true);
+			double x1 = rgen.nextDouble(0, getWidth() - 2 * BALL_RADIUS);
+			double y1 = rgen.nextDouble(0, getHeight() - 2 * BALL_RADIUS);
+			Color ball1Color = getRandomColor();
+			ball1.setColor(ball1Color);
+			
+			ball2 = new GOval (2 * BALL_RADIUS, 2 * BALL_RADIUS);
+			ball2.setFilled(true);
+			
+			double x2 = rgen.nextDouble(0, getWidth() - 2 * BALL_RADIUS);
+			double y2 = rgen.nextDouble(0, getHeight() - 2 * BALL_RADIUS);
+			Color ball2Color = getRandomColor();
+			ball2.setColor(ball2Color);
+			
+			add(ball1, x1, y1);
+			add(ball2,x2,y2);
+			
+			pause(PAUSE);
+		}
 		
 	}
 
 	public void mouseClicked(MouseEvent e) {
-
+		
 	}
 	
 	
