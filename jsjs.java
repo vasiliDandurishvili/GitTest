@@ -11,6 +11,8 @@ public class jsjs extends GraphicsProgram {
 	private GOval ball2;
 	private static final double BALL_RADIUS = 20;
 	private static final double PAUSE = 2000;
+	private GOval oval1;
+	private GOval oval2;
 
 	public void run() {
 		addMouseListeners();
@@ -41,6 +43,24 @@ public class jsjs extends GraphicsProgram {
 	}
 
 	public void mouseClicked(MouseEvent e) {
+		if(oval1 == null && oval2 == null){
+			oval1 = (GOval)getElementAt (e.getX(), e.getY());
+			return;
+		}
+		if((oval1 != null) && (oval2 == null) && (GOval)getElementAt (e.getX(), e.getY()) != null){
+			oval2 = (GOval)getElementAt (e.getX(), e.getY());
+			
+			if(oval1.getColor().equals(oval2.getColor())){
+				remove(oval1);
+				remove(oval2);
+				
+				oval1 = null;
+				oval2 = null;
+			}
+		}else{
+			oval1 = null;
+			oval2 = null;
+		}
 		
 	}
 	
