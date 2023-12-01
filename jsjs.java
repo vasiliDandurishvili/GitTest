@@ -5,11 +5,9 @@ public class jsjs extends ConsoleProgram {
 	public void run() {
 		String text = readLine("enter text: ");
 		String cleared = clearText(text);
-		if(cleared.equals("")){
-			println(text);
-		}else{
+
 		println(cleared);
-		}
+		
 	}
 
 	private String clearText(String text) {
