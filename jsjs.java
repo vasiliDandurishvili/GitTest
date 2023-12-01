@@ -7,9 +7,8 @@ public class jsjs extends ConsoleProgram {
 	int n = readInt("enter n: ");
 	int m= readInt("enter m: ");
 	// m > n
-	println(log(2,5));
-	println(log(3,29));
-	println(log(5,88));
+	println(log(n,m));
+
 	}
 	private int log(int n, int m){
 		int result = 0;
