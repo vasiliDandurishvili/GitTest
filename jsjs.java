@@ -16,6 +16,7 @@ public class jsjs extends ConsoleProgram {
 				String sub1 = text.substring(0, j);
 				String sub2 = text.substring(j + 2);
 				result = sub1 + sub2;
+				text = result;
 			}
 		}
 
