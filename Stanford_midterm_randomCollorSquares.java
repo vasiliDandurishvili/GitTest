@@ -27,7 +27,7 @@ public class Stanford_midterm_randomCollorSquares extends GraphicsProgram {
 				rect.setFillColor(fillColor);
 				Color frameColor = getRandomColor();
 				rect.setColor(frameColor);
-				add(rect, getWidth() / NUM_COLUMNS * i , getHeight() / NUM_ROW * j);
+				add(rect, getWidth() / NUM_COLUMNS * i + i*5, getHeight() / NUM_ROW * j + i*5);
 			}
 		}
 
