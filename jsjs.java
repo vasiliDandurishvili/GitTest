@@ -11,7 +11,7 @@ public class jsjs extends ConsoleProgram {
 
 	private String clearText(String text) {
 		String result = "";
-		for(int i = 0; i < text.length() / 2; i++){
+		for(int i = 0; i < text.length(); i++){
 			for(int j = 0; j < text.length() - 1; j++){
 				if(text.charAt(j) == text.charAt(j + 1)){
 					String sub1 = text.substring(0,j);
