@@ -47,7 +47,7 @@ public class midterm_removeCircles extends GraphicsProgram {
 			oval1 = (GOval)getElementAt (e.getX(), e.getY());
 			return;
 		}
-		if((oval1 != null) && (oval2 == null) && (GOval)getElementAt (e.getX(), e.getY()) != null){
+		if((oval1 != null) && (oval2 == null) && (GOval)getElementAt (e.getX(), e.getY()) != oval1){
 			oval2 = (GOval)getElementAt (e.getX(), e.getY());
 			
 			if(oval1.getColor().equals(oval2.getColor())){
