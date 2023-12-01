@@ -24,6 +24,8 @@ public class jsjs extends ConsoleProgram {
 			for (int i = 0; i < text.length() - 1; i++) {
 				if (text.charAt(i) != text.charAt(i + 1)) {
 					check = true;
+				}else{
+					continue;
 				}
 			}
 			if(check){
