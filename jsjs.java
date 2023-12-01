@@ -11,16 +11,22 @@ public class jsjs extends ConsoleProgram {
 	}
 
 	private String clearText(String text) {
-		String result = "";
-		 for (int i = 0; i < text.length(); i++) {
-	            char currentChar = text.charAt(i);
-	            boolean isDuplicate = (i < text.length() - 1) && (currentChar == text.charAt(i + 1));
+		  String result = text;
 
-	            if (!isDuplicate) {
-	                result += currentChar;
-	            } else {
-	                // Skip the next character in case of a duplicate
-	                i++;
+	        while (true) {
+	            String previousResult = result;
+
+	            for (int i = 0; i < result.length() - 1; i++) {
+	                if (result.charAt(i) == result.charAt(i + 1)) {
+	                    String sub1 = result.substring(0, i);
+	                    String sub2 = result.substring(i + 2);
+	                    result = sub1 + sub2;
+	                    i--; // Check the same index again after removing the duplicate
+	                }
+	            }
+
+	            if (previousResult.equals(result)) {
+	                break; // No changes were made in the entire iteration
 	            }
 	        }
 		return result;
