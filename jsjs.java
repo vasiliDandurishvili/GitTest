@@ -31,7 +31,7 @@ public class jsjs extends ConsoleProgram {
 				break;
 			}
 		}
-		return text;;
+		return text;
 	}
 
 }
