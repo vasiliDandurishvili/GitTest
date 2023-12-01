@@ -17,7 +17,7 @@ public class jsjs extends ConsoleProgram {
 				if (text.charAt(i) == text.charAt(i + 1)) {
 					String sub1 = text.substring(0, i);
 					String sub2 = text.substring(i + 2);
-					text = sub2 + sub1;
+					text = sub1 + sub2;
 					break;
 				}
 			}
