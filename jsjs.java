@@ -1,31 +1,29 @@
 import acm.program.*;
 
-
 public class jsjs extends ConsoleProgram {
-	
-	public void run() {
-	int n = readInt("enter n: ");
-	int m= readInt("enter m: ");
-	// m > n
-	println(log(n,m));
 
+	public void run() {
+		String text = readLine("enter text: ");
+		String cleared = clearText(text);
+
+		println(cleared);
 	}
-	private int log(int n, int m){
-		if(n == 1){
-			return 0;
-		}
-		int result = 0;
-		while(true){
-			int sum = m / n;
-			m = m / n;
-			if(sum > 0){
-				result++;
-			}else{
-				break;
+
+	private String clearText(String text) {
+		while (true) {
+			String result = "";
+			for (int i = 0; i < text.length() - 1; i++) {
+				if (text.charAt(i) == text.charAt(i + 1)) {
+					String sub1 = text.substring(0, i);
+					result += sub1;
+					String sub2 = text.substring(i + 2);
+					result += sub2;
+				}else{
+					return result;
+				}
+				
 			}
 		}
-		return result;
 	}
 
-	
 }
