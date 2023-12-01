@@ -22,5 +22,6 @@ public class jsjs extends GraphicsProgram {
 	}
 	public void mouseDragged(MouseEvent e){
 		line.setEndPoint(e.getX(),e.getY());
+		add(line);
 	}
 }
