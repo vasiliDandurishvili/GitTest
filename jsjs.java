@@ -11,25 +11,22 @@ public class jsjs extends ConsoleProgram {
 
 	private String clearText(String text) {
 		while (true) {
+			String checker = "";
 			boolean check = false;
 			for (int i = 0; i < text.length() - 1; i++) {
 				if (text.charAt(i) == text.charAt(i + 1)) {
 					String sub1 = text.substring(0, i);
 					String sub2 = text.substring(i + 2);
 					text = sub1 + sub2;
-					break;
+					if(checker.equals(text) ){
+						return text;
+					}
+					
+					checker = text;
 				}
 			}
-			for (int i = 0; i < text.length() - 1; i++) {
-				if (text.charAt(i) != text.charAt(i + 1)) {
-					check = true;
-				}
-			}
-			if(check){
-				break;
-			}
-		}
-		return text;
-	}
 
+		}
+
+	}
 }
