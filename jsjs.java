@@ -13,11 +13,16 @@ public class jsjs extends ConsoleProgram {
 	private String clearText(String text) {
 		String result = "";
 		 for (int i = 0; i < text.length(); i++) {
-	            if (i == text.length() - 1 || text.charAt(i) != text.charAt(i + 1)) {
-	                result += text.charAt(i);
-	            }
-		 }    
+	            char currentChar = text.charAt(i);
+	            boolean isDuplicate = (i < text.length() - 1) && (currentChar == text.charAt(i + 1));
 
+	            if (!isDuplicate) {
+	                result += currentChar;
+	            } else {
+	                // Skip the next character in case of a duplicate
+	                i++;
+	            }
+	        }
 		return result;
 		}
 
