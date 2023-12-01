@@ -10,8 +10,8 @@ public class jsjs extends ConsoleProgram {
 	}
 
 	private String clearText(String text) {
-		boolean check = false;
 		while (true) {
+			boolean check = false;
 			String result = "";
 			for (int i = 0; i < text.length() - 1; i++) {
 				if (text.charAt(i) == text.charAt(i + 1)) {
