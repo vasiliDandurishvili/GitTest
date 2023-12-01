@@ -72,7 +72,7 @@ public class jsjs extends GraphicsProgram {
 			return Color.GREEN;
 		}else if (a == 4) {
 			return Color.PINK;
-		}else if (a == 3) {
+		}else if (a == 5) {
 			return Color.CYAN;	
 		}else{
 			return Color.BLACK;
