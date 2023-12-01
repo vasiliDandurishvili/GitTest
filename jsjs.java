@@ -10,6 +10,7 @@ public class jsjs extends ConsoleProgram {
 	}
 
 	private String clearText(String text) {
+		boolean check = false;
 		while (true) {
 			String result = "";
 			for (int i = 0; i < text.length() - 1; i++) {
@@ -18,12 +19,19 @@ public class jsjs extends ConsoleProgram {
 					result += sub1;
 					String sub2 = text.substring(i + 2);
 					result += sub2;
-				}else{
-					return result;
+					text = result;
 				}
-				
+			}
+			for (int i = 0; i < text.length() - 1; i++) {
+				if (text.charAt(i) != text.charAt(i + 1)) {
+					check = true;
+				}
+			}
+			if(check){
+				break;
 			}
 		}
+		return text;;
 	}
 
 }
