@@ -12,16 +12,11 @@ public class jsjs extends ConsoleProgram {
 
 	private String clearText(String text) {
 		String result = "";
-		for(int i = 0; i < text.length(); i++){
-			for(int j = 0; j < text.length() - 1; j++){
-				if(text.charAt(j) == text.charAt(j + 1)){
-					String sub1 = text.substring(0,j);
-					String sub2 = text.substring(j + 2);
-					result = sub1 + sub2;
-					text = result;
-				}
-			}
-		}
+		 for (int i = 0; i < text.length(); i++) {
+	            if (i == text.length() - 1 || text.charAt(i) != text.charAt(i + 1)) {
+	                result += text.charAt(i);
+	            }
+		 }    
 
 		return result;
 		}
