@@ -22,6 +22,9 @@ public class jsjs extends ConsoleProgram {
 				}
 			}
 		}
+		if(result.equals(text)){
+			return text;
+		}
 		return result;
 		}
 
