@@ -3,25 +3,16 @@ import java.awt.event.MouseEvent;
 import acm.graphics.GLine;
 import acm.program.*;
 
-public class jsjs extends GraphicsProgram {
- private int xs;
- private int ys;
- private GLine line;
- 
+public class jsjs extends ConsoleProgram {
+
 	public void run() {
-		xs = ys = 0;
-		addMouseListeners();
-	}	
-	public void mousePressed (MouseEvent e){
-		line = new GLine(xs, ys, e.getX(), e.getY());
-		add(line);
+		String s = readLine("enter: ");
+		while(s != ""){
+		for(int i = 0; i < s.length(); i++){
+			
+		}
+			
+		}	
 	}
-	public void mouseReleased(MouseEvent e){
-		xs = e.getX();
-		ys = e.getY();
-	}
-	public void mouseDragged(MouseEvent e){
-		line.setEndPoint(e.getX(),e.getY());
-		add(line);
-	}
+
 }
