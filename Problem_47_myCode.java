@@ -5,7 +5,8 @@ import acm.util.*;
 import java.applet.*;
 import java.awt.*;
 import java.awt.event.*;
-
+/**47. დაწერეთ პრედიკატ მეთოდი რომელსაც გადაეცემა სტრინგი და რომელიც დაადგენს არის თუ
+არა მოცემული ტექსტი პალინდრომი*/
 public class Problem_47_myCode extends ConsoleProgram {
 
 	public void run() {
