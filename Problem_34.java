@@ -1,38 +1,43 @@
 
 
 import java.awt.Color;
-import java.awt.event.MouseEvent;
 
 import acm.graphics.GOval;
-import acm.program.ConsoleProgram;
 import acm.program.GraphicsProgram;
 import acm.util.RandomGenerator;
 
 //34. კანვასზე დახატეთ 1000 შემთხვევითი რადიუსის მქონე შემთხვევითი ფერით გაფერადებული
 //წრე, შემთხვევით კოორდინატებზე.
-public class Problem_34 extends GraphicsProgram{
-private RandomGenerator rgen = RandomGenerator.getInstance();
-private static final int RADIUS_MIN = 10;
-private static final int RADIUS_MAX = 30;
-private GOval oval;
-private int radius;
+public class Problem_34 extends GraphicsProgram {
+private static final int MIN_RADIUS = 10;
+private static final int MAX_RADIUS = 20;
+private static final int NUM_CIRCLES = 10000;
+	//	private RandomGenerator rgen = new RandomGenerator();
+//	ase ar vqmnit xolme
+	private RandomGenerator rgen = RandomGenerator.getInstance();
 	public void run(){
-	addMouseListeners();
-
+		for(int i = 0; i < NUM_CIRCLES; i++){
+			addRandomCircle();
+		}
 	}
-	private void draw(){
-		radius = rgen.nextInt(RADIUS_MIN,RADIUS_MAX);
-		oval = new GOval (2 * radius,2 * radius );
-		oval.setFilled(true);
-		oval.setColor(rgen.nextColor());
-	}
-	
 
-	public void mouseClicked(MouseEvent e){
-		draw();
-		double x = e.getX() - radius;
-		double y = e.getY() - radius; 
 	
-		add(oval,x , y);
+	
+	
+	
+	private void addRandomCircle(){
+		int radius = rgen.nextInt(MIN_RADIUS, MAX_RADIUS);
+		double x = rgen.nextDouble(0,getWidth() - 2 * radius);
+		double y = rgen.nextDouble(0, getHeight() - 2 * radius);
+		Color color = rgen.nextColor();
+		
+		GOval circle = new GOval (2 * radius, 2 * radius);
+		circle.setFilled(true);
+		circle.setColor(color);
+		
+		
+		add(circle,x,y);
+		
+		
 	}
 }
