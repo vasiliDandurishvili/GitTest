@@ -18,9 +18,11 @@ private GOval oval;
 private int radius = rgen.nextInt(RADIUS_MIN,RADIUS_MAX);
 	public void run(){
 	addMouseListeners();
+	while(true){
 	oval = new GOval (2 * radius,2 * radius );
 	oval.setFilled(true);
 	oval.setColor(rgen.nextColor());
+	}
 	}
 	
 
