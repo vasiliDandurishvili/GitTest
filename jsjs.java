@@ -10,15 +10,22 @@ public class jsjs extends GraphicsProgram {
 	private static final double MIN_RADIUS = 10;
 	private static final double MAX_RADIUS = 30;
 	private static final int NUM_CIRCLES = 20;
+	private static final int V_Y = 3;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private double radius;
 	private GOval oval;
 	private GObject obj1;
 	private GObject obj2;
+	private boolean check;
 	public void run() {
 		addMouseListeners();
+		check = false;
 		for(int i = 0; i < NUM_CIRCLES; i++){
 			drawCircle();
+		}
+		while(check){
+			obj1.move(0, V_Y);
+			pause(500);
 		}
 	}
 	private void drawCircle() {
@@ -34,6 +41,16 @@ public class jsjs extends GraphicsProgram {
 		if(obj1 == null && obj2 == null && getElementAt(e.getX(), e.getY()) != null){
 			obj1 = getElementAt(e.getX(), e.getY());
 			obj1.setColor(rgen.nextColor());
+		}
+		if(obj1 != null && obj2 == null && getElementAt(e.getX(), e.getY()) == null){
+			check = true;
+		}
+		if(obj1 != null && obj2 == null && getElementAt(e.getX(), e.getY()) != null){
+			obj2 = getElementAt(e.getX(), e.getY());
+			obj1.move(0, 0);
+			obj2.setColor(rgen.nextColor());
+			obj1 = obj2;
+			obj2 = null;
 		}
 	}
 
