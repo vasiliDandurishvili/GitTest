@@ -23,9 +23,11 @@ public class jsjs extends GraphicsProgram {
 		for(int i = 0; i < NUM_CIRCLES; i++){
 			drawCircle();
 		}
-		while(check){
+		while(true){
+			if(check){
 			obj1.move(0, V_Y);
 			pause(500);
+			}
 		}
 	}
 	private void drawCircle() {
