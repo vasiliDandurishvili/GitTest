@@ -1,6 +1,7 @@
 import java.awt.event.MouseEvent;
 
 import acm.graphics.GLine;
+import acm.graphics.GObject;
 import acm.graphics.GOval;
 import acm.program.*;
 import acm.util.RandomGenerator;
@@ -12,6 +13,8 @@ public class jsjs extends GraphicsProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private double radius;
 	private GOval oval;
+	private GObject obj1;
+	private GObject obj2;
 	public void run() {
 		addMouseListeners();
 		for(int i = 0; i < NUM_CIRCLES; i++){
@@ -26,6 +29,12 @@ public class jsjs extends GraphicsProgram {
 		oval.setFilled(true);
 		
 		add(oval, x, y);
+	}
+	public void mouseClicked(MouseEvent e){
+		if(obj1 == null && obj2 == null && getElementAt(e.getX(), e.getY()) != null){
+			obj1 = getElementAt(e.getX(), e.getY());
+			obj1.setColor(rgen.nextColor());
+		}
 	}
 
 }
