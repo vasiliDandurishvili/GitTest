@@ -13,7 +13,7 @@ import acm.util.RandomGenerator;
 public class Problem_34 extends GraphicsProgram{
 private RandomGenerator rgen = RandomGenerator.getInstance();
 private static final int RADIUS_MIN = 10;
-private static final int RADIUS_MAX = 30;
+private static final int RADIUS_MAX = 100;
 private GOval oval;
 private int radius = rgen.nextInt(RADIUS_MIN,RADIUS_MAX);
 	public void run(){
