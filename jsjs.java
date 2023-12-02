@@ -7,7 +7,7 @@ public class jsjs extends ConsoleProgram {
 
 	public void run() {
 		String s = readLine("enter: ");
-		while (s != "") {
+		while (s.equals("")) {
 			int amount = 0;
 			char X = ' ';
 			for (int i = 0; i < s.length(); i++) {
