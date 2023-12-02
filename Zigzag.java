@@ -34,6 +34,7 @@ public class Zigzag extends GraphicsProgram {
 
 	public void mouseDragged(MouseEvent e) {
 		line.setEndPoint(e.getX(), e.getY());
+		add(line);
 	}
 	public void mouseReleased(MouseEvent e){
 		xs = e.getX();
