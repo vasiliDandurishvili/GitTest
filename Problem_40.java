@@ -1,3 +1,5 @@
+import java.awt.event.MouseEvent;
+
 import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
@@ -10,11 +12,15 @@ public class Problem_40 extends GraphicsProgram {
 	private static final int PAUSE = 5;
 	private static final int VEL_X = 3;
 	private static final int RADIUS = 20;
+	private int vx = VEL_X;
+	private int vy = 0;
 
+	
 	public void run() {
+		addMouseListeners();
 		GOval circle = createLeftMidlleCircle();
-		int vx = VEL_X;
-		int vy = 0;
+//		int vx = VEL_X;
+//		int vy = 0;
 
 		while (true) {
 			if ((circle.getX() + 2 * RADIUS >= getWidth()) || (circle.getX() < 0)) {
@@ -24,6 +30,9 @@ public class Problem_40 extends GraphicsProgram {
 			pause(PAUSE);
 		}
 
+	}
+	public void mouseClicked(MouseEvent e){
+		vx  = -vx;
 	}
 
 	private GOval createLeftMidlleCircle() {
