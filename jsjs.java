@@ -26,8 +26,9 @@ public class jsjs extends GraphicsProgram {
 		while(true){
 			if(check){
 			obj1.move(0, V_Y);
-			pause(500);
+			pause(50);
 			}
+			pause(1);
 		}
 	}
 	private void drawCircle() {
