@@ -14,18 +14,9 @@ public class Problem_41 extends GraphicsProgram {
 	}
 
 	@Override
-	public void mouseDragged(MouseEvent e) {
+	public void mouseMoved(MouseEvent e) {
 		addBrush(e.getX(), e.getY());
 	}
-	
-	@Override
-	public void mousePressed(MouseEvent e){
-		addBrush(e.getX(), e.getY());
-	}
-//	public void mouseClicked(MouseEvent e){
-//		addBrush(e.getX(), e.getY());
-//	}
-//	
 	private void addBrush(int centerX, int centerY){
 		GOval circle = new GOval(2 * RADIUS, 2 * RADIUS);
 		circle.setFilled(true);
