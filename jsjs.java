@@ -24,6 +24,7 @@ public class jsjs extends GraphicsProgram {
 		double x = rgen.nextDouble(0, getWidth() - 2 * radius);
 		double y = rgen.nextDouble(0, getHeight() - 2 * radius);
 		oval.setFilled(true);
+		oval.setColor(rgen.nextColor);
 		
 		add(oval, x, y);
 	}
