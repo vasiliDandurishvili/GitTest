@@ -5,7 +5,8 @@ import acm.util.*;
 import java.applet.*;
 import java.awt.*;
 import java.awt.event.*;
-
+/**46. დაწერეთ მეთოდი რომელსაც გადაეცემა სტიგნი და რომელიც აბრუნებს ამ სტრინგში
+ყველაზე ხშირ სიმბოლოს.*/
 public class Problem_46_myCode extends ConsoleProgram {
 	private int mostCharNum = 0;
 	private char mostCh;
