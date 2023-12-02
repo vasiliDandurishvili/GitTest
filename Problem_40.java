@@ -9,7 +9,7 @@ import acm.program.GraphicsProgram;
 //კედელს დაეტაკება უნდა გააგრძელოს მარჯვნივ და ა.შ. უსასრულოდ.
 
 public class Problem_40 extends GraphicsProgram {
-	private static final int PAUSE = 3;
+	private static final int PAUSE = 20;
 	private static final int VEL_X = 3;
 	private static final int RADIUS = 20;
 	private int vx = VEL_X;
