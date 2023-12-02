@@ -1,11 +1,12 @@
+import java.awt.event.MouseEvent;
 
-//48. კონსოლიდან შეგყვავს ტექსტი პროგრამამ უნდა დაბეჭდოს სტატისტიკა რომელი 
-//სიმბოლო რამდენჯერ გვხვდება
+import acm.graphics.GLine;
+import acm.program.*;
 
-import acm.program.ConsoleProgram;
+public class jsjs extends ConsoleProgram {
 
-public class jsjs extends ConsoleProgram{
 	public void run() {
 		
 	}
+
 }
