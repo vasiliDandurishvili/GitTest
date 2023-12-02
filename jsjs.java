@@ -4,12 +4,11 @@ import acm.graphics.GLine;
 import acm.program.*;
 
 public class jsjs extends ConsoleProgram {
-
+private char X;
 	public void run() {
 		String s = readLine("enter: ");
 		while (s.equals("")) {
 			int amount = 0;
-			char X = ' ';
 			for (int i = 0; i < s.length(); i++) {
 				X = s.charAt(i);
 				for (int j = 0; j < s.length(); j++) {
