@@ -32,7 +32,9 @@ public class Problem_40 extends GraphicsProgram {
 
 	}
 	public void mouseClicked(MouseEvent e){
+		if((getElementAt(e.getX(), e.getY()) != null)){
 		vx  = -vx;
+		}
 	}
 
 	private GOval createLeftMidlleCircle() {
