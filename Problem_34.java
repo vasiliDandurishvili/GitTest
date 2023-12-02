@@ -29,7 +29,7 @@ private int radius;
 	
 
 	public void mouseClicked(MouseEvent e){
-		draw()
+		draw();
 		double x = e.getX() - radius;
 		double y = e.getY() - radius; 
 	
