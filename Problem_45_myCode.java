@@ -5,7 +5,8 @@ import acm.util.*;
 import java.applet.*;
 import java.awt.*;
 import java.awt.event.*;
-
+/**45. მომხმარებელს კონსოლიდან შეჰყავს ტექსტი და სიმბოლო, თქვენმა პროგრამამ უნდა იპოვოს
+რამდენჯერ გვხვდება მოცემულ ტექსტში მოცემული სიმბოლო*/
 public class Problem_45_myCode extends ConsoleProgram {
 	private int numOfSym = 0;
 	public void run(){
