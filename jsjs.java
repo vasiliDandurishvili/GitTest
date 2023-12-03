@@ -16,20 +16,20 @@ public class jsjs extends GraphicsProgram {
 	private GOval oval;
 	private GObject obj1;
 	private GObject obj2;
-	private boolean check;
+//	private boolean check;
 	public void run() {
 		addMouseListeners();
 		check = false;
 		for(int i = 0; i < NUM_CIRCLES; i++){
 			drawCircle();
 		}
-		while(true){
-			if(check){
-			obj1.move(0, V_Y);
-			pause(50);
-			}
-			pause(1);
-		}
+//		while(true){
+//			if(check){
+//			obj1.move(0, V_Y);
+//			pause(50);
+//			}
+//			pause(1);
+//		}
 	}
 	private void drawCircle() {
 		radius = rgen.nextDouble(MIN_RADIUS, MAX_RADIUS);
@@ -46,11 +46,13 @@ public class jsjs extends GraphicsProgram {
 			obj1.setColor(rgen.nextColor());
 		}
 		if(obj1 != null && obj2 == null && getElementAt(e.getX(), e.getY()) == null){
-			check = true;
+//			check = true;
+			obj1.move(0, V_Y);
 		}
 		if(obj1 != null && obj2 == null && getElementAt(e.getX(), e.getY()) != null){
 			obj2 = getElementAt(e.getX(), e.getY());
-			check = false;
+//			check = false;
+			obj1.move(0, 0);
 			obj2.setColor(rgen.nextColor());
 			obj1 = obj2;
 			obj2 = null;
