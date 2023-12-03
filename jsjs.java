@@ -19,7 +19,7 @@ public class jsjs extends GraphicsProgram {
 //	private boolean check;
 	public void run() {
 		addMouseListeners();
-		check = false;
+//		check = false;
 		for(int i = 0; i < NUM_CIRCLES; i++){
 			drawCircle();
 		}
