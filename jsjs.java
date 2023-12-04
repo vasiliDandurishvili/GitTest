@@ -10,7 +10,7 @@ public class jsjs extends GraphicsProgram {
 	private static final double MIN_RADIUS = 10;
 	private static final double MAX_RADIUS = 30;
 	private static final int NUM_CIRCLES = 20;
-	private static final int V_Y = 3;
+	private static final int V_Y = 4;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private double radius;
 	private GOval oval;
