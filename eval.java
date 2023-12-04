@@ -12,8 +12,18 @@ public class eval extends ConsoleProgram{
 		StringTokenizer tok = new StringTokenizer(str, " ");
 		int k = Integer.parseInt(str);
 		
+		int a = 0;
+		
 		while(tok.hasMoreTokens()){
-			int 
+			String s = tok.nextToken();
+			int i = Integer.parseInt(s);
+			if(tok.nextToken() == "+"){
+				a+= i;
+			}else{
+				a-= i;
+			}
+		
 		}
+		return a;
 	}
 }
