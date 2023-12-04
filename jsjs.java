@@ -46,12 +46,12 @@ public class jsjs extends GraphicsProgram {
 			obj1.setColor(rgen.nextColor());
 		}
 		if(obj1 != null && obj2 == null && getElementAt(e.getX(), e.getY()) == null){
-			check = true;
-//			obj1.move(0, V_Y);
+//			check = true;
+			obj1.move(0, V_Y);
 		}
 		if(obj1 != null && obj2 == null && getElementAt(e.getX(), e.getY()) != null){
 			obj2 = getElementAt(e.getX(), e.getY());
-			check = false;
+//			check = false;
 			obj1.move(0, 0);
 			obj2.setColor(rgen.nextColor());
 			obj1 = obj2;
