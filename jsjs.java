@@ -16,20 +16,20 @@ public class jsjs extends GraphicsProgram {
 	private GOval oval;
 	private GObject obj1;
 	private GObject obj2;
-	private boolean check;
+//	private boolean check;
 	public void run() {
 		addMouseListeners();
-		check = false;
+//		check = false;
 		for(int i = 0; i < NUM_CIRCLES; i++){
 			drawCircle();
 		}
-		while(true){
-			if(check){
-			obj1.move(0, V_Y);
-			pause(50);
-			}
-			pause(1);
-		}
+//		while(true){
+//			if(check){
+//			obj1.move(0, V_Y);
+//			pause(50);
+//			}
+//			pause(1);
+//		}
 	}
 	private void drawCircle() {
 		radius = rgen.nextDouble(MIN_RADIUS, MAX_RADIUS);
