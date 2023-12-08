@@ -13,7 +13,13 @@ public class Problem_53 extends ConsoleProgram{
 	public void run(){
 		try {
 			BufferedReader reader = new BufferedReader (new FileReader(FILENAME));
-		} catch (FileNotFoundException e) {
+			
+			String text = "";
+			while(true){
+				
+			}
+		} 
+		catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
