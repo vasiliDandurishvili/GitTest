@@ -9,14 +9,6 @@ import acm.util.RandomGenerator;
 
 public class jsjs extends ConsoleProgram {
 	public void run() {
-		String text = readLine();
-		StringTokenizer tokenizer = new StringTokenizer(text, " ");
-		int count = 0;
-
-		while (tokenizer.hasMoreTokens()) {
-			String currToken = tokenizer.nextToken();
-			count++;
-		}
-		print("count: " + count);
+		in
 	}
 }
