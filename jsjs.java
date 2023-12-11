@@ -8,7 +8,16 @@ import acm.program.*;
 import acm.util.RandomGenerator;
 
 public class jsjs extends ConsoleProgram {
+	
+	
+	private int tries = 8;
 	public void run() {
+		println("Welcome to Hnagman!");
+		completeConsole();
+	}
+
+	private void completeConsole() {
+		
 		
 	}
 }
