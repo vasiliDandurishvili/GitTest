@@ -1,4 +1,5 @@
 import java.awt.event.MouseEvent;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 import acm.graphics.GLine;
@@ -11,11 +12,21 @@ public class jsjs extends ConsoleProgram {
 	
 
 	public void run() {
-		int[] a = {10,2,3,4};
+//		int[] a = {10,2,3,4};
+		int[] a = new int[5];
 		println(a[3]);
 		println(a.length);
 		a[3] = 5;
 		println(a[3]);
+		
+		
+		Arrays.fill(a, 1);
+		
+		
+		
+		
+		
+		
 		
 //		for ( int i = 0; i <= a.length - 1; i++){
 //		a[i] = i;	
