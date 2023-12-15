@@ -16,6 +16,7 @@ public class jsjs extends ConsoleProgram {
 		println(a.length);
 		a[3] = 5;
 		println(a[3]);
+		
 		for ( int i = 0; i < a.length - 1; i++){
 		a[i] = i;	
 		}
