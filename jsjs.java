@@ -23,5 +23,13 @@ public class jsjs extends ConsoleProgram {
 		for(int i = 0; i < a.length; i++){
 			println(a[i]);
 		}
+		a[4] = 9
+		println(a[4]);
+//		0 1 2 3 4 5 6 7 
+//		0 3 0 2 7 0 5 9
+//		int x = number[1]-> 3
+//		number[3] = 2
+//		number[4] = 7
+//		number[7] = 9
 	}
 }
