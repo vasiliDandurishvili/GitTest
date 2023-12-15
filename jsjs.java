@@ -20,7 +20,7 @@ public class jsjs extends ConsoleProgram {
 		println(a[3]);
 		
 		
-		Arrays.fill(a, 1);
+//		Arrays.fill(a, 1);
 		Arrays.sort(a);
 		for(int i = 0; i < a.length; i++){
 		println(a[i]);
