@@ -12,19 +12,19 @@ public class jsjs extends ConsoleProgram {
 
 	public void run() {
 		int[] a = {10,2,3,4};
-//		println(a[3]);
-//		println(a.length);
-//		a[3] = 5;
-//		println(a[3]);
+		println(a[3]);
+		println(a.length);
+		a[3] = 5;
+		println(a[3]);
 		
-		for ( int i = 0; i <= a.length - 1; i++){
-		a[i] = i;	
-		}
-		for(int i = 0; i < a.length; i++){
-			println(a[i]);
-		}
-		a[4] = 9;
-		println(a[4]);
+//		for ( int i = 0; i <= a.length - 1; i++){
+//		a[i] = i;	
+//		}
+//		for(int i = 0; i < a.length; i++){
+//			println(a[i]);
+//		}
+//		a[4] = 9;
+//		println(a[4]);
 //		0 1 2 3 4 5 6 7 
 //		0 3 0 2 7 0 5 9
 //		int x = number[1]-> 3
