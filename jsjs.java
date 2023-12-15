@@ -25,6 +25,8 @@ public class jsjs extends ConsoleProgram {
 		Arrays.sort(a);
 		for(int i = 0; i < a.length; i++){
 		println(a[i]);
+		Arrays.toString(a);
+		println(a);
 	}
 		
 		
