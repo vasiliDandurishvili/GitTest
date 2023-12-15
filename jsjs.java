@@ -21,6 +21,7 @@ public class jsjs extends ConsoleProgram {
 		
 		
 		Arrays.fill(a, 1);
+		println(a);
 		
 		
 		
