@@ -11,7 +11,8 @@ public class jsjs extends ConsoleProgram {
 	
 
 	public void run() {
-		int [] a = new  int [5];
+		int[] a = new  int [5];
 		println(a[3]);
+		println(a.length);
 	}
 }
