@@ -65,4 +65,4 @@ public class jsjs extends ConsoleProgram {
 //		number[4] = 7
 //		number[7] = 9
 	}
-}
+
