@@ -28,8 +28,25 @@ public class jsjs extends ConsoleProgram {
 //		Arrays.toString(a);
 //	}
 		println(Arrays.toString(a));
+//		/////////////////////////
+		arr2 =  Arrays.sort(arr1);
+		while(true){
+			if(Array.equals(arr1, arr2 )){
+				break;
+			}
+//			tu ara gaacveline adgilebi cvladebs.
+//			private void swapElements(int[] arr, int pos1, int pos2) {
+//
+//				int temp = arr[pos1];
+//
+//				arr[pos1] = arr[pos2];
+//
+//				arr[pos2] = temp;
+//
+//				}
+		}
 		
-		
+//		////////////////////////
 		
 		
 		
