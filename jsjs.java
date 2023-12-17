@@ -22,6 +22,7 @@ public class jsjs extends ConsoleProgram {
 		for( int i = 0; i < myList.size(); i++){
 			println(myList.get(i));
 		}
+		return;
 		
 		
 		
