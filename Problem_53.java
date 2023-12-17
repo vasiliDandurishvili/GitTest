@@ -40,7 +40,7 @@ public class Problem_53 extends ConsoleProgram{
 		int exclamationCount = 0;
 		int sentenceCount = 0;
 
-		StringTokenizer tokenizer = new StringTokenizer(text, " ?!.\n", true);
+		StringTokenizer tokenizer = new StringTokenizer(text, " ?!.,\n", true);
 
 		while(tokenizer.hasMoreTokens()) {
 			String token = tokenizer.nextToken();
