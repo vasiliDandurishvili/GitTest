@@ -21,13 +21,13 @@ public class jsjs extends ConsoleProgram {
 //		myList.set(1 , "hey");
 		println(myList);
 		
-		for( int i = 0; i < myList.size(); i++){
-			println(myList.get(myList.size() - i -1 )); // print from back.
-			println(myList.get(i));
-		}
-		for(String num: myList){
-			println(num);
-		}
+//		for( int i = 0; i < myList.size(); i++){
+//			println(myList.get(myList.size() - i -1 )); // print from back.
+//			println(myList.get(i));
+//		}
+//		for(String num: myList){
+//			println(num);
+//		}
 		
 		
 		
