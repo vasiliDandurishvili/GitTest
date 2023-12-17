@@ -1,4 +1,5 @@
 import java.awt.event.MouseEvent;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
@@ -12,6 +13,20 @@ public class jsjs extends ConsoleProgram {
 	
 
 	public void run() {
+		
+		ArrayList<String> myList = new ArrayList<String>();
+		
+		myList.add("hello");
+		myList.add("hi");
+		
+		for( int i = 0; i < myList.size(); i++){
+			println(myList.get(i));
+		}
+		
+		
+		
+		
+		
 //		int[] a = {10,2,3,4};
 		int[] a = new int[5];
 		println(a[3]);
