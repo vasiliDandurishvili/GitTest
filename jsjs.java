@@ -18,6 +18,7 @@ public class jsjs extends ConsoleProgram {
 		
 		myList.add("hello");
 		myList.add("hi");
+		myList.set(2, "hey");
 		
 		for( int i = 0; i < myList.size(); i++){
 			println(myList.get(myList.size() - i -1 )); // print from back.
@@ -30,7 +31,7 @@ public class jsjs extends ConsoleProgram {
 		
 		
 		
-		
+		2
 		if(true){
 		return;
 		}
