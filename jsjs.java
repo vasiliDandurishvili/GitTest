@@ -23,6 +23,7 @@ public class jsjs extends ConsoleProgram {
 			println(myList.get(myList.size() - i -1 )); // print from back.
 			println(myList.get(i));
 		}
+		
 		if(true){
 		return;
 		}
