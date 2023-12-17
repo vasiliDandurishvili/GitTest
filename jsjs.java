@@ -20,7 +20,8 @@ public class jsjs extends ConsoleProgram {
 		myList.add("hi");
 		
 		for( int i = 0; i < myList.size(); i++){
-			println(myList.get(myList.size() - i -1 ));
+			println(myList.get(myList.size() - i -1 )); // print from back.
+			println(myList.get(i));
 		}
 		if(true){
 		return;
