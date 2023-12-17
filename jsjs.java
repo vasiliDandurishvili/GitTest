@@ -18,8 +18,8 @@ public class jsjs extends ConsoleProgram {
 		
 		myList.add("hello");
 		myList.add("hi");
-		myList.set(1 , "hey");
-//		println(myList);
+//		myList.set(1 , "hey");
+		println(myList);
 		
 		for( int i = 0; i < myList.size(); i++){
 			println(myList.get(myList.size() - i -1 )); // print from back.
