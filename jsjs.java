@@ -14,51 +14,18 @@ public class jsjs extends ConsoleProgram {
 
 	public void run() {
 		
-		ArrayList<String> myList = new ArrayList<String>();
-		
-		myList.add("hello");
-		myList.add("hi");
-//		myList.set(1 , "hey");
-		println(myList);
-		
-//		for( int i = 0; i < myList.size(); i++){
-//			println(myList.get(myList.size() - i -1 )); // print from back.
-//			println(myList.get(i));
-//		}
-//		for(String num: myList){
-//			println(num);
-//		}
-		
-		
-		
-		
-		
-		if(true){
-		return;
-		}
-		
-		
-		
-		
-//		int[] a = {10,2,3,4};
-		int[] a = new int[5];
-		println(a[3]);
-		println(a.length);
-		a[1] = 6; 
-		a[3] = 5;
-		println(a[3]);
-		
-		for(int val: a){
-			println("values: " + val);
-		}
-		
+		int result = 0;
+			for (int i = 1; i < 100; i++){
+				result += i^2;
+			}
+			print(result);
 //		Arrays.fill(a, 1);
-		Arrays.sort(a);
+//		Arrays.sort(a);
 //		for(int i = 0; i < a.length; i++){
 //		println(a[i]);
 //		Arrays.toString(a);
 //	}
-		println(Arrays.toString(a));
+//		println(Arrays.toString(a));
 //		/////////////////////////
 //		arr2 =  Arrays.sort(arr1);
 //		while(true){
