@@ -23,6 +23,7 @@ public class jsjs extends ConsoleProgram {
 		println(myList);
 		myList.remove(1);
 		println(myList.get(1));
+		println(myList.indexOf("h"));
 		println("-----------");
 		
 		for( int i = 0; i < myList.size(); i++){
