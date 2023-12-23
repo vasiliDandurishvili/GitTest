@@ -12,9 +12,9 @@ public class Problem_58 extends ConsoleProgram {
 	public void run() {
 		int n = readInt("enter n: ");
 		int [][] matrix = new int[n][n];
-		boolean a = isMagicMatrix(matrix, n);
+		boolean isMagic = isMagicMatrix(matrix, n);
 		
-		println(a);
+		println(isMagic);
 
 	}
 
