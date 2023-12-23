@@ -19,8 +19,8 @@ import acm.program.ConsoleProgram;
 public class Problem_59 extends ConsoleProgram{
 	public void run(){
 		int[][] matrix1 = new int[][] {
-			{0,1,1,0,0,1,0,0}, 
-			{0,1,1,1,1,1,0,0},
+			{0,0,0,0,0,0,0,0}, 
+			{0,0,1,1,1,1,0,0},
 			{0,0,1,1,1,1,0,0}, 
 			{0,0,1,1,1,1,0,0},
 		};
