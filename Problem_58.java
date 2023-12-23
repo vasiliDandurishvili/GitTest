@@ -22,16 +22,16 @@ public class Problem_58 extends ConsoleProgram {
 		/**make array what i want to have at last and then check equals.*/
 		int [] arr = new int [n*n];
 		for(int i = 0; i < n*n; i++){
-			arr[i] = i; 
+			arr[i] = i + 1; 
 		}
 		
 		int [] arr2 = new int [n*n];
 		for (int r = 0; r < matrix.length; r++){
 			for(int c = 0; c < matrix[0].length; c++){
-				arr2[matrix[0].length*r + c] = matrix[r][c];
+				arr2[matrix.length * r + c] = matrix[r][c];
 			}
 		}
 		Arrays.sort(arr2);
-		return arr.equals(arr2);
+		return Arrays.equals(arr,arr2);
 	}
 }
