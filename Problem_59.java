@@ -37,9 +37,11 @@ public class Problem_59 extends ConsoleProgram{
 		/**get all rect. take the rects starting coordinate.*/
 		for(int i1 = 0 ; i1 < nRows; i1++){
 			for(int j1 = 0; j1 < nCols; j1++){
+				
 				/**take the rects last coordinate.*/
-				for(int i2 = 0; i2 < nRows; i2++){
-					for(int j2 = 0; j2 < nCols; j2++){
+				for(int i2 = i1; i2 < nRows; i2++){
+					for(int j2 = j1; j2 < nCols; j2++){
+						
 						if(hasOnlyOnes(matrix1, i1, j1, i2, j2)){
 							int currArea = (i2 - i1 +1) * (j2 - j1 +1);
 							maxArea = Math.max(maxArea, currArea);
