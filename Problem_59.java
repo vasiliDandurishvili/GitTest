@@ -53,8 +53,8 @@ public class Problem_59 extends ConsoleProgram{
 	}
 
 	private boolean hasOnlyOnes(int[][] matrix1, int i1, int j1, int i2, int j2) {
-		for(int i = i1; i < i2; i++){
-			for(int j = j1; j < j2; j++){
+		for(int i = i1; i <= i2; i++){
+			for(int j = j1; j <= j2; j++){
 				if(matrix1[i][j] != 1){
 					return false;
 				}
