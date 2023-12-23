@@ -19,6 +19,7 @@ public class jsjs extends ConsoleProgram {
 		myList.add("hello");
 		myList.add("hi");
 		myList.add("h");
+		myList.add("hello");
 //		myList.set(1 , "hey");
 		println(myList);
 		myList.remove(1);
