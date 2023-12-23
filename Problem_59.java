@@ -22,7 +22,7 @@ public class Problem_59 extends ConsoleProgram{
 			{0,0,0,0,0,0,0,0}, 
 			{0,0,0,0,0,0,0,0},
 			{0,0,1,1,1,0,0,0}, 
-			{0,0,1,1,1,0,0,0},
+			{0,0,1,1,0,0,0,0},
 		};
 		int sum = maxArea(matrix1);
 
