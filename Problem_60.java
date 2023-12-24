@@ -19,6 +19,7 @@ public class Problem_60 extends ConsoleProgram{
 		for (int i = 0; i < myList.size(); i++){
 			println(myList.get(myList.size() - i -1));
 		}
+		println(myList);
 	}
 
 }
