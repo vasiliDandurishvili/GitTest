@@ -14,14 +14,17 @@ public class Problem_61 extends ConsoleProgram{
 		for (int i = 0; i < n; i++){
 			arr [i] = readInt("enter num: ");
 		}
+		println(getSum(arr, n, m));
+	}
+
+	private boolean getSum(int[] arr, int n, int m) {
 		for (int i = 0; i < n - 1; i++){
 			for(int j = 1; j < n; j++){
 				if(arr[i] + arr[j] == m){
-					println("true");
-				}else {
-					println("false");
+					return true;
 				}
 			}
 		}
+		return false;
 	}
 }
