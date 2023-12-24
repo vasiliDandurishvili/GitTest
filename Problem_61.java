@@ -14,7 +14,6 @@ public class Problem_61 extends ConsoleProgram{
 		for (int i = 0; i < n; i++){
 			arr [i] = readInt("enter num: ");
 		}
-		Arrays.toString(arr);
-		println(arr);
+		println(Arrays.toString(arr));
 	}
 }
