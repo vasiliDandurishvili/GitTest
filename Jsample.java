@@ -1,4 +1,4 @@
 
-public class Jsample {
+public class Jsample extends GraphicsProgram{
 
 }
