@@ -104,4 +104,3 @@ public class jsjs extends ConsoleProgram {
 //		number[7] = 9
 	}
 
-
