@@ -38,7 +38,7 @@ public class jsjs extends ConsoleProgram {
 		println(size);
 		
 		for(String key : myHash.keySet()){ 
-			myHash.get(key); // do something with the key/value pair 
+			println(myHash.get(key)); // do something with the key/value pair 
 	   	}
 		
 		
