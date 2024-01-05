@@ -1,6 +1,7 @@
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.StringTokenizer;
 
 import acm.graphics.GLine;
@@ -13,6 +14,17 @@ public class jsjs extends ConsoleProgram {
 	
 
 	public void run() {
+		HashMap <String, String> myHash = new HashMap <String, String>();
+		myHash.put("dog","bark");
+		myHash.put("cat","meow");
+		myHash.put("seal","ew ew ew");
+		
+		
+		
+		if(true){
+			return;
+			}
+		
 		
 		ArrayList<String> myList = new ArrayList<String>();
 		
