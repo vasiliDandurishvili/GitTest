@@ -30,8 +30,9 @@ public class jsjs extends ConsoleProgram {
 		myHash.put("cat","meow");
 		myHash.put("seal","ew ew ew");
 		
-		print(myHash.get("dog"));
-		
+		println(myHash.get("dog"));
+		int size = myHash.size();
+		println(size);
 		
 		
 		if(true){
