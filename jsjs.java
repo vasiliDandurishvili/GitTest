@@ -23,8 +23,9 @@ public class jsjs extends ConsoleProgram {
 		 * myMap.keySet();
 		 * 
 		 * myMap.remove(key); // make like a tree and leave! 
-		 * for(keyType key : myMap.keySet()){ // not ordered
-		   		myMap.get(key); // do something with the key/value pair }
+		 * for(keyType key : myMap.keySet()){ 
+		   		myMap.get(key); // do something with the key/value pair 
+		   	}
 		 */
 
 		HashMap<String, String> myHash = new HashMap<String, String>();
