@@ -36,7 +36,10 @@ public class jsjs extends ConsoleProgram {
 		println(myHash.get("dog"));
 		int size = myHash.size();
 		println(size);
-		println(myMap.keySet(););
+		
+		for(String key : myHash.keySet()){ 
+			myHash.get(key); // do something with the key/value pair 
+	   	}
 		
 		
 		
