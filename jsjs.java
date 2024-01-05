@@ -14,12 +14,23 @@ public class jsjs extends ConsoleProgram {
 	
 
 	public void run() {
+		/**		Some useful other methods
+
+		int size = myMap.size();
+
+		myMap.containsKey(key); // returns true or false if key is in map
+
+		myMap.keySet();
+
+		myMap.remove(key); // make like a tree and leave!*/
+
+		
 		HashMap <String, String> myHash = new HashMap <String, String>();
 		myHash.put("dog","bark");
 		myHash.put("cat","meow");
 		myHash.put("seal","ew ew ew");
 		
-		myHash.get("dog");
+		print(myHash.get("dog"));
 		
 		
 		
