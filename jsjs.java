@@ -19,7 +19,7 @@ public class jsjs extends ConsoleProgram {
 		myHash.put("cat","meow");
 		myHash.put("seal","ew ew ew");
 		
-		myHash.get("dog);
+		myHash.get("dog");
 		
 		
 		
