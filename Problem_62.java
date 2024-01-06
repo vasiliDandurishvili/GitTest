@@ -3,10 +3,11 @@ import java.util.Map;
 
 import acm.graphics.GObject;
 import acm.graphics.GRect;
+import acm.program.ConsoleProgram;
 import acm.program.GraphicsProgram;
 /**62. კონსოლიდან შეგვყავს სახელები, მანამ სანამ არ შევიყვანთ ცარიელ სტრინგს. დაბეჭდეთ
 სახელი და მის გასწვრივ რაოდენობა რამდენჯერ შევიყვანეთ ეს სახელი.*/
-public class Problem_62 extends GraphicsProgram{
+public class Problem_62 extends ConsoleProgram{
 	
 	private static final String SENTINEL = "";
 	
