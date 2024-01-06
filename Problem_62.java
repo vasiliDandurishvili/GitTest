@@ -13,21 +13,21 @@ public class Problem_62 extends GraphicsProgram {
 
 	public void run() {
 		HashMap<String, Integer> myMap = new HashMap<String, Integer>();
-		while (true) {
 
-			String name = readLine("enter name: ");
-
-			if (name.equals(SENTINEL)) {
+		while(true) {
+			String name = readLine("Enter name: ");
+			if(name.equals(SENTINEL)) {
 				break;
 			}
-			if (!myMap.containsKey(name)) {
-				myMap.put(name, 0);
+
+			if(!nameCounts.containsKey(name)) {
+				nameCounts.put(name, 0);
 			}
 
-			int nameNum = myMap.get(name) + 1;
-
-			myMap.put(name, nameNum);
+			int newCount = nameCounts.get(name) + 1;
+			nameCounts.put(name, newCount);
 		}
+
 		println(myMap);
 	}
 
