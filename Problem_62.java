@@ -9,6 +9,7 @@ public class Problem_62 extends GraphicsProgram{
 	private static final String SENTINEL = "";
 	public void run(){
 		HashMap <String, Integer> myMap = new HashMap <String, Integer>();
+		
 		while(true){
 			
 			String name = readLine("enter name: ");
