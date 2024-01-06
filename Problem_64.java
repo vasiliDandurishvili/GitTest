@@ -40,6 +40,6 @@ public class Problem_64 extends ConsoleProgram {
 		for(int i = 1; i < myMap.get(person).size(); i++){
 			print(", " + myMap.get(person).get(i));
 		}
-		print(".");
+		print(". ");
 	}
 }
