@@ -35,7 +35,7 @@ public class Problem_64 extends ConsoleProgram {
 	}
 
 	private void outputList(String person) {
-		print(person + ": ");
+		print(person + "'s followers: ");
 		print(myMap.get(person).get(0));
 		for(int i = 1; i < myMap.get(person).size(); i++){
 			print(", " + myMap.get(person).get(i));
