@@ -10,7 +10,9 @@ public class Problem_62 extends GraphicsProgram{
 	public void run(){
 		HashMap <String, Integer> myMap = new HashMap <String, Integer>();
 		while(true){
+			
 			String name = readLine("enter name: ");
+			
 			if(name.equals(SENTINEL)){
 				break;
 			}
