@@ -36,6 +36,6 @@ public class Problem_65 extends ConsoleProgram{
 				popularFriends = follower;
 			}
 		}
-		println("person with most folloing: " + "popularFriends");
+		println("person with most folloing: " + popularFriends);
 	}
 }
