@@ -12,7 +12,7 @@ public class Problem_62 extends ConsoleProgram{
 	private static final String SENTINEL = "";
 	
 	public void run(){
-		Map <String, Integer> myMap = new HashMap <String, Integer>();
+		Map <String, Integer> myMap = new HashMap <>();
 		
 		while(true){
 			
