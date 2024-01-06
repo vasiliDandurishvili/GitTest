@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Map;
 
 import acm.graphics.GObject;
 import acm.graphics.GRect;
