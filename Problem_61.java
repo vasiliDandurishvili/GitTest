@@ -21,6 +21,8 @@ public class Problem_61 extends ConsoleProgram{
 		for (int i = 0; i < n - 1; i++){
 			for(int j = 1; j < n; j++){
 				if(arr[i] + arr[j] == m){
+					println(arr[i]);
+					println(arr[j]);
 					return true;
 				}
 			}
