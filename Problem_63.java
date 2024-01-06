@@ -33,16 +33,16 @@ public class Problem_63 extends ConsoleProgram{
 		println(myMap);
 		
 		int maxFollowers = 0;
-		String pupularPerson;
+		String popularPerson = null;
 		
 		for(String person: myMap.keySet()){
 			int followers = myMap.get(person).size();
 			if(followers > maxFollowers){
 				maxFollowers = followers;
-				pupularPerson = person;
+				popularPerson = person;
 			}
 		}
-		println("most popular person: " + pupularPerson);
+		println("most popular person: " + popularPerson);
 	}
 
 }
