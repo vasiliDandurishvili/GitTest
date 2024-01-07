@@ -26,6 +26,8 @@ public class jsjs extends ConsoleProgram {
 		
 		field.setText("good cec");
 		
+		println(field.getText());
+		
 		
 		
 		
