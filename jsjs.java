@@ -28,6 +28,7 @@ public class jsjs extends ConsoleProgram {
 		
 		println(field.getText());
 		
+		
 		textField.addActionListener(this);
 		
 		
