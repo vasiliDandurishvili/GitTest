@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.StringTokenizer;
 
 import javax.swing.JLabel;
+import javax.swing.JTextField;
 
 import acm.graphics.GLine;
 import acm.graphics.GObject;
@@ -20,6 +21,8 @@ public class jsjs extends ConsoleProgram {
 		add(label, SOUTH);
 		
 		
+		JTextField field = new JTextField (10);
+		add(field, SOUTH);
 		
 		
 		
