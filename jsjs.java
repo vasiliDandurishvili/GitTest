@@ -24,6 +24,7 @@ public class jsjs extends ConsoleProgram {
 		JTextField field = new JTextField (10);
 		add(field, SOUTH);
 		
+		field.setText("good cec");
 		
 		
 		
