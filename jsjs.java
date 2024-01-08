@@ -26,10 +26,10 @@ public class jsjs extends ConsoleProgram {
 		
 		field.setText("good cec");
 		
-		println(field.getText());
+		field.getText();//reture "good cec".
 		
-		
-		textField.addActionListener(this);
+
+//		textField.addActionListener(this);
 		
 		
 		
