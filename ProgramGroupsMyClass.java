@@ -22,5 +22,8 @@ public class ProgramGroupsMyClass {
 		}
 		return studentScores.get(student);
 	}
+	public void setScore (double score){
+		
+	}
 }
 
