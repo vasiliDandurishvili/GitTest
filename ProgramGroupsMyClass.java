@@ -10,6 +10,9 @@ public class ProgramGroupsMyClass {
 	}
 	
 	public ProgramGroupsMyClass (ArrayList<String> students){
-		studentScores = new HashMap<String, Double>();studentScores.put
+		studentScores = new HashMap<String, Double>();
+		for(String student: students){
+			studentScores.put(student, null);
+		}
 	}
 }
