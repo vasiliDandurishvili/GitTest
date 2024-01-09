@@ -17,7 +17,7 @@ public class ProgrammTester extends ConsoleProgram{
 		classB.setScore("vakk", 7.25);
 		classB.setScore("vakk1", 2);
 		
-		println(classB.getScore("vako1"));
+		println(classB.getScore("vakk"));
 		println(classB.getScore("vako133"));
 		
 	}
