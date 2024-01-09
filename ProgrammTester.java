@@ -14,10 +14,10 @@ public class ProgrammTester extends ConsoleProgram{
 		println(classB.getScore("vako1"));
 		println(classB.getScore("vako133"));
 		
-		classB.setScore("vak01", 7.25);
+		classB.setScore("vako1", 7.25);
 		classB.setScore("vakk1", 2);
 		
-		println(classB.getScore("vak01"));
+		println(classB.getScore("vako1"));
 		println(classB.getScore("vako133"));
 		
 	}
