@@ -22,8 +22,12 @@ public class ProgramGroupsMyClass {
 		}
 		return studentScores.get(student);
 	}
-	public void setScore (double score){
-		
+	public void setScore (String student, double score){
+		if(!studentScores.containsKey(student)){
+			System.out.println("no student: " + student);
+			return;
+			}
+		studentScores.put(student, score);
 	}
 }
 
