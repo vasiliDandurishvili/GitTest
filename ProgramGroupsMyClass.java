@@ -29,5 +29,10 @@ public class ProgramGroupsMyClass {
 			}
 		studentScores.put(student, score);
 	}
+	public void addStudents(String student){
+		if(!studentScores.containsKey(student)){
+		studentScores.put(student, null);
+		}
+	}
 }
 
