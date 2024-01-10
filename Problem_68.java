@@ -31,7 +31,8 @@ public class Problem_68 extends GraphicsProgram {
 		addActionListeners();
 	}
 
-	public void run(){
+	
+		@Override
 		public void actionPerformed(ActionEvent e) {
 			println("here");
 			if(e.getSource() == textField) {
@@ -41,10 +42,9 @@ public class Problem_68 extends GraphicsProgram {
 				displayMessage(text);
 				textField.setText("");
 			}
-			}
 		}
-	}
-
+		}
+	
 	private void displayMessage(String text) {
 		if (text == null || text.equals("")) {
 			return;
@@ -53,4 +53,8 @@ public class Problem_68 extends GraphicsProgram {
 		add(message, x, y);
 		y += DISTANCE;
 	}
+	public void run(){
+		
+	}
 }
+	
