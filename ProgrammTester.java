@@ -20,6 +20,10 @@ public class ProgrammTester extends ConsoleProgram{
 		println(classB.getScore("vako1"));
 		println(classB.getScore("vako133"));
 		
+		classB.addStudents("vako1");
+		println(classB.getScore("vako1"));
+		
+		
 	}
 
 }
