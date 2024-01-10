@@ -8,10 +8,23 @@ import acm.program.GraphicsProgram;
 ტექსტი მაინც უნდა გამოჩნდეს ეკრანის ბოლოში, შესაბამისად სულ პირველად შეყვანილი
 ტექსტი გაქრება ეკრანიდან. */
 public class Problem_68 extends GraphicsProgram{
-	private static final int Distance = 40;
+	private static final int DISTANCE = 40;
 	private JTextField  textField;
 	private JButton button;
+	private double x = DISTANCE;
+	private double y = DISTANCE;
 	public void init(){
+		textField = new JTextField(20);
+		add(textField,SOUTH);
+		
+		textField.addActionListener(this);
+		
+		button = new JButton("enter");
+		add(button,SOUTH);
+		
+		addActionListeners();
+	}
+	public void run(){
 		
 	}
 
