@@ -19,37 +19,13 @@ public class Problem_68 extends GraphicsProgram {
 	private double x = DISTANCE;
 	private double y = DISTANCE;
 
-	public void init() {
-		textField = new JTextField(20);
+	public void init(){
+		textField = new JTextField (20);
 		add(textField, SOUTH);
-
 		textField.addActionListener(this);
-
-		button = new JButton("enter");
-		add(button, SOUTH);
-
-		addActionListeners();
+		
+		
 	}
-
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		println("here");
-		if (e.getSource() == textField) {
-			if (e.getSource() == textField || e.getSource() == button) {
-				String text = textField.getText();
-				println(text);
-				displayMessage(text);
-				textField.setText("");
-			}
-		}
-	}
-
-	private void displayMessage(String text) {
-		if (text == null || text.equals("")) {
-			return;
-		}
-		GLabel message = new GLabel(text);
-		add(message, x, y);
-		y += DISTANCE;
-	}
+	
+	
 }
