@@ -30,10 +30,6 @@ public class Problem_68 extends GraphicsProgram {
 
 		addActionListeners();
 	}
-public void run(){
-		
-	}
-	
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			println("here");
