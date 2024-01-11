@@ -40,6 +40,9 @@ public class Problem_68 extends GraphicsProgram {
 		}
 	}
 	private void drawText(String text) {
+		if(text.equals(null) || text.equals("")){
+			return;
+		}
 		GLabel message = new GLabel (text);
 		add(message, x, y);
 		y += DISTANCE;
