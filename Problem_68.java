@@ -35,8 +35,14 @@ public class Problem_68 extends GraphicsProgram {
 		if(e.getSource() == textField || e.getSource() == button){
 			String text = textField.getText();
 			println(text);
+			drawText(text);
 			textField.setText("");
 		}
+	}
+	private void drawText(String text) {
+		GLabel message = new GLabel (text);
+		add(message, x, y);
+		
 	}
 	
 	
