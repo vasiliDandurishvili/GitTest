@@ -23,7 +23,7 @@ public class Problem_68 extends GraphicsProgram {
 		textField = new JTextField(20);
 		add(textField, SOUTH);
 
-		textField.addActionListener(this);
+//		textField.addActionListener(this);
 
 		button = new JButton("enter");
 		add(button, SOUTH);
