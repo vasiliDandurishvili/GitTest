@@ -29,25 +29,25 @@ public class Problem_68 extends GraphicsProgram {
 		
 		addActionListeners();
 	}
-	public void actionPerformed(ActionEvent e){
-		println("here");
-		
-		if(e.getSource() == textField || e.getSource() == button){
-			String text = textField.getText();
-			println(text);
-			drawText(text);
-			textField.setText("");
-		}
-	}
-	private void drawText(String text) {
-		if(text.equals(null) || text.equals("")){
-			return;
-		}
-		GLabel message = new GLabel (text);
-		add(message, x, y);
-		y += DISTANCE;
-		
-	}
+//	public void actionPerformed(ActionEvent e){
+//		println("here");
+//		
+//		if(e.getSource() == textField || e.getSource() == button){
+//			String text = textField.getText();
+//			println(text);
+//			drawText(text);
+//			textField.setText("");
+//		}
+//	}
+//	private void drawText(String text) {
+//		if(text.equals(null) || text.equals("")){
+//			return;
+//		}
+//		GLabel message = new GLabel (text);
+//		add(message, x, y);
+//		y += DISTANCE;
+//		
+//	}
 	
 	
 }
