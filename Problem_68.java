@@ -24,7 +24,19 @@ public class Problem_68 extends GraphicsProgram {
 		add(textField, SOUTH);
 		textField.addActionListener(this);
 		
+		button = new JButton("enter");
+		add(button, SOUTH);
 		
+		addActionListeners();
+	}
+	public void actionPerformed(ActionEvent e){
+		println("here");
+		
+		if(e.getSource() == textField || e.getSource() == button){
+			String text = textField.getText();
+			println(text);
+			textField.setText("");
+		}
 	}
 	
 	
