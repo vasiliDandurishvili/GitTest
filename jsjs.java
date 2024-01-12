@@ -30,12 +30,7 @@ public class jsjs extends ConsoleProgram {
 		
 
 //		textField.addActionListener(this);
-		
-		for(int i = 0; i < 11;i++){
-			double x =(getWidth() / 11)*i;
-			double y1=0;
-			double y2 = getHeight();
-		}
+
 		
 		
 		
