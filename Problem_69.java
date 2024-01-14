@@ -86,9 +86,14 @@ public class Problem_69 extends GraphicsProgram {
 		
 		double minY = getHeight() - messages.getHeight() - DISTANCE;
 		double maxY = 0;
+		
+		/**when we scrool at bottom messages.getY() is negative and if is less that minY we cannot scroll 
+		 * more down.*/
 		if(messages.getY() < minY){
 			messages.setLocation(messages.getX(), minY);
-		}else if(messages.getY() > maxY){
+		}/**when we scroll up messages.getY() is equals maxY and is 0 and we cannot 
+		scroll more up.*/
+		else if(messages.getY() > maxY){
 			messages.setLocation(messages.getX(), maxY);
 		}
 	}
