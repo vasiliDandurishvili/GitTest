@@ -19,7 +19,7 @@ public class Problem_68 extends GraphicsProgram {
 	private JButton button;
 	private double x = DISTANCE;
 	private double y = DISTANCE;
-	private GCompound messages;
+	
 
 	public void init(){
 		textField = new JTextField (20);
@@ -29,8 +29,6 @@ public class Problem_68 extends GraphicsProgram {
 		button = new JButton("enter");
 		add(button, SOUTH);
 		
-		messages = new GCompound();
-		add(messages);
 		addActionListeners();
 	}
 	public void actionPerformed(ActionEvent e){
@@ -49,6 +47,7 @@ public class Problem_68 extends GraphicsProgram {
 		}
 		GLabel message = new GLabel (text);
 		add(message, x, y);
+		
 		y += DISTANCE;
 		
 	}
