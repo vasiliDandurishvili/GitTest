@@ -78,7 +78,7 @@ public class Problem_69 extends GraphicsProgram {
 	public void mouseDragged(MouseEvent e){
 		/**we want to scrol if messages length is more than canvas.*/
 		if(messages.getHeight() + DISTANCE <= getHeight()){
-			return
+			return;
 		}
 		messages.move(0, e.getY() - prevY);
 		
