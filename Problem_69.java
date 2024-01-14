@@ -84,6 +84,8 @@ public class Problem_69 extends GraphicsProgram {
 		
 		prevY = e.getY();
 		
+		double minY;
+		double maxY;
 	}
 	
 	
