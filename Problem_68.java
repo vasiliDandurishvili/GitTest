@@ -32,7 +32,7 @@ public class Problem_68 extends GraphicsProgram {
 	public void actionPerformed(ActionEvent e){
 		println("here");
 		
-		if(e.getSource() == textField || e.getSource() == button){
+		if(e.getSource() == textField ){
 			String text = textField.getText();
 			println(text);
 			drawText(text);
