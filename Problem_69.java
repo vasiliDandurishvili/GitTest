@@ -49,7 +49,7 @@ public class Problem_69 extends GraphicsProgram {
 			return;
 		}
 		GLabel message = new GLabel (text);
-//		add(message, x, y);
+		messages.add(message, x, y);
 		add(messages, x, y);
 		
 		y += DISTANCE;
