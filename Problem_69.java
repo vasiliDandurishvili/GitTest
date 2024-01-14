@@ -76,7 +76,7 @@ public class Problem_69 extends GraphicsProgram {
 		
 	}
 	public void mouseDragged(MouseEvent e){
-		messages.move(0, e.getY() - prevY());
+		messages.move(0, e.getY() - prevY);
 		
 		prevY = e.getY();
 		
