@@ -1,4 +1,5 @@
 import java.awt.event.ActionEvent;
+import java.awt.event.MouseEvent;
 
 import javax.swing.JButton;
 import javax.swing.JTextField;
@@ -20,6 +21,8 @@ public class Problem_69 extends GraphicsProgram {
 	private double x = DISTANCE;
 	private double y = DISTANCE;
 	private GCompound messages;
+	
+	private double prevY;
 
 	public void init(){
 		textField = new JTextField (20);
@@ -65,6 +68,18 @@ public class Problem_69 extends GraphicsProgram {
 		}
 		
 		
+		
+	}
+	public void mousePressed(MouseEvent e){
+		prevY = e.getY();
+		
+		
+	}
+	public void mouseDragged(MouseEvent e){
+		messages.move(0, e.getY() - prevY());
+		
+		prevY = e.getY();
+		
 	}
 	
 	
@@ -75,10 +90,6 @@ public class Problem_69 extends GraphicsProgram {
 	
 	
 	
-	
-	
-	
-	
-	
+
 	
 }
