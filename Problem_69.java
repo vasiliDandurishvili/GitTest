@@ -84,7 +84,7 @@ public class Problem_69 extends GraphicsProgram {
 		
 		prevY = e.getY();
 		
-		double minY = getHeight() - messages.getHeight() - DISTANNCE;
+		double minY = getHeight() - messages.getHeight() - DISTANCE;
 		double maxY = 0;
 		if(messages.getY() < minY){
 			messages.setLocation(messages.getX(), minY);
