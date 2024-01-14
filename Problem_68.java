@@ -3,6 +3,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.JButton;
 import javax.swing.JTextField;
 
+import acm.graphics.GCompound;
 import acm.graphics.GLabel;
 import acm.program.GraphicsProgram;
 
@@ -18,6 +19,7 @@ public class Problem_68 extends GraphicsProgram {
 	private JButton button;
 	private double x = DISTANCE;
 	private double y = DISTANCE;
+	private GCompound messages;
 
 	public void init(){
 		textField = new JTextField (20);
@@ -27,6 +29,8 @@ public class Problem_68 extends GraphicsProgram {
 		button = new JButton("enter");
 		add(button, SOUTH);
 		
+		messages = new GCompound();
+		add(messages);
 		addActionListeners();
 	}
 	public void actionPerformed(ActionEvent e){
