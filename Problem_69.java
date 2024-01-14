@@ -60,7 +60,7 @@ public class Problem_69 extends GraphicsProgram {
 	private void fixPositionOfLastMessages() {
 		if(messages.getHeight() + DISTANCE > getHeight()){
 			double newY = getHeight() - messages.getHeight() - DISTANCE;
-			messages.setLocation(messages.getX, newY);
+			messages.setLocation(messages.getX(), newY);
 		}
 		
 		
