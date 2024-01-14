@@ -50,6 +50,7 @@ public class Problem_69 extends GraphicsProgram {
 		}
 		GLabel message = new GLabel (text);
 //		add(message, x, y);
+		add(messages, x, y);
 		
 		y += DISTANCE;
 		
