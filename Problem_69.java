@@ -33,6 +33,7 @@ public class Problem_69 extends GraphicsProgram {
 		add(messages);
 		
 		addActionListeners();
+		addMouseListeners();
 	}
 	public void actionPerformed(ActionEvent e){
 		println("here");
