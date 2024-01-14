@@ -15,12 +15,13 @@ public class Problem_67 extends GraphicsProgram{
 		add(textField, SOUTH);
 		textField.addActionListener(this);
 		
-		addActionListeners();
+//		addActionListeners();
 	}
 	public void actionPerformed(ActionEvent e){
 		if(e.getSource() == textField){
 			GImage image = new GImage (textField.getText());
 			add(image, getWidth() / 2 - image.getWidth() / 2, getHeight() / 2 - image.getHeight() / 2 );
+			
 		}
 	}
 
