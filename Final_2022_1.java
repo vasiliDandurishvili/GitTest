@@ -18,12 +18,12 @@ public class Final_2022_1 extends ConsoleProgram{
 		int sames = 1;
 		String result = "";
 		for(int i = 0; i < line.length(); i++){
-			if(line.charAt(i) == line.charAt(i + 1)){
+			if(i < line.length() -1 && line.charAt(i) != line.charAt(i+1)){
 				
 			}
+			
+			
 		}
-		
-		
 		
 		return result;
 	}
