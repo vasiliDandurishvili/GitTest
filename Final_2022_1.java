@@ -1,5 +1,8 @@
 import acm.program.ConsoleProgram;
 
+
+//aaabbbbbccd -> a3b4c2d1 
+
 public class Final_2022_1 extends ConsoleProgram{
 	public void run(){
 		String line = readLine();
@@ -13,7 +16,6 @@ public class Final_2022_1 extends ConsoleProgram{
 		}
 		
 	}
-// aaabbbbbccd
 	private String manipString(String line) {
 		int sames = 1;
 		String result = "";
@@ -21,8 +23,7 @@ public class Final_2022_1 extends ConsoleProgram{
 			if(i < line.length() -1 && line.charAt(i) != line.charAt(i+1)){
 				/**bolos ar tvlis.*/
 				String psLine = line.substring(0, i + 1);
-				result = line.charAt(0) +  "";
-				result += sames;
+				result = line.charAt(0) +  "" + sames;
 				line = line.substring(i + 1);
 				sames = 1;
 				
