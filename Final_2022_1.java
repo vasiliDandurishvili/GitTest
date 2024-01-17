@@ -21,7 +21,8 @@ public class Final_2022_1 extends ConsoleProgram{
 			if(i < line.length() -1 && line.charAt(i) != line.charAt(i+1)){
 				/**bolos ar tvlis.*/
 				String psLine = line.substring(0, i + 1);
-				result = line.charAt(0) + sames + "";
+				result = line.charAt(0) +  "";
+				result += sames;
 				line = line.substring(i + 1);
 				sames = 1;
 				
