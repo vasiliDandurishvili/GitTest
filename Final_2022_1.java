@@ -20,6 +20,7 @@ public class Final_2022_1 extends ConsoleProgram{
 		if(line.length() == 1){
 			return line.charAt(0) + "" + 1;
 		}
+		String result = "";
 		
 		
 		return result;
