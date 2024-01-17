@@ -26,11 +26,20 @@ public class Final_2022_1 extends ConsoleProgram{
 			if(i != line.length() - 1 && line.charAt(i) != line.charAt(+1)){
 				String psLine = line.substring(0, i + 1);
 				result += line.charAt(0) + "" + sames;
+				line = line.substring(i + 1);
 				sames = 1;
 				i = -1;
 			}else{
 				sames += 1;
 			}
+			
+		}
+		/**if last digit is different from before line should be 1 size.*/
+		if(line.length() == 1){
+			result += line.charAt(0) + "" + 1; 
+		}/**if last digits are same add to result*/
+		else{
+			result += line.charAt(0) + "" + line.length();
 		}
 		
 		
