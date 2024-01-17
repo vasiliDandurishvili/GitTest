@@ -19,7 +19,7 @@ public class Final_2022_1 extends ConsoleProgram{
 		String result = "";
 		for(int i = 0; i < line.length(); i++){
 			if(i < line.length() -1 && line.charAt(i) != line.charAt(i+1)){
-				
+				String psLine = line.substring(0, i + 1);
 			}
 			
 			
