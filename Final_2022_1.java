@@ -28,7 +28,8 @@ public class Final_2022_1 extends ConsoleProgram{
 					result += line.charAt(line.length() - 1) + "" + 1;
 					return result;
 				}else{
-					
+					result += line.charAt(0) + "" + line.length();
+					return result;
 				}
 			}
 			if(i < line.length() - 1 && line.charAt(i) != line.charAt(i+1)){
