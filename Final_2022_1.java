@@ -17,6 +17,9 @@ public class Final_2022_1 extends ConsoleProgram{
 		
 	}
 	private String manipString(String line) {
+		if(line.length() == 1){
+			return.line.charAt(0) + "" + 1;
+		}
 		int sames = 1;
 		String result = "";
 		for(int i = 0; i < line.length(); i++){
