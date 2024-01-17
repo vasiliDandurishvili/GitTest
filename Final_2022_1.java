@@ -25,7 +25,7 @@ public class Final_2022_1 extends ConsoleProgram{
 		for(int i = 0; i <= line.length() - 1; i++){
 			if(i != line.length() - 1 && line.charAt(i) != line.charAt(+1)){
 				String psLine = line.substring(0, i + 1);
-				result += line.charAt(0) + "" + sames;
+				result += line.charAt(0) + "" + psLine.length();
 				line = line.substring(i + 1);
 				sames = 1;
 				i = -1;
