@@ -17,11 +17,6 @@ public class jsjs extends ConsoleProgram {
 
 	public void run() {
 		
-		String l = "kkkkaa";
-		
-		String m = l.substring(0, 4);
-		print(m);
-		
 		if(true){
 			return;
 		}
