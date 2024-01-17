@@ -20,7 +20,18 @@ public class Final_2022_1 extends ConsoleProgram{
 		if(line.length() == 1){
 			return line.charAt(0) + "" + 1;
 		}
+		int sames = 1;
 		String result = "";
+		for(int i = 0; i <= line.length() - 1; i++){
+			if(i != line.length() - 1 && line.charAt(i) != line.charAt(+1)){
+				String psLine = line.substring(0, i + 1);
+				result += line.charAt(0) + "" + sames;
+				sames = 1;
+				i = -1;
+			}else{
+				sames += 1;
+			}
+		}
 		
 		
 		return result;
