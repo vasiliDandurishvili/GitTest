@@ -15,8 +15,17 @@ public class Final_2022_1 extends ConsoleProgram{
 	}
 
 	private String manipString(String line) {
-		// TODO Auto-generated method stub
-		return null;
+		int sames = 1;
+		String result = "";
+		for(int i = 0; i < line.length(); i++){
+			if(line.charAt(i) == line.charAt(i + 1)){
+				
+			}
+		}
+		
+		
+		
+		return result;
 	}
 
 }
