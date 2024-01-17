@@ -26,7 +26,8 @@ public class Final_2022_1 extends ConsoleProgram{
 				String psLine = line.substring(0, i + 1);
 				result += line.charAt(0) + "" + psLine.length();
 				line = line.substring(i + 1);
-				sames = 1;i = -1;
+				
+				i = -1;
 			}
 			
 		}
