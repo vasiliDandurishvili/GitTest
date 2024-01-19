@@ -13,8 +13,10 @@ public class FX_2022_1 extends ConsoleProgram{
 	}
 
 	private String intToString(int[] arr) {
+		int sum = 0;
 		String result = "";
 		for(int i = 0; i < arr.length; i++){
+			result = arr[i] + "";
 			
 		}
 		
