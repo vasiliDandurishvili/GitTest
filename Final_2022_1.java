@@ -31,8 +31,8 @@ public class Final_2022_1 extends ConsoleProgram{
 			}
 			
 		}
-	
-			result += line.charAt(0) + "" + line.length();
+		/**for last chars.*/
+		result += line.charAt(0) + "" + line.length();
 		
 		
 		
