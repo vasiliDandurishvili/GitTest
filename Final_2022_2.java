@@ -40,7 +40,7 @@ public class Final_2022_2 extends ConsoleProgram{
 		for(int i = 0; i < row; i++){
 			for(int j = 0; j < col; j++){
 				if(matrix[i][j] == tmp){
-					matrix[i][j] == 0;
+					matrix[i][j] = 0;
 				}
 			}
 		}
@@ -61,10 +61,12 @@ public class Final_2022_2 extends ConsoleProgram{
 	private void changerowWithTmps(int[][] matrix, int i, int tmp) {
 		int row = matrix.length;
 		int col = matrix[0].length;	
-		
+		for(int i = 0; )
+		///////
 	}
 	private void changeColWithTmps(int[][] matrix, int j, int tmp) {
 		int row = matrix.length;
-		int col = matrix[0].length;		
+		int col = matrix[0].length;	
+		/////////
 	}
 }
