@@ -43,7 +43,7 @@ public class Final_2022_3 extends ConsoleProgram{
 	private boolean reallySorted(ArrayList<Integer> a) {
 		for(int i = 1; i < a.size(); i++){
 			if(a.get(i) < a.get(i - 1)){
-				return false.
+				return false;
 			}
 			
 		}
