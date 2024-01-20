@@ -41,8 +41,13 @@ public class Final_2022_3 extends ConsoleProgram{
 		
 	}
 	private boolean reallySorted(ArrayList<Integer> a) {
-		// TODO Auto-generated method stub
-		return false;
+		for(int i = 1; i < a.size(); i++){
+			if(a.get(i) < a.get(i - 1)){
+				return false.
+			}
+			
+		}
+		return true;
 	}
 	private void swap(ArrayList<Integer> a, int i, int j) {
 		int temp = a.get(i);
