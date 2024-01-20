@@ -21,6 +21,17 @@ public class Final_2022_3 extends ConsoleProgram{
 		return false;
 	}
 	private boolean sortedWithReverse(ArrayList<Integer> a) {
+		for(int i = 0; i < a.size();i++){
+			for(int j = i + 1; j < a.size();j++ ){
+				revereElems(a, i, j);
+				if(reallySorted(a)){
+					return true;
+				}
+				revereElems(a,i,j);
+			}
+		return false;
+	}
+	private boolean reallySorted(ArrayList<Integer> a) {
 		// TODO Auto-generated method stub
 		return false;
 	}
