@@ -29,7 +29,12 @@ public class Final_2022_3 extends ConsoleProgram{
 				}
 				revereElems(a,i,j);
 			}
+		}
 		return false;
+	}
+	private void revereElems(ArrayList<Integer> a, int i, int j) {
+		
+		
 	}
 	private boolean reallySorted(ArrayList<Integer> a) {
 		// TODO Auto-generated method stub
