@@ -33,7 +33,11 @@ public class Final_2022_3 extends ConsoleProgram{
 		return false;
 	}
 	private void revereElems(ArrayList<Integer> a, int i, int j) {
-		
+		int mid = (j - i + 1) / 2 ;
+		/**swap each elements, i = 10 j = 20 =>  11<=>19, 12<=>18... .*/
+		for(int k = 0; k < mid; k++){
+			swap(a, i + k, j - k);
+		}
 		
 	}
 	private boolean reallySorted(ArrayList<Integer> a) {
