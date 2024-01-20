@@ -32,9 +32,12 @@ public class Final_2022_1 extends ConsoleProgram{
 			
 		}
 		/**if last digit is different from before line should be 1 size.*/
-		
+		if(line.length() == 1){
+			result += line.charAt(0) + "" + 1; 
+		}/**if last digits are same add to result*/
+		else{
 			result += line.charAt(0) + "" + line.length();
-		
+		}
 		
 		
 		return result;
