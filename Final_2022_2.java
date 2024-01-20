@@ -61,7 +61,9 @@ public class Final_2022_2 extends ConsoleProgram{
 	private void changerowWithTmps(int[][] matrix, int i, int tmp) {
 		int row = matrix.length;
 		int col = matrix[0].length;	
-		for(int i = 0; )
+		for(;true; ){
+			
+		}
 		///////
 	}
 	private void changeColWithTmps(int[][] matrix, int j, int tmp) {
