@@ -17,7 +17,6 @@ import acm.util.RandomGenerator;
 public class jsjs extends ConsoleProgram {
 
 	public void run() {
-
 		ArrayList<Integer> List = new ArrayList<Integer>();
 
 		List.add(11);
