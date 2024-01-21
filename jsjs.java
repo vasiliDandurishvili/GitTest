@@ -25,7 +25,11 @@ public class jsjs extends ConsoleProgram {
 		List.add(1717);
 		List.add(1);
 		
+		println(List);
+		
 		Collections.reverse(List);
+		
+		println(List);
 		if(true){
 			return;
 		}
