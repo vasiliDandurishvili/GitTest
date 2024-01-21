@@ -1,6 +1,7 @@
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.StringTokenizer;
 
@@ -16,6 +17,18 @@ import acm.util.RandomGenerator;
 public class jsjs extends ConsoleProgram {
 
 	public void run() {
+
+		ArrayList<Integer> List = new ArrayList<Integer>();
+
+		List.add(11);
+		List.add(199);
+		List.add(1717);
+		List.add(1);
+		
+		Collections.reverse(List);
+		if(true){
+			return;
+		}
 		
 		String l = "kkkkaa";
 		
