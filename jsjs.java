@@ -34,7 +34,8 @@ public class jsjs extends ConsoleProgram {
 			println(copyLine + " " + line.substring(space[0] + 1));
 			return;
 		}
-		
+		// for last part
+		copyLine += line.substring(beginIndex)
 		println(copyLine);
 		
 		
