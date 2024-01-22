@@ -17,6 +17,30 @@ import acm.util.RandomGenerator;
 public class jsjs extends ConsoleProgram {
 
 	public void run() {
+		// sfeisebis damateba.
+		int[] space = new int[5];
+		for(int i = 0; i < space.length; i++){
+			space[i] = readInt();
+		}
+		Arrays.sort(space);
+		String line = readLine("text: ");
+		String copyLine = line.substring(0, space[0] + 1);
+		if(space.length >= 2){
+			String sub;
+			for(int i = 1; i < space.length; i++){
+				copyLine += " " + line.substring(space[i - 1], space[i] + 1);
+			}
+		}else{
+			println(copyLine + " " + line.substring(space[0] + 1));
+			return;
+		}
+		
+		println(copyLine);
+		
+		
+		if(true){
+			return;
+		}
 		//a da b indeqsebi.
 		String str = readLine();
 		if(str.lastIndexOf("a") < str.indexOf("b")){
