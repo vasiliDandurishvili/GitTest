@@ -17,6 +17,35 @@ import acm.util.RandomGenerator;
 public class jsjs extends ConsoleProgram {
 
 	public void run() {
+		
+		int [] a = new int[10];
+		for(int i = 0;i < a.length; i++){
+			a[i] = readInt();
+		}
+		boolean check = false;
+		while(true){
+			for(int i = 0; i < a.length; i++){
+				if(a[i] > a[i+1]){
+					int temp = a[i];
+					a[i] = a[i + 1];
+					a[i + 1] = temp;
+					i = 0;
+				}
+			}
+			break;
+		}
+		println(Arrays.toString(a));
+		
+		
+		
+		
+		
+		
+		
+		if(true){
+			return;
+		}
+		
 		ArrayList<Integer> List = new ArrayList<Integer>();
 
 		List.add(11);
