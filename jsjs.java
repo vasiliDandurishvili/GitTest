@@ -18,16 +18,16 @@ public class jsjs extends ConsoleProgram {
 
 	public void run() {
 		
-		int [] a = new int[10];
-		for(int i = 0;i < a.length; i++){
-			a[i] = readInt();
+		int [] arr = new int[10];
+		for(int i = 0;i < arr.length; i++){
+			arr[i] = readInt();
 		}
 		while(true){
-			for(int i = 0; i < a.length; i++){
-				if(a[i] > a[i+1]){
-					int temp = a[i];
-					a[i] = a[i + 1];
-					a[i + 1] = temp;
+			for(int i = 0; i < arr.length; i++){
+				if(arr[i] > arr[i+1]){
+					int temp = arr[i];
+					arr[i] = arr[i + 1];
+					arr[i + 1] = temp;
 					i = 0;
 				}
 			}
