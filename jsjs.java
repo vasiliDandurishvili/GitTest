@@ -22,7 +22,6 @@ public class jsjs extends ConsoleProgram {
 		for(int i = 0;i < a.length; i++){
 			a[i] = readInt();
 		}
-		boolean check = false;
 		while(true){
 			for(int i = 0; i < a.length; i++){
 				if(a[i] > a[i+1]){
