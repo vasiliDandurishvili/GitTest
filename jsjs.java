@@ -17,6 +17,17 @@ import acm.util.RandomGenerator;
 public class jsjs extends ConsoleProgram {
 
 	public void run() {
+		//a da b indeqsebi.
+		String str = readLine();
+		if(str.lastIndexOf("a") < str.indexOf("b")){
+			println("true");
+		}else{
+			println("false");
+		}
+		
+		if(true){
+			return;
+		}
 		//asteroidebi.
 		int mas = readInt("masa: ");
 		int[] comet = new int[6];
