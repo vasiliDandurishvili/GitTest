@@ -20,7 +20,7 @@ public class jsjs extends ConsoleProgram {
 		// sfeisebis damateba.
 		int[] space = new int[5];
 		for(int i = 0; i < space.length; i++){
-			space[i] = readInt();
+			space[i] = readInt("space: ");
 		}
 		Arrays.sort(space);
 		String line = readLine("text: ");
