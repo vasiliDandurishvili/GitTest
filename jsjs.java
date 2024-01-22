@@ -17,7 +17,29 @@ import acm.util.RandomGenerator;
 public class jsjs extends ConsoleProgram {
 
 	public void run() {
+		//asteroidebi.
+		int mas = readInt("masa: ");
+		int[] comet = new int[6];
+		for(int i = 0; i < comet.length; i++){
+			comet[i] = readInt();
+		}
+		Arrays.sort(comet);
 		
+		for(int i = 0; i < comet.length; i++){
+			if(mas >= comet[i]){
+				mas += comet[i];
+			}else{
+				println("false");
+			}
+		}
+		println("true");
+		
+		
+		
+		if(true){
+			return;
+		}
+		//sort masive.
 		int [] arr = new int[10];
 		for(int i = 0;i < arr.length; i++){
 			arr[i] = readInt();
@@ -195,6 +217,8 @@ public class jsjs extends ConsoleProgram {
 		//
 		// }
 	}
+
+
 
 	// ////////////////////////
 
