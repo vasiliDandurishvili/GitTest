@@ -33,7 +33,7 @@ public class jsjs extends ConsoleProgram {
 			}
 			break;
 		}
-		println(Arrays.toString(a));
+		println(Arrays.toString(arr));
 		
 		
 		
