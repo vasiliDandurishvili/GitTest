@@ -30,6 +30,7 @@ public class jsjs extends ConsoleProgram {
 				mas += comet[i];
 			}else{
 				println("false");
+				return;
 			}
 		}
 		println("true");
