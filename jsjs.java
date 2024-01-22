@@ -18,7 +18,7 @@ public class jsjs extends ConsoleProgram {
 
 	public void run() {
 		// sfeisebis damateba.
-	
+		
 		
 		
 		if(true){
