@@ -28,7 +28,7 @@ public class jsjs extends ConsoleProgram {
 					int temp = arr[i];
 					arr[i] = arr[i + 1];
 					arr[i + 1] = temp;
-					i = 0;
+					i = -1;
 				}
 			}
 			break;
