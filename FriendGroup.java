@@ -27,8 +27,20 @@ public class FriendGroup {
 		ArrayList<String> friends = friendMap.get(person);
 		friends.add(friend);
 		
-		System.out.println(friendMap);
 	
+	}
+	public String getPopularPerson(){
+		int maxCount = 0;
+		String popularPerson = null;
+		for(String person: friendMap.keySet()){
+			int friendCount = friendMap.get(person).size();
+			if(friendCount > maxCount){
+				maxCount = friendCount;
+				popularPerson = person;
+			}
+		}
+		
+		return popularPerson;
 	}
 }
 
