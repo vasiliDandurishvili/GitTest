@@ -60,7 +60,10 @@ public class School {
 //	addPupil მეთოდის საშუალებით შეგიძლიათ საგანზე დაამატოთ მოსწავლე. ერთი და
 //	იგივე მოსწავლე შეიძლება ერთ ან რამდენიმე საგანს სწავლობდეს.
 	public void addPupil(String pupil, String subject){
-		subjectPupil.putIfA
+		if(!subjectTeacher.containsKey(subject)){
+			return;
+		}
+		subjectPupil.putIfAbsent(subject, new HashSet<>());
 		
 	}
 	
