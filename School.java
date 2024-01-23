@@ -64,6 +64,10 @@ public class School {
 			return;
 		}
 		subjectPupil.putIfAbsent(subject, new HashSet<>());
+		subjectPupil.get(subject).add(pupil);
+		
+		pupilSubject.putIfAbsent(pupil, new HashSet<>());
+		pupilSubject.get(pupil).add(subject);
 		
 	}
 	
