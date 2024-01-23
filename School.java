@@ -84,7 +84,7 @@ public class School {
 			teachers.addAll(subjectTeacher.get(subject));
 		}
 		
-		return null;
+		return teachers.iterator();
 		
 	}
 	
