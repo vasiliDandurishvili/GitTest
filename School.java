@@ -48,6 +48,11 @@ public class School {
 			return;
 		}
 		teacherSubject.get(teacher).add(subject);
+		//axla saganzec unda davamatot maswavlebeli.
+		
+		subjectTeacher.putIfAbsent(subject, new HashSet<>());
+		
+		subjectTeacher.get(subject).add(teacher);
 		
 	}
 	
