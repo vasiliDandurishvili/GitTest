@@ -25,7 +25,7 @@ public class School {
 		System.out.println("teacherSubject: " + teacherSubject);
 		System.out.println("subjectTeacher: " + subjectTeacher);
 		System.out.println("pupilSubject: " + pupilSubject);
-		System.out.println("subjectPupic: " + subjectPupic);
+		System.out.println("subjectPupil: " + subjectPupil);
 	}
 	
 //	addTeacher მეთოდის საშუალებით შეგიძლიათ სკოლას დაამატოთ ახალი
