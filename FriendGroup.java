@@ -42,6 +42,11 @@ public class FriendGroup {
 		
 		return popularPerson;
 	}
+	public String getFriendsAsString(){
+		
+		
+		return null;
+	}
 }
 
 
