@@ -23,7 +23,9 @@ public class FriendGroup {
 		if(!friendMap.containsKey(person)){
 			friendMap.put(person, new ArrayList<String>());
 		}
-		friendMap.get(person).add(friend);
+//		friendMap.get(person).add(friend);
+		ArrayList<String> friends = friendMap.get(person);
+		friends.add(friend);
 	
 	}
 }
