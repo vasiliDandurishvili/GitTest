@@ -8,7 +8,7 @@ public class School {
 	private Map <String, HashSet<String>> subjectTeacher;
 	
 	private Map <String, HashSet<String>> pupilSubject;
-	private Map <String, HashSet<String>> subjectPupic;
+	private Map <String, HashSet<String>> subjectPupil;
 	
 	
 //	კონსტრუქტორს არაფერი არ გადაეცემა. აქ შეგიძლიათ ინიციალიზაცია გაუკეთოთ
