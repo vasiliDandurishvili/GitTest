@@ -121,9 +121,11 @@ public class School {
 			teacherSubject.remove(teacher);
 		}
 		for(String subject: subjectTeacher.keySet()){
-			if(subjectTeacher.get(subject).contains(teacher)){
-				subjectTeacher.get(subject).remove(teacher);
-			}
+			subjectTeacher.get(subject).remove(teacher);
+//			es ar schirdeba radgan ararsebulis remove errors ar agdebs
+//			if(subjectTeacher.get(subject).contains(teacher)){
+//				subjectTeacher.get(subject).remove(teacher);
+//			}
 		}
 	}
 	
