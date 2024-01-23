@@ -26,6 +26,8 @@ public class FriendGroup {
 //		friendMap.get(person).add(friend);
 		ArrayList<String> friends = friendMap.get(person);
 		friends.add(friend);
+		
+		System.out.println(friendMap);
 	
 	}
 }
