@@ -42,10 +42,13 @@ public class FriendGroup {
 		
 		return popularPerson;
 	}
-	public String getFriendsAsString(){
+	public String getFriendsAsString(String person){
+		if(!friendMap.containsKey(person)){
+			return "no friends";
+		}
+		ArrayList<String> friends = friendMap.get(person);
 		
-		
-		return null;
+		return friends.toString();
 	}
 }
 
