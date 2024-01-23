@@ -98,6 +98,7 @@ public class School {
 		for(String subject: teacherSubject.get(teacher)){
 			pupils.addAll(subjectPupil.get(subject));
 		}
+		
 		return pupils.iterator();
 	}
 	
