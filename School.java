@@ -79,6 +79,11 @@ public class School {
 //	დამატებული(სწავლობს). თუკი pupil სახელის მოსწავლე არ გვყავს მაშინ მეთოდმა
 //	უნდა დააბრუნოს null.
 	public Iterator<String> getTeachers(String pupil){
+		HashSet<String> teachers = new HashSet<>();
+		for(String subject: pupilSubject.get(pupil)){
+			teachers.addAll(subjectTeacher.get(subject));
+		}
+		
 		return null;
 		
 	}
