@@ -94,8 +94,11 @@ public class School {
 //	სახელები, რომლებიც მის რომელიმე საგანს სწავლობენ. თუკი teacher სახელის მქონე
 //	ლექტორი არ გვყავს მაშინ მეთოდმა უნდა დააბრუნოს null.
 	public Iterator<String> getPupils(String teacher){
-		return null;
-		
+		HashSet<String> pupils = new HashSet<>();
+		for(String subject: teacherSubject.get(teacher)){
+			pupils.addAll(subjectPupil.get(subject));
+		}
+		return pupils.iterator();
 	}
 	
 	
