@@ -50,6 +50,20 @@ public class FriendGroup {
 		
 		return friends.toString();
 	}
+	public ArrayList<String> getAllName(){
+		ArrayList<String> names = new ArrayList<>();
+		for(String person: friendMap.keySet()){
+			if(!names.contains(person)){
+				names.add(person);
+			}
+			ArrayList<String> friends = friendMap.get(person);
+			for(String friend: friends){
+				if(!names.contains(friend)){
+					names.add(friend);
+				}
+			}
+		}
+	}
 }
 
 
