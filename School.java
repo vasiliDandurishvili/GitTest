@@ -1,3 +1,4 @@
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
@@ -13,7 +14,11 @@ public class School {
 //	კონსტრუქტორს არაფერი არ გადაეცემა. აქ შეგიძლიათ ინიციალიზაცია გაუკეთოთ
 //	თქვენთვის საჭირო ცვლადებს.
 	public School(){
+		teacherSubject = new HashMap<>();
+		subjectTeacher = new HashMap<>();
 		
+		pupilSubject = new HashMap<>();
+		subjectPupic = new HashMap<>();
 	}
 
 	
