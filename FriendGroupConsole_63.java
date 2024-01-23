@@ -13,6 +13,11 @@ public class FriendGroupConsole_63 extends ConsoleProgram {
 			String person = readLine("enter person: ");
 			myFriendGroup.addFriendship(person, friend);
 		}
-		println("the most popular person: " + myFriendGroup.getPopularPerson());
+		String popular =  myFriendGroup.getPopularPerson();
+		println("the most popular person: " + popular);
+		
+		println("friends: " + myFriendGroup.getFriendsAsString(popular));
+		
+		
 	}
 }
