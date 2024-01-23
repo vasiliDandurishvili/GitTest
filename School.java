@@ -21,6 +21,12 @@ public class School {
 		subjectPupic = new HashMap<>();
 	}
 
+	private void tester(){
+		System.out.println("teacherSubject: " + teacherSubject);
+		System.out.println("subjectTeacher: " + subjectTeacher);
+		System.out.println("pupilSubject: " + pupilSubject);
+		System.out.println("subjectPupic: " + subjectPupic);
+	}
 	
 //	addTeacher მეთოდის საშუალებით შეგიძლიათ სკოლას დაამატოთ ახალი
 //	მასწავლებელი. მეთოდს გადაეცემა მასწავლებლის სახელი. შეგიძლიათ ჩათვალოთ,
@@ -38,6 +44,10 @@ public class School {
 //	თუკი teacher სახელის მქონე მასწავლებელი არ არის აქამდე დამატებული, მაშინ
 //	მეთოდმა არაფერი არ უნდა გააკეთოს.
 	public void addSubject(String teacher, String subject){
+		if(!teacherSubject.containsKey(teacher)){
+			return;
+		}
+		teacherSubject.get(teacher).add(subject);
 		
 	}
 	
