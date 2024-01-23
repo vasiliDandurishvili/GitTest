@@ -84,7 +84,9 @@ public class School {
 		}
 		HashSet<String> teachers = new HashSet<>();
 		for(String subject: pupilSubject.get(pupil)){
-			teachers.addAll(subjectTeacher.get(subject));
+			if(subjectTeacher.containsKey(subject)){// es yoveltvis moxdeba tu aqamde movida.
+				teachers.addAll(subjectTeacher.get(subject));	
+			}
 		}
 		
 		return teachers.iterator();
@@ -97,9 +99,14 @@ public class School {
 //	სახელები, რომლებიც მის რომელიმე საგანს სწავლობენ. თუკი teacher სახელის მქონე
 //	ლექტორი არ გვყავს მაშინ მეთოდმა უნდა დააბრუნოს null.
 	public Iterator<String> getPupils(String teacher){
+		if(!teacherSubject.containsKey(teacher)){
+			return null;
+		}
 		HashSet<String> pupils = new HashSet<>();
 		for(String subject: teacherSubject.get(teacher)){
-			pupils.addAll(subjectPupil.get(subject));
+			if(subjectPupil.containsKey(subject)){// 1 mainc studenti gadis sagans.
+			pupils.addAll(subjectPupil.get(subject));//tu aravis ar aurchevia sagani get ar imushavebs
+			}
 		}
 		
 		return pupils.iterator();
@@ -110,7 +117,14 @@ public class School {
 //	გამოძახების, შემდეგ getTeachers მეთოდმა არ უნდა დააბრუნოს teacher სახელი არც
 //	ერთი სტუდენტისთვის.
 	public void removeTeacher(String teacher){
-		
+		if(teacherSubject.containsKey(teacher)){
+			teacherSubject.remove(teacher);
+		}
+		for(String subject: subjectTeacher.keySet()){
+			if(subjectTeacher.get(subject).contains(teacher)){
+				subjectTeacher.get(subject).remove(teacher);
+			}
+		}
 	}
 	
 
