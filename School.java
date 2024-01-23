@@ -18,7 +18,7 @@ public class School {
 		subjectTeacher = new HashMap<>();
 		
 		pupilSubject = new HashMap<>();
-		subjectPupic = new HashMap<>();
+		subjectPupil = new HashMap<>();
 	}
 
 	private void tester(){
@@ -60,6 +60,7 @@ public class School {
 //	addPupil მეთოდის საშუალებით შეგიძლიათ საგანზე დაამატოთ მოსწავლე. ერთი და
 //	იგივე მოსწავლე შეიძლება ერთ ან რამდენიმე საგანს სწავლობდეს.
 	public void addPupil(String pupil, String subject){
+		subjectPupil.putIfA
 		
 	}
 	
