@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 import acm.program.ConsoleProgram;
 
 public class FriendGroupConsole_63 extends ConsoleProgram {
@@ -16,7 +18,13 @@ public class FriendGroupConsole_63 extends ConsoleProgram {
 		String popular =  myFriendGroup.getPopularPerson();
 		println("the most popular person: " + popular);
 		
-		println("friends: " + myFriendGroup.getFriendsAsString(popular));
+//		println("friends: " + myFriendGroup.getFriendsAsString(popular));
+		
+		ArrayList<String> names = myFriendGroup.getAllName();
+		
+		for(String name: names){
+			println(name + "'s friends: " + myFriendGroup.getFriendsAsString(name));
+		}
 		
 		
 	}
