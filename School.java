@@ -26,7 +26,7 @@ public class School {
 //	მასწავლებელი. მეთოდს გადაეცემა მასწავლებლის სახელი. შეგიძლიათ ჩათვალოთ,
 //	რომ მასწავლებლის სახელი უნიკალურია.
 	public void addTeacher(String teacher){
-		teacherSubject.put(teacher, hashSet<String>());
+		teacherSubject.put(teacher, new HashSet<>());
 	}
 	
 	
