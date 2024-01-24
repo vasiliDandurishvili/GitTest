@@ -18,7 +18,14 @@ public class jsjs extends ConsoleProgram {
 
 	public void run() {
 		// sfeisebis damateba.
+		ArrayList<String> myArr = new ArrayList<String>(); 
+		myArr.add("ad");
 		
+		println(myArr);
+		
+		myArr.add(null);
+		
+		println(myArr);
 		
 		
 		if(true){
