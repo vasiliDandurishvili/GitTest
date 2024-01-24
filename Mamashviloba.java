@@ -53,11 +53,14 @@ public class Mamashviloba extends ConsoleProgram{
 		}
 		//aq ukve hasmapebi savsea.
 		if(!sonDad.containsKey(name)){
+			System.out.println("1");
 			for(String son: dadSon.get(sonDad.get(name))){//amoviget mamis shvilebi-> bidzebi
+				System.out.println("2");
 				//aq vdgavart bidzebze da mati shvilebi unda chavamatot chven listshi.
 				if(!son.equals(name)){//mamachvenis shvili rom ar iyos.
+					System.out.println("3");
 					for(String cousin: dadSon.get(son)){
-						
+						System.out.println("4");
 						cousins.add(cousin);
 					}
 				}
