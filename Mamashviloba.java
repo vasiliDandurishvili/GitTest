@@ -34,6 +34,7 @@ public class Mamashviloba extends ConsoleProgram{
 				if(!son.equals(sonDad.get(name))){//mamachveni rom ar iyos.
 					// "son" aris bidza.
 					for(String cousin: dadSon.get(son)){//amovigot bidzis shvilebi.
+						System.out.println("1");
 						cousins.add(cousin);
 					}
 				}
