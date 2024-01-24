@@ -56,6 +56,7 @@ public class Mamashviloba extends ConsoleProgram{
 				//aq vdgavart bidzebze da mati shvilebi unda chavamatot chven listshi.
 				if(!son.equals(name)){//mamachvenis shvili rom ar iyos.
 					for(String cousin: dadSon.get(son)){
+						
 						cousins.add(cousin);
 					}
 				}
