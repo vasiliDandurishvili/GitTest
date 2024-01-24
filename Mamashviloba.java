@@ -7,7 +7,9 @@ import java.util.HashSet;
 import java.util.Map;
 
 import acm.program.ConsoleProgram;
-
+/**
+ * tavidan sonDad-ic value hashset-i mqonda da papis amogeba aerorebda.
+ * */
 public class Mamashviloba extends ConsoleProgram{
 	private Map <String, String> sonDad = new HashMap<>();
 	private Map <String, HashSet<String>> dadSon = new HashMap<>();
@@ -28,7 +30,6 @@ public class Mamashviloba extends ConsoleProgram{
 		
 		//aq ukve hasmapebi savsea.
 		if(sonDad.containsKey(name)){//unda iyos vinmes shvili
-			System.out.println("1");
 			for(String son: dadSon.get(sonDad.get(sonDad.get(name)))){//amoviget mamis mama-> papa -> magis shvilebi, bidzebi
 				
 				if(!son.equals(sonDad.get(name))){//mamachveni rom ar iyos.
