@@ -9,7 +9,7 @@ import java.util.Map;
 import acm.program.ConsoleProgram;
 
 public class Mamashviloba extends ConsoleProgram{
-	private Map <String, HashSet<String>> sonDad = new HashMap<>();
+	private Map <String, String> sonDad = new HashMap<>();
 	private Map <String, HashSet<String>> dadSon = new HashMap<>();
 	String name;
 	String fileName;
@@ -61,9 +61,9 @@ public class Mamashviloba extends ConsoleProgram{
 					String son = line.substring(0, space);//second is exclusive
 					String dad = line.substring(space + 1);
 					if(!sonDad.containsKey(son)){
-						sonDad.put(son, new HashSet<String>());
+						sonDad.put(son, dad);
 					}
-					sonDad.get(son).add(dad);
+//					sonDad.get(son).add(dad);
 					//axla piriqitac.
 					if(!dadSon.containsKey(dad)){
 						dadSon.put(dad, new HashSet<String>());
