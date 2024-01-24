@@ -23,8 +23,8 @@ public class Mamashviloba extends ConsoleProgram{
 		
 		println(name + "'s cousins: " + getCousins(fileName, name));
 	}
-	private ArrayList<String> getCousins(String fileName, String name){
-		 ArrayList<String> cousins = new  ArrayList<String>();
+	private HashSet<String> getCousins(String fileName, String name){
+		 HashSet<String> cousins = new  HashSet<String>();
 		
 		//aq ukve hasmapebi savsea.
 		if(sonDad.containsKey(name)){//unda iyos vinmes shvili
