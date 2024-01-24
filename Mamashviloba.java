@@ -43,6 +43,7 @@ public class Mamashviloba extends ConsoleProgram{
 			}
 		}
 		else{
+			System.out.println("5");
 			return null;
 		}
 		
