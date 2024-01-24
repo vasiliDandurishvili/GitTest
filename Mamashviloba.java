@@ -43,9 +43,8 @@ public class Mamashviloba extends ConsoleProgram{
 					
 					
 				}
-				reader.close();
 			}
-			
+			reader.close();
 			
 		}catch(IOException e){
 			
