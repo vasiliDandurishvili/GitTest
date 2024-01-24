@@ -37,7 +37,6 @@ public class Circles extends GraphicsProgram {
 				o.setColor(color);
 			}
 			oval = null;
-			o = null;
 		}
 	}
 }
