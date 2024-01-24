@@ -50,6 +50,9 @@ public class Mamashviloba extends ConsoleProgram{
 		}catch(IOException e){
 			
 		}
+		System.out.println("sd: " + sonDad);
+		System.out.println("ds: " + dadSon);
+		
 		
 		return null;
 		
