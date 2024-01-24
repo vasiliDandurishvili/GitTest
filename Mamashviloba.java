@@ -27,7 +27,7 @@ public class Mamashviloba extends ConsoleProgram{
 		 ArrayList<String> cousins = new  ArrayList<String>();
 		
 		//aq ukve hasmapebi savsea.
-		if(!sonDad.containsKey(name)){
+		if(sonDad.containsKey(name)){
 			System.out.println("1");
 			for(String son: dadSon.get(sonDad.get(name))){//amoviget mamis shvilebi-> bidzebi
 				System.out.println("2");
