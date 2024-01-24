@@ -45,6 +45,9 @@ public class Mamashviloba extends ConsoleProgram{
 					
 				}
 			}
+			System.out.println("sd" + sonDad);
+			System.out.println("ds" + dadSon);
+			
 			reader.close();
 			
 		}catch(IOException e){
