@@ -28,10 +28,7 @@ public class Mamashviloba extends ConsoleProgram{
 		
 		//aq ukve hasmapebi savsea.
 		if(sonDad.containsKey(name)){//unda iyos vinmes shvili
-			String father = sonDad.get(name).toString();
-			String grandFather = sonDad.get(father).toString();
-			//sonDad.get(sonDad.get(name))
-			for(String son: dadSon.get(grandFather)){//amoviget mamis mama-> papa -> magis shvilebi, bidzebi
+			for(String son: dadSon.get(sonDad.get(sonDad.get(name)))){//amoviget mamis mama-> papa -> magis shvilebi, bidzebi
 				
 				if(!son.equals(sonDad.get(name))){//mamachveni rom ar iyos.
 					// "son" aris bidza.
