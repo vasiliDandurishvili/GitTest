@@ -41,6 +41,8 @@ public class Mamashviloba extends ConsoleProgram{
 						dadSon.put(dad, new HashSet<String>());
 					}
 					dadSon.get(dad).add(son);
+					System.out.println("sd" + sonDad);
+					System.out.println("ds" + dadSon);
 					
 					
 				}
