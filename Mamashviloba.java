@@ -13,14 +13,44 @@ public class Mamashviloba extends ConsoleProgram{
 	private Map <String, HashSet<String>> dadSon = new HashMap<>();
 	String name;
 	String fileName;
+	
+	
 	public void run(){
 		name = readLine("name: ");
 		fileName = "mamashviloba";
+		
+		bufferReader();
 		
 		println(name + "'s cousins: " + getCousins(fileName, name));
 	}
 	private ArrayList<String> getCousins(String fileName, String name){
 		 ArrayList<String> cousins = new  ArrayList<String>();
+		
+		//aq ukve hasmapebi savsea.
+		if(!sonDad.containsKey(name)){
+			System.out.println("1");
+			for(String son: dadSon.get(sonDad.get(name))){//amoviget mamis shvilebi-> bidzebi
+				System.out.println("2");
+				//aq vdgavart bidzebze da mati shvilebi unda chavamatot chven listshi.
+				if(!son.equals(name)){//mamachvenis shvili rom ar iyos.
+					System.out.println("3");
+					for(String cousin: dadSon.get(son)){
+						System.out.println("4");
+						cousins.add(cousin);
+					}
+				}
+				
+			}
+		}
+		else{
+			return null;
+		}
+		
+		
+		return cousins;
+		
+	}
+	private void bufferReader(){
 		try{
 			BufferedReader reader = new BufferedReader(new FileReader(fileName));
 			
@@ -51,28 +81,5 @@ public class Mamashviloba extends ConsoleProgram{
 		}catch(IOException e){
 			
 		}
-		//aq ukve hasmapebi savsea.
-		if(!sonDad.containsKey(name)){
-			System.out.println("1");
-			for(String son: dadSon.get(sonDad.get(name))){//amoviget mamis shvilebi-> bidzebi
-				System.out.println("2");
-				//aq vdgavart bidzebze da mati shvilebi unda chavamatot chven listshi.
-				if(!son.equals(name)){//mamachvenis shvili rom ar iyos.
-					System.out.println("3");
-					for(String cousin: dadSon.get(son)){
-						System.out.println("4");
-						cousins.add(cousin);
-					}
-				}
-				
-			}
-		}
-		else{
-			return null;
-		}
-		
-		
-		return cousins;
-		
 	}
 }
