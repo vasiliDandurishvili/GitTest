@@ -20,6 +20,7 @@ public class Mamashviloba extends ConsoleProgram{
 		println(name + "'s cousins: " + getCousins(fileName, name));
 	}
 	private ArrayList<String> getCousins(String fileName, String name){
+		 ArrayList<String> cousins = new  ArrayList<String>();
 		try{
 			BufferedReader reader = new BufferedReader(new FileReader(fileName));
 			
@@ -49,11 +50,24 @@ public class Mamashviloba extends ConsoleProgram{
 		}catch(IOException e){
 			
 		}
-		System.out.println("sd: " + sonDad);
-		System.out.println("ds: " + dadSon);
+		//aq ukve hasmapebi savsea.
+		if(!sonDad.containsKey(name)){
+			for(String son: dadSon.get(sonDad.get(name))){//amoviget mamis shvilebi-> bidzebi
+				//aq vdgavart bidzebze da mati shvilebi unda chavamatot chven listshi.
+				if(!son.equals(name)){//mamachvenis shvili rom ar iyos.
+					for(String cousin: dadSon.get(son)){
+						cousins.add(cousin);
+					}
+				}
+				
+			}
+		}
+		else{
+			return null;
+		}
 		
 		
-		return null;
+		return cousins;
 		
 	}
 }
