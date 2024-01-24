@@ -43,7 +43,7 @@ public class Mamashviloba extends ConsoleProgram{
 					dadSon.get(dad).add(son);			
 				}
 			}
-			System.out.println("======================");
+			System.out.println("=======");
 			System.out.println("sd" + sonDad);
 			System.out.println("ds" + dadSon);
 			reader.close();
