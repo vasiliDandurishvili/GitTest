@@ -40,16 +40,12 @@ public class Mamashviloba extends ConsoleProgram{
 					if(!dadSon.containsKey(dad)){
 						dadSon.put(dad, new HashSet<String>());
 					}
-					dadSon.get(dad).add(son);
-					System.out.println("sd" + sonDad);
-					System.out.println("ds" + dadSon);
-					
-					
+					dadSon.get(dad).add(son);			
 				}
 			}
+			System.out.println("======================");
 			System.out.println("sd" + sonDad);
 			System.out.println("ds" + dadSon);
-			
 			reader.close();
 			
 		}catch(IOException e){
