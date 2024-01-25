@@ -24,12 +24,12 @@ public class bank_account extends ConsoleProgram {
 			println("balance: " + money);
 		} else if (line2.equals("deposit")) {
 			int dep = readInt("deposit: ");
-			deposit.add(dep);
+			deposits.add(dep);
 			money += dep;
 			println("new balance: " + money);
 		} else if (line2.equals("withdraw")) {
 			int with = readInt("withdraw: ");
-			withdraw.add(with);
+			withdraws.add(with);
 			money -= with;
 			println("new balance: " + money);
 		}
