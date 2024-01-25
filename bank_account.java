@@ -1,8 +1,11 @@
+import java.util.ArrayList;
+
 import acm.program.ConsoleProgram;
 
 public class bank_account extends ConsoleProgram {
 	double money;
-
+	ArrayList <Integer> deposit = new 	ArrayList<>(); 
+	ArrayList <Integer> withdraw = new 	ArrayList<>(); 
 	public void run() {
 		money = 1000;
 		while (true) {
@@ -32,6 +35,6 @@ public class bank_account extends ConsoleProgram {
 	}
 
 	private void transactions(double money) {
-
+		
 	}
 }
