@@ -80,7 +80,7 @@ public class Mamashviloba extends ConsoleProgram{
 			}
 //			System.out.println("=======");
 //			System.out.println("sd" + sonDad);
-//			System.out.println("ds" + dadSon);
+//			System.out.println("ds" + dadSon);c
 			reader.close();
 			
 		}catch(IOException e){
