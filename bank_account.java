@@ -8,14 +8,13 @@ public class bank_account extends ConsoleProgram {
 	ArrayList <Integer> withdraws = new 	ArrayList<>(); 
 	public void run() {
 		money = 100000;
-		while (true) {
 			String line = readLine("balance or transaction?");
 			if (line.equals("check balance")) {
 				bandAccount(money);
 			} else {
 				transactions(money);
 			}
-		}
+		
 	}
 
 	private void bandAccount(double money) {
