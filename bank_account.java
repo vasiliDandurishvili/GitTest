@@ -4,8 +4,8 @@ import acm.program.ConsoleProgram;
 
 public class bank_account extends ConsoleProgram {
 	double money;
-	ArrayList <Integer> deposit = new 	ArrayList<>(); 
-	ArrayList <Integer> withdraw = new 	ArrayList<>(); 
+	ArrayList <Integer> deposits = new 	ArrayList<>(); 
+	ArrayList <Integer> withdraws = new 	ArrayList<>(); 
 	public void run() {
 		money = 1000;
 		while (true) {
@@ -24,10 +24,12 @@ public class bank_account extends ConsoleProgram {
 			println("balance: " + money);
 		} else if (line2.equals("deposit")) {
 			int dep = readInt("deposit: ");
+			deposit.add(dep);
 			money += dep;
 			println("new balance: " + money);
 		} else if (line2.equals("withdraw")) {
 			int with = readInt("withdraw: ");
+			withdraw.add(with);
 			money -= with;
 			println("new balance: " + money);
 		}
@@ -35,6 +37,16 @@ public class bank_account extends ConsoleProgram {
 	}
 
 	private void transactions(double money) {
-		
+		String check = readLine("deposits or withdraw");
+		if(check.equals("deposits")){
+			for(int i = 0; i < deposits.size(); i++){
+				println(i + "th deposit is :" + deposits.get(i));
+			}
+		}
+		if(check.equals("withdraws")){
+			for(int i = 0; i < withdraws.size(); i++){
+				println(i + "th withdraws is :" + withdraws.get(i));
+			}
+		}
 	}
 }
