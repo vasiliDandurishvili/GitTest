@@ -3,11 +3,10 @@ import java.util.ArrayList;
 import acm.program.ConsoleProgram;
 
 public class bank_account extends ConsoleProgram {
-	double money;
+	double money = 100000;;
 	ArrayList <Integer> deposits = new 	ArrayList<>(); 
 	ArrayList <Integer> withdraws = new 	ArrayList<>(); 
 	public void run() {
-		money = 100000;
 		while(true){
 			String line = readLine("check balance or transaction?");
 			if (line.equals("check balance")) {
