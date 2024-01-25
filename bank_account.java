@@ -7,7 +7,7 @@ public class bank_account extends ConsoleProgram {
 	ArrayList <Integer> deposits = new 	ArrayList<>(); 
 	ArrayList <Integer> withdraws = new 	ArrayList<>(); 
 	public void run() {
-		money = 1000;
+		money = 100000;
 		while (true) {
 			String line = readLine("balance or transaction?");
 			if (line.equals("check balance")) {
