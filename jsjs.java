@@ -18,6 +18,30 @@ import acm.util.RandomGenerator;
 public class jsjs extends ConsoleProgram {
 
 	public void run() {
+		
+		ArrayList<Integer> lis7 = new ArrayList<>();
+		ArrayList<Integer> lis8 = new ArrayList<>();
+		
+		int [] arr7 = new int[10];
+		for(int i = 0;i < arr7.length; i++){
+			arr7[i] = readInt();
+			lis7.add(arr7[i]);
+		}
+//		int [] arr8 = new int[10];
+//		for(int i = 0;i < arr8.length; i++){
+//			arr8[i] = readInt();
+//			lis8.add(arr8[i]);
+//		}
+		
+		Collections.swap(lis7, 3, 5);
+		println(lis7);
+		Collections.reverse(lis7);
+		println(lis7);
+		
+		if(true){
+			return;
+		}
+		
 		HashSet<Integer> p = new HashSet<>();
 		HashSet<Integer> b = new HashSet<>();
 		while(true){
@@ -36,28 +60,7 @@ public class jsjs extends ConsoleProgram {
 		if(true){
 			return;
 		}
-		
-		ArrayList<Integer> lis7 = new ArrayList<>();
-		ArrayList<Integer> lis8 = new ArrayList<>();
-		
-		int [] arr7 = new int[10];
-		for(int i = 0;i < arr7.length; i++){
-			arr7[i] = readInt();
-			lis7.add(arr7[i]);
-		}
-//		int [] arr8 = new int[10];
-//		for(int i = 0;i < arr8.length; i++){
-//			arr8[i] = readInt();
-//			lis8.add(arr8[i]);
-//		}
-		
-		Collections.swap(lis7, 3, 5);
-		println(lis7);
-		
-		
-		if(true){
-			return;
-		}
+	
 		// sfeisebis damateba.
 		ArrayList<String> myArr = new ArrayList<String>(); 
 		myArr.add("ad");
