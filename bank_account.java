@@ -44,7 +44,7 @@ public class bank_account extends ConsoleProgram {
 		}
 		if(check.equals("withdraws")){
 			for(int i = 0; i < withdraws.size(); i++){
-				println(i + "th withdraws is :" + withdraws.get(i));
+				println((i + 1) + "th withdraws is :" + withdraws.get(i));
 			}
 		}
 	}
