@@ -18,10 +18,10 @@ import acm.util.RandomGenerator;
 public class jsjs extends ConsoleProgram {
 
 	public void run() {
-		HashSet<Integer> a = new HashSet<>();
+		HashSet<Integer> p = new HashSet<>();
 		HashSet<Integer> b = new HashSet<>();
 		while(true){
-			a.add(readInt("a: "));
+			p.add(readInt("p: "));
 			b.add(readInt("b: "));
 			
 			int q = readInt("br");
@@ -29,6 +29,8 @@ public class jsjs extends ConsoleProgram {
 				break;
 			}
 		}
+		p.addAll(b);
+		println(p);
 		
 		
 		if(true){
