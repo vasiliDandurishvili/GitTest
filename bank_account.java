@@ -10,14 +10,14 @@ public class bank_account extends ConsoleProgram {
 		while(true){
 			String line = readLine("check balance or transaction?");
 			if (line.equals("check balance")) {
-				bandAccount(money);
+				bandAccount();
 			} else {
-				transactions(money);
+				transactions();
 			}
 		}
 	}
 
-	private void bandAccount(double money) {
+	private void bandAccount() {
 		String line2 = readLine("give money: ");
 		if (line2.equals("balance")) {
 			println("balance: " + money);
@@ -35,7 +35,7 @@ public class bank_account extends ConsoleProgram {
 
 	}
 
-	private void transactions(double money) {
+	private void transactions() {
 		String check = readLine("deposits or withdraw");
 		if(check.equals("deposits")){
 			for(int i = 0; i < deposits.size(); i++){
