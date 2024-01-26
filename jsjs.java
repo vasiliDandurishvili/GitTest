@@ -32,6 +32,7 @@ public class jsjs extends ConsoleProgram {
 //		}
 		
 		Collections.swap(lis7, 3, 5);
+		println(lis7);
 		
 		
 		if(true){
