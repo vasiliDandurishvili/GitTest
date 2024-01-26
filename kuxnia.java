@@ -16,13 +16,22 @@ public class kuxnia {
 					dishes.add(dish);
 					continue;
 				}
+				boolean can = true;
+				for(String ingredient: receipts.get(dish)){
+					if(!fridge.contains(ingredient) && !result.contains(ingredient)){
+						can = false;
+					}
+				}
+				if(can)
+					dishes.add(dish);
 			}
-		
-			if(true){
+			if (dishes.isEmpty()) {
 				break;
+			}
+			for (String dish : dishes) {
+				result.add(dish);
 			}
 		}
 		return result;
 	}
-
 }
