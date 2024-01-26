@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.StringTokenizer;
 
 import javax.swing.JLabel;
@@ -17,6 +18,23 @@ import acm.util.RandomGenerator;
 public class jsjs extends ConsoleProgram {
 
 	public void run() {
+		HashSet<Integer> a = new HashSet<>();
+		HashSet<Integer> b = new HashSet<>();
+		while(true){
+			a.add(readInt("a: "));
+			b.add(readInt("b: "));
+			
+			int q = readInt("br");
+			if(q == 27){
+				break;
+			}
+		}
+		
+		
+		if(true){
+			return;
+		}
+		
 		ArrayList<Integer> lis7 = new ArrayList<>();
 		ArrayList<Integer> lis8 = new ArrayList<>();
 		
