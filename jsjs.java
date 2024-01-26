@@ -17,6 +17,23 @@ import acm.util.RandomGenerator;
 public class jsjs extends ConsoleProgram {
 
 	public void run() {
+		int [] arr7 = new int[10];
+		for(int i = 0;i < arr7.length; i++){
+			arr7[i] = readInt();
+		}
+		int [] arr8 = new int[10];
+		for(int i = 0;i < arr8.length; i++){
+			arr8[i] = readInt();
+		}
+		
+		ArrayList<Integer> lis = new ArrayList<>();
+		ArrayList<Integer> lis2 = new ArrayList<>();
+		Collections.swap(lis, 3, 5);
+		
+		
+		if(true){
+			return;
+		}
 		// sfeisebis damateba.
 		ArrayList<String> myArr = new ArrayList<String>(); 
 		myArr.add("ad");
