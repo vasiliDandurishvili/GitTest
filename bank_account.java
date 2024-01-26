@@ -18,7 +18,7 @@ public class bank_account extends ConsoleProgram {
 	}
 
 	private void bandAccount() {
-		String line2 = readLine("give money: ");
+		String line2 = readLine("money: ");
 		if (line2.equals("balance")) {
 			println("balance: " + money);
 		} else if (line2.equals("deposit")) {
