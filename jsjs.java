@@ -25,11 +25,11 @@ public class jsjs extends ConsoleProgram {
 			arr7[i] = readInt();
 			lis7.add(arr7[i]);
 		}
-		int [] arr8 = new int[10];
-		for(int i = 0;i < arr8.length; i++){
-			arr8[i] = readInt();
-			lis8.add(arr8[i]);
-		}
+//		int [] arr8 = new int[10];
+//		for(int i = 0;i < arr8.length; i++){
+//			arr8[i] = readInt();
+//			lis8.add(arr8[i]);
+//		}
 		
 		Collections.swap(lis7, 3, 5);
 		
